@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "name": "konnector name",
+  "type": "node",
+  "slug": "konnectorslug",
+  "description": "description",
+  "source": "git://github.com/cozy/cozy-konnector-thename.git",
+  "locales": {
+    "fr": {
+      "description": "Récupère toutes vos factures",
+      "permissions": {
+        "bills": {
+          "description": "Utilisé pour sauvegarder les données de facturation"
+        },
+        "files": {
+          "description": "Utilisé pour sauvegarder les factures"
+        }
+      }
+    }
+  },
+  "permissions": {
+    "bills": {
+      "description": "Required to save the bills data",
+      "type": "io.cozy.bills"
+    },
+    "files": {
+      "description": "Required to save the bills",
+      "type": "io.cozy.files"
+    }
+  },
+  "developer": {
+    "name": "yourname",
+    "url": "your web site"
+  }
+}
