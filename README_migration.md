@@ -29,8 +29,15 @@ intervention will make it more easy to read.
 Kresus is not supported (yet?) in cozy v3, then it is not possible to link you bills to you bank
 operations. Just remove code calling the linkBankOperation lib.
 
-## You can test your konnector!
-
+## Update some paths
 Most of the libs used by konnectors have been migrated to use cozy-client-js instead of v2 code and
 are directly available in the lib directory of this template. Oh yes for that you need to execute a
 tiny search and replace from '../lib' to './lib' in your konnector code and you will be done.
+
+## Update the manifest files
+
+package.json and manifest.konnectors to be updated with informations of your own konnector like,
+name of the project, dependencies, needed permissions, description of the project. Same goes for
+the README.md file.
+
+## You can test your konnector!
