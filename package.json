@@ -10,6 +10,7 @@
     "cheerio": "^0.22.0",
     "core-js": "^2.4.1",
     "cozy-client-js": "^0.1.8",
+    "cozy-slug": "^0.2.2",
     "debug": "^2.6.3",
     "env-cmd": "^5.0.0",
     "isomorphic-fetch": "^2.2.1",
