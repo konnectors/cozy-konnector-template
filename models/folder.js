@@ -1,5 +1,4 @@
 const async = require('async')
-const log = require('printit')({prefix: 'konnectors'})
 const cozy = require('../lib/cozyclient')
 
 // Folder model is used to list the list of available folders in the user's
@@ -51,28 +50,3 @@ module.exports = {
     .catch(err => callback(err))
   }
 }
-
-// module.exports = (Folder = americano.getModel('Folder', {
-//   path: String,
-//   name: String
-// }))
-
-// Get full path for given folder.
-// Folder.prototype.getFullPath = function () {
-//   return `${this.path}/${this.name}`
-// }
-
-// Return folder list ordered by full path.
-// Folder.all = callback =>
-//   Folder.request('byFullPath', function (err, folders) {
-//     if (err) { return callback(err) }
-//     return callback(null, folders)
-//   })
-
-// Folder.allPath = callback =>
-//   Folder.all(function (err, folders) {
-//     if (err) { return callback(err) }
-//     folders = folders.map(folder => folder.getFullPath())
-//     return callback(err, folders)
-//   })
-
