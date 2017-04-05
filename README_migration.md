@@ -5,12 +5,15 @@
 This doc describes how you can migrate a v2 konnector to a V3 konnector as easily as possible. At
 the moment, it applies only to login/password konnectors (not OAuth ones especially).
 
+## Files
+
+Clone this repository and then remove the ```.git``` directory. Then copy your konnector js file to the root as ```konnector.js``` (or konnector.coffee).
 
 ## Convert Coffeescript to es2015 code (if needed)
 
 There are still a lot of konnectors which are coded in coffeescript. We do not intent to support
 coffeescript in this new version of cozy, and it would be good to do it for your konnector (but you
-can still compile with coffeescript if you want and it is not supported by this document).
+can still compile with coffeescript if you want but it is not supported by this document).
 
 Just run :
 
