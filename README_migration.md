@@ -29,18 +29,15 @@ intervention will make it more easy to read.
 
 ## Remove code related to kresus
 
-Kresus is not supported (yet?) in cozy v3, then it is not possible to link you bills to you bank
-operations. Just remove code calling the linkBankOperation lib.
+Kresus is not supported (yet?) in cozy v3 and link_bank_operation.coffee is not ported to gozy yet, then it is not possible to link you bills to you bank operations. Just remove code calling the linkBankOperation lib.
 
 ## Update some paths
 Most of the libs used by konnectors have been migrated to use cozy-client-js instead of v2 code and
 are directly available in the lib directory of this template. Oh yes for that you need to execute a
 tiny search and replace from '../lib' to './lib' in your konnector code and you will be done.
 
-## Update the manifest files
+## Update the template files
 
-package.json and manifest.konnectors to be updated with informations of your own konnector like,
-name of the project, dependencies, needed permissions, description of the project. Same goes for
-the README.md file.
+This template repository is delivered with sample package.json, manifest.konnectors and README.md files. You need to update them with information specific to your konnector like : name of the project, dependencies, needed permissions, description of the project.
 
 ## You can test your konnector!
