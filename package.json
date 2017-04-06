@@ -9,7 +9,6 @@
     "cheerio": "^0.22.0",
     "cozy-konnector-libs": "^1.0.8",
     "debug": "^2.6.3",
-    "env-cmd": "^5.0.0",
     "node-polyglot": "^2.2.2",
     "printit": "^0.1.20",
     "request": "^2.81.0",
@@ -22,6 +21,7 @@
     "standalone": "env-cmd ./data/env_standalone.js npm start"
   },
   "devDependencies": {
+    "env-cmd": "^5.0.0",
     "request-debug": "^0.2.0"
   }
 }
