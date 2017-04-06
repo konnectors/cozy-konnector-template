@@ -31,21 +31,18 @@ Then just run :
 npm install
 npm start
 ```
+### Test
 
-### Hack
-
-If you do not want to need to have an accessible cozy-stack, just run :
+If you do not want to have to install the konnector on a cozy v3 to test it, you can register the
+konnector as an OAuth application with the following commands :
 
 ```sh
 npm install
 npm run dev
 ```
 
-The requests to the cozy stack will be stubbed using the ./data/fixture.json file as source of data
-and when cozy-client-js is asked to create or update data, the data will be output to the console
-
-This command will register your konnector as an Oauth application to the cozy-stack. By default,
-the cozy-stack is supposed to be located in http://cozy.local:8080. If this is not your case, just
+This command will register your konnector as an OAuth application to the cozy-stack. By default,
+the cozy-stack is supposed to be located in http://cozy.tools:8080. If this is not your case, just
 update the COZY_URL field in ./data/env.js.
 
 After that, your konnector is run but should not work since you did not specify an credentials to
@@ -54,6 +51,18 @@ which is a JSON string.
 
 Now run npm run dev one more time, you dont have to do the Oauth thing now, and it should be ok
 
+### Hack
+
+If you do not want to need to have an accessible cozy-stack, just run :
+
+```sh
+npm install
+npm run standalone
+```
+
+The requests to the cozy stack will be stubbed using the ./data/fixture.json file as source of data
+and when cozy-client-js is asked to create or update data, the data will be output to the console.
+The bills (or any file) will be saved in the ./data directory
 
 ### Maintainer
 
