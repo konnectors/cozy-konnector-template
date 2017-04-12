@@ -25,7 +25,7 @@ and/or updating the konnector in the cozy-stack :
 
 You first need an installed nodejs (LTS version is fine)
 
-Then just run :
+Then just run (but you have to have proper COZY_CREDENTIALS, COZY_URL and COZY_FIELDS environment variables):
 
 ```sh
 npm install
