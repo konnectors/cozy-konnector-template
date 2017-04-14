@@ -20,10 +20,10 @@ If you want to work on this konnector and submit code modifications, feel free t
 
 ### Run
 
-If you have a running accessible cozy-stack you can test your the konnector without installing
+If you have a running accessible cozy-stack you can test your modifications to the konnector without installing
 and/or updating the konnector in the cozy-stack :
 
-You first need an installed nodejs (LTS version is fine)
+You first need an installed [nodejs] (LTS version is fine).
 
 Then just run (but you have to have proper COZY_CREDENTIALS, COZY_URL and COZY_FIELDS environment variables):
 
@@ -43,13 +43,13 @@ npm run dev
 
 This command will register your konnector as an OAuth application to the cozy-stack. By default,
 the cozy-stack is supposed to be located in http://cozy.tools:8080. If this is not your case, just
-update the COZY_URL field in ./data/env.js.
+update the COZY_URL field in [./data/env.js].
 
-After that, your konnector is run but should not work since you did not specify an credentials to
-the target service. You can also do this in ./data/env.js by modifying the COZY_FIELDS attribute
+After that, your konnector is running but should not work since you did not specify any credentials to
+the target service. You can also do this in [./data/env.js] by modifying the COZY_FIELDS attribute
 which is a JSON string.
 
-Now run npm run dev one more time, you dont have to do the Oauth thing now, and it should be ok
+Now run `npm run dev` one more time, it should be ok.
 
 ### Hack
 
@@ -60,9 +60,9 @@ npm install
 npm run standalone
 ```
 
-The requests to the cozy stack will be stubbed using the ./data/fixture.json file as source of data
-and when cozy-client-js is asked to create or update data, the data will be output to the console.
-The bills (or any file) will be saved in the ./data directory
+The requests to the cozy-stack will be stubbed using the [./data/fixture.json] file as source of data
+and when cozy-client is asked to create or update data, the data will be outputed to the console.
+The bills (or any file) will be saved in the ./data directory.
 
 ### Maintainer
 
@@ -89,4 +89,5 @@ License
 [freenode]: http://webchat.freenode.net/?randomnick=1&channels=%23cozycloud&uio=d4
 [forum]: https://forum.cozy.io/
 [github]: https://github.com/cozy/
+[nodejs]: https://nodejs.org/
 [twitter]: https://twitter.com/mycozycloud
