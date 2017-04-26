@@ -5,6 +5,17 @@
   "slug": "konnectorslug",
   "description": "description",
   "source": "git://github.com/cozy/cozy-konnector-thename.git",
+  "fields": {
+    "save_folder": {
+      "doctype": "io.cozy.files",
+      "type": "folder",
+    },
+    "account": {
+      "doctype": "io.cozy.accounts",
+      "account_type": "accounttype",
+      "accountFormat": "login,password",
+    }
+  },
   "locales": {
     "fr": {
       "description": "Récupère toutes vos factures",
