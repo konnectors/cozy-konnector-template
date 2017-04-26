@@ -25,20 +25,48 @@ and/or updating the konnector in the cozy-stack :
 
 You first need an installed [nodejs] (LTS version is fine).
 
-Then just run (but you have to have proper COZY_CREDENTIALS, COZY_URL and COZY_FIELDS environment variables):
+Then just run (but you need to have proper COZY_CREDENTIALS, COZY_URL and COZY_FIELDS environment variables):
 
 ```sh
-npm install
-npm start
+npm install --global yarn
 ```
+
+Then run (but you have to have proper COZY_CREDENTIALS, COZY_URL and COZY_FIELDS environment variables):
+
+```sh
+yarn
+yarn start
+```
+
+Where:
+ - COZY_CREDENTIALS needs to be the result of ```cozy-stack instances token-cli <instance name> <scope>```
+ - COZY_URL is the full http url to your cozy
+ - COZY_FIELDS is something like :
+```javascript
+{
+  "data":{
+    "attributes":{
+      "arguments":{
+        "account":"cf31eaef5d899404a7e8c3737c1c2d1f",
+        "folder_to_save":"folderPath",
+        "slug":"mykonnector"
+      }
+    }
+  }
+}
+```
+
+The "account" field is the id of the record with doctype "io.cozy.accounts" which will be used as
+parameters for your konnector.
+
 ### Test
 
 If you do not want to have to install the konnector on a cozy v3 to test it, you can register the
 konnector as an OAuth application with the following commands :
 
 ```sh
-npm install
-npm run dev
+yarn
+yarn dev
 ```
 
 This command will register your konnector as an OAuth application to the cozy-stack. By default,
@@ -46,18 +74,21 @@ the cozy-stack is supposed to be located in http://cozy.tools:8080. If this is n
 update the COZY_URL field in [./data/env.js].
 
 After that, your konnector is running but should not work since you did not specify any credentials to
-the target service. You can also do this in [./data/env.js] by modifying the COZY_FIELDS attribute
-which is a JSON string.
+the target service. You can do this in a [./data/env_fields.json] (you have
+[./data/env_fields.json.template] available as a template)
 
-Now run `npm run dev` one more time, it should be ok.
+Ninit:dev:accountow run ```yarn init:dev:account``` to create an account in the targeted cozy which will be used by
+the connector (the id of the account is saved in ./data/account.txt)
+
+Now run `yarn dev` one more time, it should be ok.
 
 ### Hack
 
 If you do not want to need to have an accessible cozy-stack, just run :
 
 ```sh
-npm install
-npm run standalone
+yarn
+yarn standalone
 ```
 
 The requests to the cozy-stack will be stubbed using the [./data/fixture.json] file as source of data
@@ -91,3 +122,4 @@ License
 [github]: https://github.com/cozy/
 [nodejs]: https://nodejs.org/
 [twitter]: https://twitter.com/mycozycloud
+[yarn]: https://yarnpkg.com

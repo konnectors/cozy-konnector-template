@@ -26,6 +26,11 @@
     "files": {
       "description": "Required to save the bills",
       "type": "io.cozy.files"
+    },
+    "accounts": {
+      "description": "Required to get the account's data",
+      "type": "io.cozy.accounts",
+      "verbs": ["GET"]
     }
   },
   "developer": {

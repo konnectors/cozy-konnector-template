@@ -27,10 +27,6 @@ Now you have a nice konnector.js file !
 There may be some small problems though. Each time the ''.?'' was used, a _guardxx_ function will be generated. It works but a human
 intervention will make it more easy to read.
 
-## Remove the code related to kresus
-
-Kresus is not supported (yet?) in cozy v3 and link_bank_operation.coffee is not ported to gozy yet, then it is not possible to link you bills to you bank operations. Just remove code calling the linkBankOperation lib.
-
 ## Use the package "cozy-konnector-libs"
 
 This package is already present in the package.json and contains all libs shared by the konnectors.
@@ -41,6 +37,7 @@ Here is the list available at the moment with their equivalent in the old reposi
   baseKonnector -> libs/base_konnector
   fetcher -> libs/fetcher
   filterExisting -> libs/filter_existing
+  linkBankOperation -> libs/link_bank_operation
   naming -> libs/naming
   saveDataAndFile -> libs/save_data_and_file
   models.bill -> models/bill
@@ -68,4 +65,4 @@ https://github.com/cozy/cozy-konnector-bouyguestelecom.git
 
 This template repository is delivered with sample package.json, manifest.konnectors and README.md files. You need to update them with information specific to your konnector like : name of the project, dependencies, needed permissions, description of the project.
 
-## You can test your konnector!
+## You can test your konnector following the procedure described in [./README.md]!
