@@ -95,6 +95,31 @@ The requests to the cozy-stack will be stubbed using the [./data/fixture.json] f
 and when cozy-client is asked to create or update data, the data will be outputed to the console.
 The bills (or any file) will be saved in the ./data directory.
 
+### Build
+
+To be able to run the connector, the cozy stack needs a connector which is built into only one
+file, without needing to npm install it, this will be a lot faster to install.
+
+There is a command in package.json to help you to do that : ```yarn build```
+
+This command uses [webpack] to bundle all the code needed by your connector into one file.
+
+This will generate an index.js file in the build directory. The expected way to deploy this built
+file is to create a 'build' branch (or with another name)
+
+```sh
+yarn build
+git checkout -b build   # if the build branch does not exist yet
+cp build/index.js ./
+git add index.js
+git ci -m "built"
+git push origin build
+```
+
+And your konnector can now be installed using the following url :
+
+git://github.com/cozy/cozy-konnector-<yourkonnector>.git#build
+
 ### Maintainer
 
 The lead maintainers for this konnector is <YOUR NAME>
@@ -122,4 +147,5 @@ License
 [github]: https://github.com/cozy/
 [nodejs]: https://nodejs.org/
 [twitter]: https://twitter.com/mycozycloud
+[webpack]: https://webpack.js.org
 [yarn]: https://yarnpkg.com
