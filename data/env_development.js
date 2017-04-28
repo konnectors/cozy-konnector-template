@@ -15,6 +15,6 @@ module.exports = {
   COZY_CREDENTIALS: fs.existsSync(tokenPath) ? fs.readFileSync(tokenPath) : 'NO TOKEN',
   COZY_URL: 'http://cozy.tools:8080',
   NODE_ENV: 'development',
-  COZY_FIELDS: `{"connector": "trainline", "account": "${accountId}", "folder_to_save": "trainline"}`,
+  COZY_FIELDS: `{"connector": "mykonnector", "account": "${accountId}", "folder_to_save": "folderPath"}`,
   DEBUG: '*'
 }
