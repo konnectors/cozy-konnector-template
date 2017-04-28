@@ -1,4 +1,3 @@
-module.exports = Object.assign(require('./env.js'), {
-  NODE_ENV: 'development',
-  DEBUG: '*'
+module.exports = Object.assign(require('./env_development.js'), {
+  NODE_ENV: 'standalone'
 })
