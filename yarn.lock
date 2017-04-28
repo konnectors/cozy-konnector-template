@@ -113,7 +113,7 @@ async-each@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/async-each/-/async-each-1.0.1.tgz#19d386a1d9edc6e7c1c85d388aedbcc56d33602d"
 
-async@^2.0.1, async@^2.1.2:
+async@^2.0.1, async@^2.1.2, async@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/async/-/async-2.3.0.tgz#1013d1051047dd320fe24e494d5c66ecaf6147d9"
   dependencies:
@@ -422,10 +422,11 @@ cozy-client-js@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/cozy-client-js/-/cozy-client-js-0.2.1.tgz#1404f4a22be25dd8dfbfd496957bb4c127beca6e"
 
-cozy-konnector-libs@^2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-2.0.4.tgz#fa8dcf9923b4a812219bea495fa6e1509fc20a49"
+cozy-konnector-libs@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-2.1.0.tgz#d2c0806ab1f952fd062109a3ce5c2c4569630440"
   dependencies:
+    async "^2.3.0"
     btoa "^1.1.2"
     core-js "^2.4.1"
     cozy-client-js "^0.2.1"
