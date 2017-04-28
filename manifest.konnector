@@ -8,12 +8,12 @@
   "fields": {
     "save_folder": {
       "doctype": "io.cozy.files",
-      "type": "folder",
+      "type": "folder"
     },
     "account": {
       "doctype": "io.cozy.accounts",
       "account_type": "accounttype",
-      "accountFormat": "login,password",
+      "accountFormat": "login,password"
     }
   },
   "locales": {
