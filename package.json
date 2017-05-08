@@ -20,8 +20,8 @@
   },
   "scripts": {
     "start": "node index.js",
-    "init:dev:account": "npm run predev && env-cmd ./data/env_development.js cozy-init-dev-account ./data/account.txt ./data/env_fields.json",
-    "predev": "env-cmd ./data/env_development.js cozy-authenticate manifest.konnector",
+    "oauth": "env-cmd ./data/env.js cozy-authenticate manifest.konnector",
+    "predev": "npm run oauth && env-cmd ./data/env.js cozy-init-dev-account ./data/account.txt ./data/env_fields.json",
     "dev": "env-cmd ./data/env_development.js npm start",
     "standalone": "env-cmd ./data/env_standalone.js npm start",
     "build": "webpack"
@@ -30,7 +30,7 @@
     "cz-conventional-changelog": "^2.0.0",
     "env-cmd": "^5.1.0",
     "request-debug": "^0.2.0",
-    "webpack": "^2.4.1"
+    "webpack": "^2.5.0"
   },
   "config": {
     "commitizen": {
