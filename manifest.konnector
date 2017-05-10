@@ -32,7 +32,7 @@
   "permissions": {
     "bills": {
       "description": "Required to save the bills data",
-      "type": "io.cozy.bills"
+      "type": "io.cozy.kittens"
     },
     "files": {
       "description": "Required to save the bills",
