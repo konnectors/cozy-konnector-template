@@ -113,9 +113,15 @@ async-each@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/async-each/-/async-each-1.0.1.tgz#19d386a1d9edc6e7c1c85d388aedbcc56d33602d"
 
-async@^2.0.1, async@^2.1.2, async@^2.3.0:
+async@^2.0.1, async@^2.1.2:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/async/-/async-2.3.0.tgz#1013d1051047dd320fe24e494d5c66ecaf6147d9"
+  dependencies:
+    lodash "^4.14.0"
+
+async@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/async/-/async-2.4.0.tgz#4990200f18ea5b837c2cc4f8c031a6985c385611"
   dependencies:
     lodash "^4.14.0"
 
@@ -422,25 +428,26 @@ core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
-cozy-client-js@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/cozy-client-js/-/cozy-client-js-0.2.1.tgz#1404f4a22be25dd8dfbfd496957bb4c127beca6e"
+cozy-client-js@^0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/cozy-client-js/-/cozy-client-js-0.2.4.tgz#6982554ff59e09a62668420abe10aec13c16326d"
 
-cozy-konnector-libs@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-2.1.0.tgz#d2c0806ab1f952fd062109a3ce5c2c4569630440"
+cozy-konnector-libs@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-2.2.0.tgz#a0d223e3995ad0fe45c2459dae964da0f1bf71ee"
   dependencies:
-    async "^2.3.0"
+    async "^2.4.0"
     btoa "^1.1.2"
     core-js "^2.4.1"
-    cozy-client-js "^0.2.1"
+    cozy-client-js "^0.2.4"
     cozy-slug "^0.2.2"
-    debug "^2.6.4"
+    debug "^2.6.6"
     isomorphic-fetch "^2.2.1"
     lodash "^4.17.4"
     moment "^2.18.1"
     printit "^0.1.20"
-    regenerator-runtime "^0.10.3"
+    regenerator-runtime "^0.10.5"
+    request "^2.81.0"
     ware "^1.3.0"
 
 cozy-slug@^0.2.2:
@@ -533,13 +540,7 @@ date-now@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/date-now/-/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
 
-debug@^2.2.0, debug@^2.6.4:
-  version "2.6.4"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.4.tgz#7586a9b3c39741c0282ae33445c4e8ac74734fe0"
-  dependencies:
-    ms "0.7.3"
-
-debug@^2.6.6:
+debug@^2.2.0, debug@^2.6.6:
   version "2.6.6"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.6.tgz#a9fa6fbe9ca43cf1e79f73b75c0189cbb7d6db5a"
   dependencies:
@@ -1764,9 +1765,9 @@ readdirp@^2.0.0:
     readable-stream "^2.0.2"
     set-immediate-shim "^1.0.1"
 
-regenerator-runtime@^0.10.3:
-  version "0.10.3"
-  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.10.3.tgz#8c4367a904b51ea62a908ac310bf99ff90a82a3e"
+regenerator-runtime@^0.10.5:
+  version "0.10.5"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.10.5.tgz#336c3efc1220adcedda2c9fab67b5a7955a33658"
 
 regex-cache@^0.4.2:
   version "0.4.3"
@@ -2184,9 +2185,9 @@ webpack-sources@^0.2.3:
     source-list-map "^1.1.1"
     source-map "~0.5.3"
 
-webpack@^2.4.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-2.4.1.tgz#15a91dbe34966d8a4b99c7d656efd92a2e5a6f6a"
+webpack@^2.5.0:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-2.5.1.tgz#61742f0cf8af555b87460a9cd8bba2f1e3ee2fce"
   dependencies:
     acorn "^5.0.0"
     acorn-dynamic-import "^2.0.0"
