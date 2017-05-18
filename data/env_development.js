@@ -13,6 +13,6 @@ if (fs.existsSync(accountIdPath)) {
 
 module.exports = Object.assign(require('./env.js'), {
   NODE_ENV: 'development',
-  COZY_FIELDS: `{"connector": "mykonnector", "account": "${accountId}", "folder_to_save": "folderPath"}`,
+  COZY_FIELDS: `{"connector": "mykonnector", "account": "${accountId}", "folder_to_save": "io.cozy.files.root-dir"}`,
   DEBUG: '*'
 })
