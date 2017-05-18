@@ -432,9 +432,9 @@ cozy-client-js@^0.2.4:
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/cozy-client-js/-/cozy-client-js-0.2.4.tgz#6982554ff59e09a62668420abe10aec13c16326d"
 
-cozy-konnector-libs@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-2.2.0.tgz#a0d223e3995ad0fe45c2459dae964da0f1bf71ee"
+cozy-konnector-libs@^2.4.0:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-2.3.2.tgz#3392d5e6ec263b5a5901d33fbb657d2499216b64"
   dependencies:
     async "^2.4.0"
     btoa "^1.1.2"
@@ -445,7 +445,6 @@ cozy-konnector-libs@^2.2.0:
     isomorphic-fetch "^2.2.1"
     lodash "^4.17.4"
     moment "^2.18.1"
-    printit "^0.1.20"
     regenerator-runtime "^0.10.5"
     request "^2.81.0"
     ware "^1.3.0"
@@ -1644,10 +1643,6 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
-printit@^0.1.20:
-  version "0.1.20"
-  resolved "https://registry.yarnpkg.com/printit/-/printit-0.1.20.tgz#f4af334983ea610fadcfe2d82924abbcaa5e475e"
-
 process-nextick-args@~1.0.6:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-1.0.7.tgz#150e20b756590ad3f91093f25a4f2ad8bff30ba3"
@@ -2185,7 +2180,7 @@ webpack-sources@^0.2.3:
     source-list-map "^1.1.1"
     source-map "~0.5.3"
 
-webpack@^2.5.0:
+webpack@^2.5.1:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-2.5.1.tgz#61742f0cf8af555b87460a9cd8bba2f1e3ee2fce"
   dependencies:
