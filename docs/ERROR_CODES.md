@@ -14,4 +14,5 @@ if (err && res.statusCode === 422) {
 |Error code|Meaning|
 |---|---|
 |'LOGIN_FAILED'|The konnector could not login|
+|'NOT_EXISTING_DIRECTORY'|The folder specified as folder_to_save does not exist (checked by base_konnector)|
 |'UNKNOWN_ERROR'|There was an unexpected error, please take a look at the logs to know what appened|
