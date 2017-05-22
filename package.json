@@ -11,7 +11,7 @@
   "license": "AGPL-3.0",
   "dependencies": {
     "cheerio": "^0.22.0",
-    "cozy-konnector-libs": "^2.4.0",
+    "cozy-konnector-libs": "^2.4.1",
     "node-polyglot": "^2.2.2",
     "request": "^2.81.0",
     "request-json": "^0.6.2"
