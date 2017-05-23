@@ -68,7 +68,7 @@ The cozy-stack runs the connector in a rkt container to be sure it does not affe
 
 The connector is run by calling npm start with the following envrionment variables :
 
- - COZY_CREDENTIALS needs to be the result of ```cozy-stack instances token-cli <instance name> <scope>```
+ - COZY_CREDENTIALS needs to be the result of `cozy-stack instances token-cli <instance name> <scope>`
  - COZY_URL is the full http or https url to your cozy
  - COZY_FIELDS is something like :
 ```javascript
@@ -93,7 +93,7 @@ parameters for your konnector.
 To be able to run the connector, the cozy stack needs a connector which is built into only one
 file, without needing to npm install it, this will be a lot faster to install.
 
-There is a command in package.json to help you to do that : ```yarn build```
+There is a command in package.json to help you to do that : `yarn build`
 
 This command uses [webpack] to bundle all the code needed by your connector into one file.
 
@@ -112,6 +112,14 @@ git push origin build
 And your konnector can now be installed using the following url :
 
 git://github.com/cozy/cozy-konnector-<yourkonnector>.git#build
+
+### Prettier
+
+We use [prettier][prettier] to format the `konnector.js` file. You can run it with:
+
+```sh
+yarn prettier
+```
 
 ### Maintainer
 
