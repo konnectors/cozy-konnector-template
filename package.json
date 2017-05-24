@@ -14,8 +14,7 @@
     "cozy-konnector-libs": "^2.4.1",
     "node-polyglot": "^2.2.2",
     "request": "^2.81.0",
-    "request-json": "^0.6.2",
-    "standard": "^10.0.2"
+    "request-json": "^0.6.2"
   },
   "scripts": {
     "start": "node index.js",
@@ -30,6 +29,7 @@
     "cz-conventional-changelog": "^2.0.0",
     "env-cmd": "^5.1.0",
     "request-debug": "^0.2.0",
+    "standard": "^10.0.2",
     "webpack": "^2.5.1"
   },
   "config": {
