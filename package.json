@@ -22,12 +22,14 @@
     "predev": "npm run oauth && env-cmd ./data/env.js cozy-init-dev-account ./data/account.txt ./data/env_fields.json",
     "dev": "env-cmd ./data/env_development.js npm start",
     "standalone": "env-cmd ./data/env_standalone.js npm start",
-    "build": "webpack"
+    "build": "webpack",
+    "lint": "standard --fix konnector.js"
   },
   "devDependencies": {
     "cz-conventional-changelog": "^2.0.0",
     "env-cmd": "^5.1.0",
     "request-debug": "^0.2.0",
+    "standard": "^10.0.2",
     "webpack": "^2.5.1"
   },
   "config": {
