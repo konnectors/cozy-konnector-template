@@ -24,7 +24,8 @@
     "standalone": "env-cmd ./data/env_standalone.js npm start",
     "build": "webpack",
     "lint": "standard --fix konnector.js",
-    "deploy": "git-directory-deploy --username <YOUR_GH_USERNAME> --email <YOUR_EMAIL> --directory build/ --repo=https://$GITHUB_TOKEN@github.com/<USERNAME_GH>/<SLUG_GH>.git"
+    "deploy:travis": "git-directory-deploy --username <YOUR_GH_USERNAME> --email <YOUR_EMAIL> --directory build/ --repo=https://$GITHUB_TOKEN@github.com/<USERNAME_GH>/<SLUG_GH>.git",
+    "deploy": "git-directory-deploy --directory build/ --repo=https://github.com/<USERNAME_GH>/<SLUG_GH>.git"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^4.0.1",
