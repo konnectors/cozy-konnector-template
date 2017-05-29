@@ -1,4 +1,5 @@
-var path = require('path');
+var path = require('path')
+const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   entry: './index.js',
@@ -6,5 +7,14 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'build'),
     filename: 'index.js'
-  }
+  },
+  plugins: [
+    new CopyPlugin([
+      { from: 'manifest.konnector' },
+      { from: 'package.json' },
+      { from: 'yarn.lock' },
+      { from: 'README.md' },
+      { from: 'LICENSE' }
+    ])
+  ]
 }
