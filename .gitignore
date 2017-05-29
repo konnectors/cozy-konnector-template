@@ -1,7 +1,35 @@
-node_modules/*
+# NPM
+node_modules/
+npm-debug.log
+yarn-error.log
+
+
+# Build
+build/
+
+# Data
 data/*
 !data/env.js
 !data/env_development.js
 !data/env_fields.json.template
 !data/env_standalone.js
 !data/fixture.json
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+
+# Editors / IDEs
+.floo
+.flooignore
+
+# Default
+# /!\ KEEP THIS SECTION THE LAST ONE
+!.gitkeep
