@@ -34,20 +34,26 @@ Most of the previous libs in the libs directory of the cozy/konnectors repositor
 
 Here is the list available at the moment with their equivalent in the old repository:
 
-  baseKonnector -> libs/base_konnector
-  fetcher -> libs/fetcher
-  filterExisting -> libs/filter_existing
-  linkBankOperation -> libs/link_bank_operation
-  naming -> libs/naming
-  saveDataAndFile -> libs/save_data_and_file
-  models.bill -> models/bill
-  models.file -> models/file
-  models.folder -> models/folder
+| Old way | New way |
+| --- | --- |
+| libs/base_konnector | baseKonnector |
+| libs/fetcher | fetcher |
+| libs/filter_existing | filterExisting |
+| libs/link_bank_operation | linkBankOperation |
+| libs/naming | naming |
+| libs/save_data_and_file | saveDataAndFile |
+| models/bill | models.bill |
+| models/file | models.file |
+| models/folder | models.folder |
 
 How to use it ? We will take the example of baseKonnector and models.bill
 
 ```javascript
 const {baseKonnector, models} = require('cozy-konnector-libs')
+
+//or
+
+const {log, baseKonnector, filterExisting, saveDataAndFile, models} = require('cozy-konnector-libs')
 ```
 
 Be carefull, the name baseKonnector and models must be exactly the same as expected by
@@ -65,4 +71,4 @@ https://github.com/cozy/cozy-konnector-bouyguestelecom.git
 
 This template repository is delivered with sample package.json, manifest.konnectors and README.md files. You need to update them with information specific to your konnector like : name of the project, dependencies, needed permissions, description of the project.
 
-## You can test your konnector following the procedure described in [./README.md]!
+## You can test your konnector following the procedure described in the [./README.md](README)!
