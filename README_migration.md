@@ -49,11 +49,8 @@ Here is the list available at the moment with their equivalent in the old reposi
 How to use it ? We will take the example of baseKonnector and models.bill
 
 ```javascript
-const {baseKonnector, models} = require('cozy-konnector-libs')
-
-//or
-
 const {log, baseKonnector, filterExisting, saveDataAndFile, models} = require('cozy-konnector-libs')
+const Bill = models.bill
 ```
 
 Be carefull, the name baseKonnector and models must be exactly the same as expected by
@@ -71,4 +68,4 @@ https://github.com/cozy/cozy-konnector-bouyguestelecom.git
 
 This template repository is delivered with sample package.json, manifest.konnectors and README.md files. You need to update them with information specific to your konnector like : name of the project, dependencies, needed permissions, description of the project.
 
-## You can test your konnector following the procedure described in the [./README.md](README)!
+## You can test your konnector following the procedure described in the [README.md](README)!
