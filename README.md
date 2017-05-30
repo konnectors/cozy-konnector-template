@@ -88,7 +88,7 @@ The connector is run by calling npm start with the following envrionment variabl
 The "account" field is the id of the record with doctype "io.cozy.accounts" which will be used as
 parameters for your konnector.
 
-### Build
+### Build (without Travis)
 
 To be able to run the connector, the cozy stack needs a connector which is built into only one
 file, without needing to npm install it, this will be a lot faster to install.
@@ -97,21 +97,36 @@ There is a command in package.json to help you to do that : `yarn build`
 
 This command uses [webpack] to bundle all the code needed by your connector into one file.
 
-This will generate an index.js file in the build directory. The expected way to deploy this built
-file is to create a 'build' branch (or with another name)
+This will generate an index.js file in the build directory and add all files the connector will need.
 
-```sh
-yarn build
-git checkout -b build   # if the build branch does not exist yet
-cp build/index.js ./
-git add index.js
-git ci -m "built"
-git push origin build
-```
+You can deploy this build by using the specific script : `yarn deploy`
+
+This command will commit and push your built in the branch `build` fo your project.
 
 And your konnector can now be installed using the following url :
 
 git://github.com/cozy/cozy-konnector-<yourkonnector>.git#build
+
+### Build using Travis CI
+
+This project contains a `.travis.yml` config file which allows you to build your connector
+automatically using [Travis-CI][travis].
+
+You can follow these steps to enable building using Travis:
+
+* On your [travis-ci.org][travis] account, find your project name (should be the same than your Github repository) and enable Travis by using the related checkbox.
+* Once enabled, go to this project on Travis by clicking on it and go to the "Settings" menu by using the "More options" menu at the top right.
+* Enable these three options:
+    * "Build only if .travis.yml is present"
+    * "Build branch updates" (run Travis after each branch update)
+    * "Build pull request updates" (run Travis after each Pull Request update)
+* Then, you have to generate a Github token in [your Github account settings](https://github.com/settings/tokens). Here is the [Github blog post about API token](https://github.com/blog/1509-personal-api-tokens).
+* Then, add an environment variable (still in your Travis project settings) named `GITHUB_TOKEN` and use your previous generated Github token as value (We highly recommand you to __keep the checkbox "Display value in build log" to OFF value__ in order to keep your token value hidden in the Travis logs.)
+
+Now Travis is ready to build your project, it should build it each time your push a commit in your repository or create a pull request.
+
+> __Note:__ Travis will push your build to your `build` branch ONLY for commits made on your master branch (included PR merge commits). You can see the related Travis statement [here](https://github.com/cozy/cozy-konnector-template/blob/master/.travis.yml#L27).
+
 
 ### Standard
 
@@ -151,3 +166,4 @@ License
 [twitter]: https://twitter.com/mycozycloud
 [webpack]: https://webpack.js.org
 [yarn]: https://yarnpkg.com
+[travis]: https://travis-ci.org
