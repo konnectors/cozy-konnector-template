@@ -120,7 +120,7 @@ You can follow these steps to enable building using Travis:
     * "Build only if .travis.yml is present"
     * "Build branch updates" (run Travis after each branch update)
     * "Build pull request updates" (run Travis after each Pull Request update)
-* Then, you have to generate a Github token in [your Github account settings](https://github.com/settings/tokens). Here is the [Github blog post about API token](https://github.com/blog/1509-personal-api-tokens). Don't forget to give the `repo` scope.
+* Then, you have to generate a Github token in [your Github account settings](https://github.com/settings/tokens). Here is the [Github blog post about API token](https://github.com/blog/1509-personal-api-tokens). Don't forget to authorize the access to the repo scope like following: ![repo scope](https://cloud.githubusercontent.com/assets/10224453/26671128/aa735ec2-46b4-11e7-9cd0-25310100e05e.png)
 * Then, add an environment variable (still in your Travis project settings) named `GITHUB_TOKEN` and use your previous generated Github token as value (We highly recommand you to __keep the checkbox "Display value in build log" to OFF value__ in order to keep your token value hidden in the Travis logs.)
 
 Now Travis is ready to build your project, it should build it each time your push a commit in your repository or create a pull request.
