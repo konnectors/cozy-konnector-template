@@ -3,17 +3,13 @@ node_modules/
 npm-debug.log
 yarn-error.log
 
+# connector data files
+.account
+.token.json
+konnector-dev-config.json
 
 # Build
 build/
-
-# Data
-data/*
-!data/env.js
-!data/env_development.js
-!data/env_fields.json.template
-!data/env_standalone.js
-!data/fixture.json
 
 # OS generated files
 .DS_Store

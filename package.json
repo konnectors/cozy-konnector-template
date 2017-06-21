@@ -1,5 +1,5 @@
 {
-  "name": "cozy-konnector-newkonnectorname",
+  "name": "cozy-konnector-template",
   "version": "1.0.0",
   "description": "",
   "repository": {
@@ -15,10 +15,8 @@
   },
   "scripts": {
     "start": "node index.js",
-    "oauth": "env-cmd ./data/env.js cozy-authenticate manifest.konnector",
-    "predev": "npm run oauth && env-cmd ./data/env.js cozy-init-dev-account ./data/account.txt ./data/env_fields.json",
-    "dev": "env-cmd ./data/env_development.js npm start",
-    "standalone": "env-cmd ./data/env_standalone.js npm start",
+    "dev": "cozy-konnector-dev",
+    "standalone": "cozy-konnector-standalone",
     "build": "webpack",
     "lint": "standard --fix konnector.js",
     "deploy:travis": "git-directory-deploy --username <YOUR_GH_USERNAME> --email <YOUR_EMAIL> --directory build/ --repo=https://$GITHUB_TOKEN@github.com/<USERNAME_GH>/<SLUG_GH>.git",
