@@ -49,9 +49,12 @@ function fetchKittens (requiredFields, entries, data, next) {
       count: 10
     }
   }, function (err, response, body) {
+    // Error handling. If there was an error in the previous request, we directly call next filling
+    // the first argument which is the error message. Then the connector is directly stopped.
     if (err) return next(err.message)
 
     if (body && body.data && body.data.result && body.data.result.items) {
+      // entries.fetched is used by filterExisting to check if some of its items already exist
       entries.fetched = body.data.result.items.map(item => ({
         title: item.title,
         pdfurl: item.media,
@@ -63,19 +66,24 @@ function fetchKittens (requiredFields, entries, data, next) {
     }
   })
 
-  function getFileName (url) {
+  function getFileName (caturl) {
     // from http://tout-en-couleur.e-monsite.com/medias/images/holy.jpg to holy
-    let result = url.split('/').pop().split('.')
-    result.pop()
-    return result.join('.')
+    const path = require('path')
+    const parsed = require('url').parse(caturl)
+    return path.parse(path.basename(parsed.pathname)).name
   }
 }
 
 function customFilterExisting (requiredFields, entries, data, next) {
+  // filterExisting will check if some items in entries.fetched already exist in database and pout
+  // the not existing ones in entries.filtered
   filterExisting(null, Kitten)(requiredFields, entries, data, next)
 }
 
 function customSaveDataAndFile (requiredFields, entries, data, next) {
+  // read items in entries.fetched or entries.filtered and put them in database. If there is a
+  // pdfurl attribute in some items, it will download the corresponding file and put it in your
+  // cozy
   const fnsave = saveDataAndFile(null, Kitten, {
     extension: 'jpg'
   })
