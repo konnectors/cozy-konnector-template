@@ -1,12 +1,15 @@
+// This is a default simple connector made to show you some common libs which can be used
+// This connector fetches some cat images from the qwant api (which is more open than the google one)
+
 'use strict'
 
 const {baseKonnector, filterExisting, saveDataAndFile, models} = require('cozy-konnector-libs')
 const Kitten = models.baseModel.createNew({
-  name: 'kitten'
+  name: 'io.cozy.kitten'
 })
 
 module.exports = baseKonnector.createNew({
-  name: 'kitten',
+  name: 'io.cozy.kitten',
   models: [],
   // fetchOperation is the list of function which will be called in sequence with the following
   // parameters :
