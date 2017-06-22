@@ -30,9 +30,9 @@
     }
   },
   "permissions": {
-    "bills": {
-      "description": "Required to save the bills data",
-      "type": "io.cozy.bills"
+    "kittens": {
+      "description": "Required to save the kittens details",
+      "type": "io.cozy.kitten"
     },
     "files": {
       "description": "Required to save the bills",
@@ -45,7 +45,7 @@
     }
   },
   "developer": {
-    "name": "yourname",
-    "url": "your web site"
+    "name": "cozy",
+    "url": "cozy.io"
   }
 }
