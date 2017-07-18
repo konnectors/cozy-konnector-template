@@ -10,7 +10,7 @@
   "author": "",
   "license": "AGPL-3.0",
   "dependencies": {
-    "cozy-konnector-libs": "^2.4.1",
+    "cozy-konnector-libs": "^3.0.0-alpha.5",
     "request": "^2.81.0",
     "request-promise": "^4.2.1"
   },
@@ -25,16 +25,7 @@
   },
   "devDependencies": {
     "copy-webpack-plugin": "^4.0.1",
-    "cz-conventional-changelog": "^2.0.0",
-    "env-cmd": "^5.1.0",
     "git-directory-deploy": "^1.5.1",
-    "request-debug": "^0.2.0",
-    "standard": "^10.0.2",
     "webpack": "^2.5.1"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   }
 }
