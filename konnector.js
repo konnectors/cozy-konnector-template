@@ -75,7 +75,7 @@ function fetchKittens (requiredFields, entries, data, next) {
 }
 
 function customFilterExisting (requiredFields, entries, data, next) {
-  // filterExisting will check if some items in entries.fetched already exist in database and pout
+  // filterExisting will check if some items in entries.fetched already exist in database and put
   // the not existing ones in entries.filtered
   filterExisting(null, Kitten)(requiredFields, entries, data, next)
 }
