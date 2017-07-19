@@ -13,7 +13,7 @@ module.exports = baseKonnector.createNew({
   models: [],
   // fetchOperation is the list of function which will be called in sequence with the following
   // parameters :
-  // requiredFields : the list of attributes of your connector that the user can choose (ofter login and password)
+  // requiredFields : the list of attributes of your connector that the user can choose (often login and password)
   // entries : it is an object which is passed accross the functions
   // data : another object passed accross function, not used
   // next : this is a callback you have to call when the task of the current function is finished
