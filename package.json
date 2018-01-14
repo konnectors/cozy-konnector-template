@@ -4,7 +4,7 @@
   "description": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cozy/cozy-konnector-thename.git"
+    "url": "git+https://github.com/cozy/cozy-konnector-template.git"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +24,6 @@
   "devDependencies": {
     "copy-webpack-plugin": "^4.0.1",
     "git-directory-deploy": "^1.5.1",
-    "webpack": "3"
+    "webpack": "^3"
   }
 }

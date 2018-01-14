@@ -5,37 +5,28 @@
   "slug": "konnectorslug",
   "description": "description",
   "source": "git://github.com/cozy/cozy-konnector-thename.git",
-  "fields": {
-    "save_folder": {
-      "doctype": "io.cozy.files",
-      "type": "folder"
-    },
-    "account": {
-      "doctype": "io.cozy.accounts",
-      "account_type": "accounttype",
-      "accountFormat": "login,password"
-    }
-  },
   "locales": {
     "fr": {
-      "description": "Récupère toutes vos factures",
       "permissions": {
-        "bills": {
-          "description": "Utilisé pour sauvegarder les données de facturation"
+        "books": {
+          "description": "Utilisé pour sauvegarder les références de vos livres"
         },
         "files": {
-          "description": "Utilisé pour sauvegarder les factures"
+          "description": "Utilisé pour sauvegarder les couvertures de vos livres"
+        },
+        "accounts": {
+          "description": "Utilisé pour récupérer les informations de votre compte"
         }
       }
     }
   },
   "permissions": {
     "books": {
-      "description": "Required to save the kittens details",
+      "description": "Required to save books' references",
       "type": "io.cozy.books"
     },
     "files": {
-      "description": "Required to save the files",
+      "description": "Required to save the covers",
       "type": "io.cozy.files"
     },
     "accounts": {
