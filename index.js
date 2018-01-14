@@ -1,27 +1,31 @@
-'use strict'
+const { BaseKonnector, requestFactory, saveFiles, addData } = require('cozy-konnector-libs')
+const request = requestFactory({ cheerio: true })
 
-// This is a default simple connector made to show you some common libs which can be used
-// This connector fetches some cat images from the qwant api (which is more open than the google one)
-const {BaseKonnector, saveFiles, request} = require('cozy-konnector-libs')
+const baseUrl = 'http://books.toscrape.com'
 
-const rq = request()
+module.exports = new BaseKonnector(start)
 
-module.exports = new BaseKonnector(requiredFields => {
-  return rq({
-    uri: 'https://api.qwant.com/api/search/images',
-    qs: {
-      q: 'chatons',
-      count: 10
-    }
+function start (fields) {
+  return request(`${baseUrl}/index.html`)
+  .then($ => {
+    const entries = Array.from($('article')).map(article => parseArticle($, article))
+    return addData(entries, 'com.toscrape.books')
+    .then(() => saveFiles(entries, fields))
   })
-  .then(body => {
-    let result = []
-    if (body && body.data && body.data.result && body.data.result.items) {
-      // entries.fetched is used by filterExisting to check if some of its items already exist
-      result = body.data.result.items.map(item => ({fileurl: item.media}))
-    }
-    return result
-  })
-  .then(entries => saveFiles(entries, requiredFields.folderPath))
-  // .then(result => console.log(result, 'result'))
-})
+}
+
+function parseArticle ($, article) {
+  const $article = $(article)
+  const title = $article.find('h3 a').attr('title')
+  return {
+    title,
+    price: normalizePrice($article.find('.price_color').text()),
+    url: `${baseUrl}/${$article.find('h3 a').attr('href')}`,
+    fileurl: `${baseUrl}/${$article.find('img').attr('src')}`,
+    filename: `${title}.jpg`
+  }
+}
+
+function normalizePrice (price) {
+  return parseFloat(price.trim().replace('£', ''))
+}

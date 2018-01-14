@@ -10,9 +10,7 @@
   "author": "",
   "license": "AGPL-3.0",
   "dependencies": {
-    "cozy-konnector-libs": "^3.0.0-alpha.5",
-    "request": "^2.81.0",
-    "request-promise": "^4.2.1"
+    "cozy-konnector-libs": "^3.0.0"
   },
   "scripts": {
     "start": "node index.js",
@@ -21,7 +19,7 @@
     "build": "webpack",
     "lint": "standard --fix konnector.js",
     "deploy:travis": "git-directory-deploy --username <YOUR_GH_USERNAME> --email <YOUR_EMAIL> --directory build/ --repo=https://$GITHUB_TOKEN@github.com/<USERNAME_GH>/<SLUG_GH>.git",
-    "deploy": "git-directory-deploy --directory build/ --branch build --repo=https://github.com/<USERNAME_GH>/<SLUG_GH>.git"
+    "deploy": "git-directory-deploy --directory build/ --branch build --repo=https://github.com/cozy/cozy-konnector-template.git"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^4.0.1",

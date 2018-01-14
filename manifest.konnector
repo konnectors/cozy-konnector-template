@@ -30,12 +30,12 @@
     }
   },
   "permissions": {
-    "kittens": {
+    "books": {
       "description": "Required to save the kittens details",
-      "type": "io.cozy.kitten"
+      "type": "io.cozy.books"
     },
     "files": {
-      "description": "Required to save the bills",
+      "description": "Required to save the files",
       "type": "io.cozy.files"
     },
     "accounts": {

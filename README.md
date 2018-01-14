@@ -28,17 +28,11 @@ If you just want to test this connector without any cozy available.
 
 You first need an installed [nodejs] (LTS version is fine).
 
-We also suggest you tu use [yarn] instead of npm for node packages.
+Just run :
 
 ```sh
-npm install --global yarn
-```
-
-Then just run :
-
-```sh
-yarn
-yarn standalone
+npm install
+npm run standalone
 ```
 
 The requests to the cozy-stack will be stubbed using the [./fixture.json] file as source of data
@@ -51,8 +45,8 @@ If you do not want to have to install the konnector on a cozy v3 to test it, you
 konnector as an OAuth application with the following commands :
 
 ```sh
-yarn
-yarn dev
+npm install
+npm run dev
 ```
 
 This command will register your konnector as an OAuth application to the cozy-stack. By default,
@@ -98,15 +92,15 @@ parameters for your konnector.
 To be able to run the connector, the cozy stack needs a connector which is built into only one
 file, without needing to npm install it, this will be a lot faster to install.
 
-There is a command in package.json to help you to do that : `yarn build`
+There is a command in package.json to help you to do that : `npm run build`
 
 This command uses [webpack] to bundle all the code needed by your connector into one file.
 
 This will generate an index.js file in the build directory and add all files the connector will need.
 
-You can deploy this build by using the specific script : `yarn deploy`
+You can deploy this build by using the specific script : `npm run deploy`
 
-This command will commit and push your built in the branch `build` fo your project.
+This command will commit and push your build in the branch `build` fo your project.
 
 And your konnector can now be installed using the following url :
 
@@ -138,7 +132,7 @@ Now Travis is ready to build your project, it should build it each time your pus
 We use [standard] to format the `index.js` file. You can run it with:
 
 ```sh
-yarn lint
+npm run lint
 ```
 
 ### Maintainer
