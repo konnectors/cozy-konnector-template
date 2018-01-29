@@ -36,7 +36,7 @@ function parseArticle ($, article) {
   }
 }
 
-// converte a price string to a float
+// convert a price string to a float
 function normalizePrice (price) {
   return parseFloat(price.trim().replace('£', ''))
 }
