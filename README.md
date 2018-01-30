@@ -126,6 +126,12 @@ Now Travis is ready to build your project, it should build it each time your pus
 
 > __Note:__ Travis will push your build to your `build` branch ONLY for commits made on your master branch (included PR merge commits). You can see the related Travis statement [here](https://github.com/cozy/cozy-konnector-template/blob/master/.travis.yml#L27).
 
+### Add your new connector to [Cozy Collect](https://github.com/cozy/cozy-collect)
+
+The Cozy Collect application will soon use an application store as source of connectors. But for
+now, if you want to add your new connector to Cozy Collect, you can submit a message in the forum
+in the [collect section](https://forum.cozy.io/c/francais/collect-fr), and we will handle this for
+you.
 
 ### Standard
 
