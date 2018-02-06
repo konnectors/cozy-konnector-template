@@ -124,6 +124,7 @@ You can help us by making our community even more vibrant. For example, you can 
 
 
 [issues]: https://github.com/<USERNAME_GH>/<SLUG_GH>/issues/new
+[checkbox]: https://github.com/blog/1375-task-lists-in-gfm-issues-pulls-comments
 [pr]: https://help.github.com/categories/collaborating-with-issues-and-pull-requests/
 [forking]: http://blog.campoy.cat/2014/03/github-and-go-forking-pull-requests-and.html
 [stdjs]: http://standardjs.com/
