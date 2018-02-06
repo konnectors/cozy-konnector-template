@@ -28,11 +28,17 @@ If you just want to test this connector without any cozy available.
 
 You first need an installed [nodejs] (LTS version is fine).
 
-Just run :
+And the last version of yarn :
 
 ```sh
-npm install
-npm run standalone
+npm install --global yarn
+```
+
+Then just run :
+
+```sh
+yarn
+yarn standalone
 ```
 
 The requests to the cozy-stack will be stubbed using the [./fixture.json] file as source of data
@@ -45,8 +51,8 @@ If you do not want to have to install the konnector on a cozy v3 to test it, you
 konnector as an OAuth application with the following commands :
 
 ```sh
-npm install
-npm run dev
+yarn
+yarn dev
 ```
 
 This command will register your konnector as an OAuth application to the cozy-stack. By default,
@@ -65,7 +71,7 @@ The files are saved in the root directory of your cozy by default.
 
 The cozy-stack runs the connector in a nsjail container to be sure it does not affect the environment.
 
-The connector is run by calling npm start with the following envrionment variables :
+The connector is run by calling yarn start with the following envrionment variables :
 
  - COZY_CREDENTIALS needs to be the result of `cozy-stack instances token-cli <instance name> <scope>`
  - COZY_URL is the full http or https url to your cozy
@@ -90,15 +96,15 @@ parameters for your konnector.
 ### Build (without Travis)
 
 To be able to run the connector, the cozy stack needs a connector which is built into only one
-file, without needing to npm install it, this will be a lot faster to install.
+file, without needing to install its dependencies, this will be a lot faster to install.
 
-There is a command in package.json to help you to do that : `npm run build`
+There is a command in package.json to help you to do that : `yarn build`
 
 This command uses [webpack] to bundle all the code needed by your connector into one file.
 
 This will generate an index.js file in the build directory and add all files the connector will need.
 
-You can deploy this build by using the specific script : `npm run deploy`
+You can deploy this build by using the specific script : `yarn deploy`
 
 This command will commit and push your build in the branch `build` fo your project.
 
@@ -138,7 +144,7 @@ you.
 We use [standard] to format the `index.js` file. You can run it with:
 
 ```sh
-npm run lint
+yarn lint
 ```
 
 ### Maintainer
