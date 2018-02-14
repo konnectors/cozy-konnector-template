@@ -178,3 +178,4 @@ License
 [webpack]: https://webpack.js.org
 [yarn]: https://yarnpkg.com
 [travis]: https://travis-ci.org
+[contribute]: CONTRIBUTING.md
