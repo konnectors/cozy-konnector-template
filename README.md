@@ -15,7 +15,7 @@ What's this new konnector?
 
 ### Open a Pull-Request
 
-If you want to work on this konnector and submit code modifications, feel free to open pull-requests! See the [contributing guide](CONTRIBUTING.md) for more information about how to properly open pull-requests.
+If you want to work on this konnector and submit code modifications, feel free to open pull-requests! See the [contributing guide][contribute] for more information about how to properly open pull-requests.
 
 ### Cozy-konnector-libs
 
@@ -178,3 +178,4 @@ License
 [webpack]: https://webpack.js.org
 [yarn]: https://yarnpkg.com
 [travis]: https://travis-ci.org
+[contribute]: CONTRIBUTING.md
