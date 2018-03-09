@@ -6,7 +6,7 @@ module.exports = {
   target: 'node',
   output: {
     path: path.join(__dirname, 'build'),
-    filename: 'konnector.js'
+    filename: 'index.js'
   },
   plugins: [
     new CopyPlugin([
