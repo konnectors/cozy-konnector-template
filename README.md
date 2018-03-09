@@ -57,7 +57,7 @@ yarn dev
 
 This command will register your konnector as an OAuth application to the cozy-stack. By default,
 the cozy-stack is supposed to be located in http://cozy.tools:8080. If this is not your case, just
-update the COZY_URL field in [./konnector-dev-config-json].
+update the COZY_URL field in [./konnector-dev-config.json].
 
 After that, your konnector is running but should not work since you did not specify any credentials to
 the target service. You can do this also in [./konnector-dev-config.json] in the "fields"
