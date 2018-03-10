@@ -1,4 +1,4 @@
-const { BaseKonnector, requestFactory, saveFiles, addData } = require('cozy-konnector-libs')
+const { BaseKonnector, requestFactory, saveFiles, addData, scrape } = require('cozy-konnector-libs')
 const request = requestFactory({ cheerio: true })
 
 const baseUrl = 'http://books.toscrape.com'
@@ -14,29 +14,34 @@ function start (fields) {
   .then($ => {
     // cheerio (https://cheerio.js.org/) uses the same api as jQuery (http://jquery.com/)
     // here I do an Array.from to convert the cheerio fake array to a real js array.
-    const entries = Array.from($('article')).map(article => parseArticle($, article))
+    const entries = scrape($, {
+      title: {
+        sel: 'h3 a',
+        attr: 'title'
+      },
+      price: {
+        sel: '.price_color',
+        fn: normalizePrice
+      },
+      url: {
+        sel: 'h3 a',
+        fn: $el => `${baseUrl}/${$el.attr('title')}`
+      },
+      fileurl: {
+        sel: 'img',
+        fn: $el => `${baseUrl}/${$el.attr('src')}`
+      },
+      filename: {
+        sel: 'h3 a',
+        fn: $el => `${$el.attr('title')}.jpg`
+      }
+    }, 'article')
     return addData(entries, 'com.toscrape.books')
     .then(() => saveFiles(entries, fields))
   })
 }
 
-// The goal of this function is to parse a html page wrapped by a cheerio instance // and return an array of js objects which will be saved to the cozy by addData (https://github.com/cozy/cozy-konnector-libs/blob/master/docs/api.md#module_addData)
-// and saveFiles (https://github.com/cozy/cozy-konnector-libs/blob/master/docs/api.md#savefiles)
-function parseArticle ($, article) {
-  const $article = $(article)
-  const title = $article.find('h3 a').attr('title')
-  return {
-    title,
-    price: normalizePrice($article.find('.price_color').text()),
-    url: `${baseUrl}/${$article.find('h3 a').attr('href')}`,
-    // when it finds a fileurl attribute, saveFiles will save this file to the cozy with a filename
-    // name
-    fileurl: `${baseUrl}/${$article.find('img').attr('src')}`,
-    filename: `${title}.jpg`
-  }
-}
-
 // convert a price string to a float
-function normalizePrice (price) {
-  return parseFloat(price.trim().replace('£', ''))
+function normalizePrice ($price) {
+  return parseFloat($price.text().trim().replace('£', ''))
 }
