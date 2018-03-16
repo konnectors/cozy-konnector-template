@@ -30,8 +30,8 @@
     "format": "prettier --write '**/*.{js,json}'",
     "precommit": "yarn lint",
     "lint": "eslint .",
-    "deploy": "git-directory-deploy --directory build/ --branch build --repo=${DEPLOY_REPOSITORY:-https://github.com/konnectors/cozy-konnector-template.git}",
-    "deploy:prod": "git-directory-deploy --directory build/ --branch latest --repo=${DEPLOY_REPOSITORY:-https://github.com/konnectors/cozy-konnector-template.git}"
+    "deploy": "git-directory-deploy --directory build/ --branch build --repo=${DEPLOY_REPOSITORY:-https://$GITHUB_TOKEN@github.com/konnectors/cozy-konnector-template.git}",
+    "deploy:prod": "git-directory-deploy --directory build/ --branch latest --repo=${DEPLOY_REPOSITORY:-https://$GITHUB_TOKEN@github.com/konnectors/cozy-konnector-template.git}"
   },
   "dependencies": {
     "cozy-konnector-libs": "^3.0.0"
