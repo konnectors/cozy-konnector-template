@@ -1,5 +1,3 @@
 {
-  "extends": [
-    "cozy-konnector"
-  ]
+  "extends": ["cozy-konnector"]
 }
