@@ -110,7 +110,7 @@ This command will commit and push your build in the branch `build` fo your proje
 
 And your konnector can now be installed using the following url :
 
-git://github.com/cozy/cozy-konnector-<yourkonnector>.git#build
+git://github.com/konnectors/cozy-konnector-<yourkonnector>.git#build
 
 ### Build using Travis CI
 

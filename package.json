@@ -4,7 +4,7 @@
   "description": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cozy/cozy-konnector-template.git"
+    "url": "git+https://github.com/konnectors/cozy-konnector-template.git"
   },
   "keywords": [],
   "author": "",

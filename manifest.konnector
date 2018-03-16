@@ -4,7 +4,7 @@
   "type": "node",
   "slug": "konnectorslug",
   "description": "description",
-  "source": "git://github.com/cozy/cozy-konnector-thename.git",
+  "source": "git://github.com/konnectors/cozy-konnector-thename.git",
   "locales": {
     "fr": {
       "permissions": {
