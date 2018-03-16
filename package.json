@@ -13,11 +13,16 @@
   "dependencies": {
     "cozy-konnector-libs": "^3.0.0"
   },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
   "scripts": {
     "start": "node ./src/index.js",
     "dev": "cozy-konnector-dev ./src/index.js",
     "standalone": "cozy-konnector-standalone ./src/index.js",
     "build": "webpack",
+    "format": "prettier --write '**/*.{js,json}'",
     "lint": "standard --fix ./src/index.js",
     "deploy": "git-directory-deploy --directory build/ --branch build --repo=https://github.com/konnectors/cozy-konnector-template.git",
     "deploy:prod": "git-directory-deploy --directory build/ --branch latest --repo=https://github.com/konnectors/cozy-konnector-template.git"
@@ -25,6 +30,7 @@
   "devDependencies": {
     "copy-webpack-plugin": "^4.0.1",
     "git-directory-deploy": "^1.5.1",
+    "prettier": "1.11.1",
     "standard": "^11.0.0",
     "webpack": "^4.1.1",
     "webpack-cli": "^2.0.10"
