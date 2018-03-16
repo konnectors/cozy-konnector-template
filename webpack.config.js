@@ -1,8 +1,9 @@
 var path = require('path')
 const CopyPlugin = require('copy-webpack-plugin')
+const entry = require('./package.json').main
 
 module.exports = {
-  entry: './index.js',
+  entry,
   target: 'node',
   output: {
     path: path.join(__dirname, 'build'),
