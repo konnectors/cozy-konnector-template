@@ -10,9 +10,6 @@
   "author": "",
   "license": "AGPL-3.0",
   "main": "./src/index.js",
-  "dependencies": {
-    "cozy-konnector-libs": "^3.0.0"
-  },
   "eslintConfig": {
     "env": {
       "es6": true,
@@ -40,6 +37,9 @@
     "lint": "eslint .",
     "deploy": "git-directory-deploy --directory build/ --branch build --repo=https://github.com/konnectors/cozy-konnector-template.git",
     "deploy:prod": "git-directory-deploy --directory build/ --branch latest --repo=https://github.com/konnectors/cozy-konnector-template.git"
+  },
+  "dependencies": {
+    "cozy-konnector-libs": "^3.0.0"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^4.0.1",
