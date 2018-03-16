@@ -13,6 +13,19 @@
   "dependencies": {
     "cozy-konnector-libs": "^3.0.0"
   },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "jest": true,
+      "node": true
+    },
+    "extends": [
+      "eslint-config-cozy-app"
+    ]
+  },
+  "eslintIgnore": [
+    "build"
+  ],
   "prettier": {
     "semi": false,
     "singleQuote": true
@@ -23,7 +36,7 @@
     "standalone": "cozy-konnector-standalone ./src/index.js",
     "build": "webpack",
     "format": "prettier --write '**/*.{js,json}'",
-    "lint": "standard --fix ./src/index.js",
+    "lint": "eslint .",
     "deploy": "git-directory-deploy --directory build/ --branch build --repo=https://github.com/konnectors/cozy-konnector-template.git",
     "deploy:prod": "git-directory-deploy --directory build/ --branch latest --repo=https://github.com/konnectors/cozy-konnector-template.git"
   },
@@ -31,7 +44,8 @@
     "copy-webpack-plugin": "^4.0.1",
     "git-directory-deploy": "^1.5.1",
     "prettier": "1.11.1",
-    "standard": "^11.0.0",
+    "eslint": "4.18.2",
+    "eslint-config-cozy-app": "^0.4.0",
     "webpack": "^4.1.1",
     "webpack-cli": "^2.0.10"
   }
