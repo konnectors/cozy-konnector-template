@@ -19,8 +19,8 @@
     "standalone": "cozy-konnector-standalone ./src/index.js",
     "build": "webpack",
     "lint": "standard --fix ./src/index.js",
-    "deploy:travis": "git-directory-deploy --username <YOUR_GH_USERNAME> --email <YOUR_EMAIL> --directory build/ --repo=https://$GITHUB_TOKEN@github.com/<USERNAME_GH>/<SLUG_GH>.git",
-    "deploy": "git-directory-deploy --directory build/ --branch build --repo=https://github.com/cozy/cozy-konnector-template.git"
+    "deploy": "git-directory-deploy --directory build/ --branch build --repo=https://github.com/konnectors/cozy-konnector-template.git",
+    "deploy:prod": "git-directory-deploy --directory build/ --branch latest --repo=https://github.com/konnectors/cozy-konnector-template.git"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^4.0.1",
