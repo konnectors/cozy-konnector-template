@@ -25,7 +25,7 @@
   "scripts": {
     "start": "node ./src/index.js",
     "dev": "cozy-konnector-dev",
-    "standalone": "cozy-konnector-standalone",
+    "standalone": "cozy-konnector-standalone src/index",
     "build": "webpack",
     "format": "prettier --write '**/*.{js,json}'",
     "precommit": "yarn lint",
