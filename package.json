@@ -24,7 +24,7 @@
   },
   "scripts": {
     "start": "node ./src/index.js",
-    "dev": "cozy-konnector-dev",
+    "dev": "cozy-konnector-dev src/index",
     "standalone": "cozy-konnector-standalone src/index",
     "build": "webpack",
     "format": "prettier --write '**/*.{js,json}'",
