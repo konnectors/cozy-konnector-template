@@ -21,27 +21,25 @@ function start (fields) {
       },
       price: {
         sel: '.price_color',
-        fn: normalizePrice
+        parse: price => parseFloat(price.trim().replace('£', ''))
       },
       url: {
         sel: 'h3 a',
-        fn: $el => `${baseUrl}/${$el.attr('title')}`
+        attr: 'title',
+        parse: url => `${baseUrl}/${url}`
       },
       fileurl: {
         sel: 'img',
-        fn: $el => `${baseUrl}/${$el.attr('src')}`
+        attr: 'src',
+        parse: src => `${baseUrl}/${src}`
       },
       filename: {
         sel: 'h3 a',
-        fn: $el => `${$el.attr('title')}.jpg`
+        attr: 'title',
+        parse: title => `${title}.jpg`
       }
     }, 'article')
     return addData(entries, 'com.toscrape.books')
     .then(() => saveFiles(entries, fields))
   })
-}
-
-// convert a price string to a float
-function normalizePrice ($price) {
-  return parseFloat($price.text().trim().replace('£', ''))
 }

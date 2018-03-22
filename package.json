@@ -10,7 +10,7 @@
   "author": "",
   "license": "AGPL-3.0",
   "dependencies": {
-    "cozy-konnector-libs": "^3.0.0"
+    "cozy-konnector-libs": "3.5.3"
   },
   "scripts": {
     "start": "node index.js",
