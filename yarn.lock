@@ -1822,7 +1822,7 @@ cozy-client-js@^0.8.0:
     pouchdb-adapter-cordova-sqlite "https://github.com/SnceGroup/pouchdb-adapter-cordova-sqlite.git#f3ee23009b70209c611435d57491aa77fb88802a"
     pouchdb-find "0.10.4"
 
-cozy-jobs-cli@^1.0.6:
+cozy-jobs-cli@1.0.6:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/cozy-jobs-cli/-/cozy-jobs-cli-1.0.6.tgz#629eea56039cd407d66fe2509781a6e39200b8ff"
   dependencies:
