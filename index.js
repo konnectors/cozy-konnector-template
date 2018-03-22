@@ -12,8 +12,6 @@ function start (fields) {
   // The BaseKonnector instance expects a Promise as return of the function
   return request(`${baseUrl}/index.html`)
   .then($ => {
-    // cheerio (https://cheerio.js.org/) uses the same api as jQuery (http://jquery.com/)
-    // here I do an Array.from to convert the cheerio fake array to a real js array.
     const entries = scrape($, {
       title: {
         sel: 'h3 a',
