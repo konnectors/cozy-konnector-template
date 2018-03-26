@@ -24,8 +24,8 @@
   },
   "scripts": {
     "start": "node ./src/index.js",
-    "dev": "cozy-konnector-dev src/index",
-    "standalone": "cozy-konnector-standalone src/index",
+    "dev": "cozy-run-dev",
+    "standalone": "cozy-run-standalone",
     "build": "webpack",
     "precommit": "yarn lint",
     "lint": "eslint --fix .",
