@@ -4,7 +4,7 @@ node_js:
 env:
   global:
     # kosssi GITHUB_TOKEN
-    # to generate yours : travis encrypt GITHUB_TOKEN=<your_GITHUB_TOKEN>
+    # to generate yours : travis encrypt GITHUB_TOKEN=<your_GITHUB_TOKEN> -r konnectors/cozy-konnector-template
     - secure: "vw+BSo/iU2IpteuzjqdCJsgS6VrlHNc531V51Rqm0AjtZa7LoMn+1xNXL790vs5/LGoXr6TZqZhRuR777V2ASOmyPW5n4ZSPrPzu6e6A4e57brDUuBL/hz5EBXyfyQU/41hU0c8dWJzinEYSDQurt4zQaSlP61nChipuNsx6aXLXQHIQNngCdBUpm4c2KJ7UJy9LpoEVtnxnPt18EvKUsENs3kZraP/twSM2j+n2hKt1In8MRoSZNyNvAwGSI5U+2H3SltKJxn/u0IoPFPoqrbKjbwAhhRAw4xv9X4flSIoxflOZurEUkbKcdLlGPPmRJBLTODq3I9q5yiS5eXcWTfCeniaTHv8KYRrjLuwEb2ZpwRfBgcHqyY4I29yoKNqrfbN5YOgCTLru9tJRT7IvfACRCzK9ToyP3QtUTAqSUfS5CeaWHVmTsWejh072V2kJQRczqhCcS+gCyGVoNU4TY6AysOUP/nZh8H7sQr/mfO/MemufPMtbsmxRH3oY4u4gXLqX0dKcfTimmdcwmLwSPBbUgN80YPR3GVR0zLWltf35Q65P7r3HLkHCfKoO8pGverNkG/izlQYn1muSai9TG0MgaX5eeemwbe5tHmZmXhT1heDFFvzeVAPDeU5OBFG0VjCh6DJcjWDmeVK6HaupEHA06edu4/n2W/uH962cWXk="
 cache:
   yarn: true
