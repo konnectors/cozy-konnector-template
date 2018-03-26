@@ -23,6 +23,6 @@ deploy:
   - provider: script
     repo: konnectors/cozy-konnector-template
     skip-cleanup: true
-    script: yarn deploy:prod
+    script: DEPLOY_BRANCH=latest yarn deploy
     on:
       branch: prod
