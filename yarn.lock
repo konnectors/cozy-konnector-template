@@ -1843,9 +1843,9 @@ cozy-jobs-cli@1.0.7:
     opn "^5.1.0"
     regenerator-runtime "^0.11.1"
 
-cozy-konnector-libs@3.8.0:
-  version "3.8.0"
-  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-3.8.0.tgz#b98e23acdb9e31254d47c5e1249c82136b75eecc"
+cozy-konnector-libs@3.8.1:
+  version "3.8.1"
+  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-3.8.1.tgz#c4f9d6c2df742023897691c8d0e257a516ec00cd"
   dependencies:
     babel-plugin-transform-object-rest-spread "^6.26.0"
     babel-preset-env "^1.6.0"
