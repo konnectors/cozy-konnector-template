@@ -18,10 +18,6 @@
   "eslintIgnore": [
     "build"
   ],
-  "prettier": {
-    "semi": false,
-    "singleQuote": true
-  },
   "scripts": {
     "start": "node ./src/index.js",
     "dev": "cozy-run-dev",
