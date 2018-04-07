@@ -1,42 +1,72 @@
 {
   "version": "1.0.0",
   "name": "konnector name",
-  "type": "node",
+  "type": "konnector",
+  "language": "node",
+  "icon": "icon.svg",
   "slug": "konnectorslug",
-  "description": "description",
   "source": "git://github.com/konnectors/cozy-konnector-thename.git",
-  "locales": {
-    "fr": {
-      "permissions": {
-        "books": {
-          "description": "Utilisé pour sauvegarder les références de vos livres"
-        },
-        "files": {
-          "description": "Utilisé pour sauvegarder les couvertures de vos livres"
-        },
-        "accounts": {
-          "description": "Utilisé pour récupérer les informations de votre compte"
-        }
+  "editor": "Your name",
+  "vendorLink": "Link to the target website",
+  "categories": ["other"],
+  "fields": {
+    "advancedFields": {
+      "folderPath": {
+        "advanced": true,
+        "isRequired": false
       }
     }
   },
+  "dataType": [
+    "bill"
+  ],
   "permissions": {
     "books": {
-      "description": "Required to save books' references",
       "type": "io.cozy.books"
     },
     "files": {
-      "description": "Required to save the covers",
       "type": "io.cozy.files"
     },
     "accounts": {
-      "description": "Required to get the account's data",
       "type": "io.cozy.accounts",
       "verbs": ["GET"]
     }
   },
   "developer": {
-    "name": "cozy",
-    "url": "cozy.io"
+    "name": "Cozy",
+    "url": "https://cozy.io"
+  },
+  "langs": ["fr", "en"],
+  "locales": {
+    "fr": {
+      "short_description": "Template de connecteur",
+      "long_description": "Ce template récupère une liste de livres sur un site de scraping",
+      "permissions": {
+        "books": {
+          "description": "Utilisé pour sauvegarder les références des livres"
+        },
+        "files": {
+          "description": "Utilisé pour sauvegarder les factures"
+        },
+        "accounts": {
+          "description": "Utilisé pour obtenir les données du compte"
+        }
+      }
+    },
+    "en": {
+      "short_description": "Connector template",
+      "long_description": "This template fetches a list of books from a scraping website",
+      "permissions": {
+        "books": {
+          "description": "Required to save books references"
+        },
+        "files": {
+          "description": "Required to save the bills"
+        },
+        "accounts": {
+          "description": "Required to get the account's data"
+        }
+      }
+    }
   }
 }
