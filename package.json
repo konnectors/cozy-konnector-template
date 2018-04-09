@@ -32,12 +32,12 @@
   },
   "devDependencies": {
     "copy-webpack-plugin": "4.5.1",
-    "cozy-jobs-cli": "1.0.8",
+    "cozy-jobs-cli": "1.0.9",
     "eslint": "4.19.1",
     "eslint-config-cozy-app": "0.5.1",
     "git-directory-deploy": "1.5.1",
     "husky": "0.14.3",
-    "webpack": "4.4.1",
+    "webpack": "4.5.0",
     "webpack-cli": "2.0.14"
   }
 }
