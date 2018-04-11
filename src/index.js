@@ -21,7 +21,7 @@ function start(fields) {
     const entries = Array.from($('article')).map(article =>
       parseArticle($, article)
     )
-    return addData(entries, 'com.toscrape.books').then(() =>
+    return addData(entries, 'io.cozy.books').then(() =>
       saveFiles(entries, fields)
     )
   })
