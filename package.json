@@ -22,6 +22,8 @@
     "start": "node ./src/index.js",
     "dev": "cozy-run-dev",
     "standalone": "cozy-run-standalone",
+    "test": "konitor testit .",
+    "check": "konitor check .",
     "build": "webpack",
     "precommit": "yarn lint",
     "lint": "eslint --fix .",
@@ -38,6 +40,7 @@
     "eslint-config-cozy-app": "0.5.1",
     "git-directory-deploy": "1.5.1",
     "husky": "0.14.3",
+    "konitor": "0.7.0",
     "webpack": "4.5.0",
     "webpack-cli": "2.0.14"
   }
