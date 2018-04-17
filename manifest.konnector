@@ -1,11 +1,11 @@
 {
   "version": "1.0.0",
-  "name": "konnector name",
+  "name": "Connector template",
   "type": "konnector",
   "language": "node",
-  "icon": "icon.svg",
-  "slug": "konnectorslug",
-  "source": "git://github.com/konnectors/cozy-konnector-thename.git",
+  "icon": "icon.png",
+  "slug": "template-collect",
+  "source": "git://github.com/konnectors/cozy-konnector-template.git",
   "editor": "Your name",
   "vendorLink": "Link to the target website",
   "categories": ["other"],
@@ -20,6 +20,7 @@
   "dataType": [
     "bill"
   ],
+  "screenshots": [ "screenshots/screenshot1.png" ],
   "permissions": {
     "books": {
       "type": "io.cozy.books"
