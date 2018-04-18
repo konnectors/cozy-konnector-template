@@ -7,7 +7,7 @@
   "slug": "template-collect",
   "source": "git://github.com/konnectors/cozy-konnector-template.git",
   "editor": "Cozy",
-  "vendorLink": "Link to the target website",
+  "vendor_link": "Link to the target website",
   "categories": ["other"],
   "fields": {
     "advancedFields": {
@@ -17,7 +17,7 @@
       }
     }
   },
-  "dataType": [
+  "data_types": [
     "bill"
   ],
   "screenshots": [ "screenshots/screenshot1.png" ],
