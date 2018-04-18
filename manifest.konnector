@@ -6,7 +6,7 @@
   "icon": "icon.png",
   "slug": "template-collect",
   "source": "git://github.com/konnectors/cozy-konnector-template.git",
-  "editor": "Your name",
+  "editor": "Cozy",
   "vendorLink": "Link to the target website",
   "categories": ["other"],
   "fields": {

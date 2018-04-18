@@ -7,7 +7,7 @@
     "url": "git+https://github.com/konnectors/cozy-konnector-template.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Cozy Cloud",
   "license": "AGPL-3.0",
   "main": "./src/index.js",
   "eslintConfig": {
