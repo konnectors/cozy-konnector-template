@@ -17,15 +17,17 @@ script:
   - yarn lint
   - yarn build
 deploy:
+  # publish dev versions
   - provider: script
     repo: konnectors/cozy-konnector-template
     skip-cleanup: true
     script: DEPLOY_BRANCH=build && yarn deploy && yarn cozyPublish
     on:
       branch: master
+  # publish stable versions and beta versions based on tags
   - provider: script
     repo: konnectors/cozy-konnector-template
     skip-cleanup: true
-    script: DEPLOY_BRANCH=latest && yarn deploy && yarn cozyPublish
+    script: DEPLOY_BRANCH=build && yarn deploy && yarn cozyPublish
     on:
-      branch: prod
+      tags: true
