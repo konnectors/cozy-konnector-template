@@ -1996,7 +1996,39 @@ cozy-jobs-cli@1.0.17:
     opn "^5.1.0"
     regenerator-runtime "^0.11.1"
 
-cozy-konnector-libs@4.1.7, cozy-konnector-libs@^4.1.7:
+cozy-konnector-libs@4.1.8:
+  version "4.1.8"
+  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-4.1.8.tgz#0cda8dca8846a7b9beeedde396ae4c9037fd8be5"
+  dependencies:
+    babel-cli "^6.26.0"
+    babel-plugin-transform-object-rest-spread "^6.26.0"
+    babel-preset-env "^1.6.0"
+    bluebird "^3.5.0"
+    bluebird-retry "^0.11.0"
+    btoa "^1.1.2"
+    chalk "^2.3.2"
+    cheerio "^1.0.0-rc.2"
+    commander "^2.12.2"
+    core-js "^2.4.1"
+    cozy-client-js "^0.8.0"
+    cozy-logger "^1.1.4"
+    date-fns "^1.29.0"
+    geco "^0.11.1"
+    isomorphic-fetch "^2.2.1"
+    jest "^22.0.0"
+    jsdoc-to-markdown "^4.0.1"
+    lodash "^4.17.4"
+    moment "^2.18.1"
+    opn "^5.1.0"
+    raven "^2.4.0"
+    regenerator-runtime "^0.11.0"
+    replay "^2.1.2"
+    request "^2.81.0"
+    request-debug "^0.2.0"
+    request-promise "^4.2.1"
+    uuid "^3.1.0"
+
+cozy-konnector-libs@^4.1.7:
   version "4.1.7"
   resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-4.1.7.tgz#85f8d73686f26f2101ed284e4668b4fe15598590"
   dependencies:
