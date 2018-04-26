@@ -21,20 +21,20 @@ deploy:
   - provider: script
     repo: konnectors/cozy-konnector-template
     skip-cleanup: true
-    script: DEPLOY_BRANCH=build && yarn deploy && yarn cozyPublish
+    script: DEPLOY_BRANCH=build yarn deploy && yarn cozyPublish
     on:
       branch: master
   # publish on latest branch (will be removed when collect will use only the registry
   - provider: script
     repo: konnectors/cozy-konnector-template
     skip-cleanup: true
-    script: DEPLOY_BRANCH=latest && yarn deploy
+    script: DEPLOY_BRANCH=latest yarn deploy
     on:
       branch: prod
   # publish stable versions and beta versions based on tags
   - provider: script
     repo: konnectors/cozy-konnector-template
     skip-cleanup: true
-    script: DEPLOY_BRANCH=build && yarn deploy && yarn cozyPublish
+    script: DEPLOY_BRANCH=build yarn deploy && yarn cozyPublish
     on:
       tags: true
