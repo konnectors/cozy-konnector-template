@@ -1981,6 +1981,15 @@ cozy-client-js@^0.8.0:
     pouchdb-adapter-cordova-sqlite "https://github.com/SnceGroup/pouchdb-adapter-cordova-sqlite.git#f3ee23009b70209c611435d57491aa77fb88802a"
     pouchdb-find "0.10.4"
 
+cozy-client-js@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/cozy-client-js/-/cozy-client-js-0.9.0.tgz#ef81ac66a2858427e23da3c214f1a169e9972a8c"
+  dependencies:
+    core-js "^2.5.3"
+    pouchdb "6.1.1"
+    pouchdb-adapter-cordova-sqlite "git+https://github.com/SnceGroup/pouchdb-adapter-cordova-sqlite.git#f3ee23009b70209c611435d57491aa77fb88802a"
+    pouchdb-find "0.10.4"
+
 cozy-jobs-cli@1.0.17:
   version "1.0.17"
   resolved "https://registry.yarnpkg.com/cozy-jobs-cli/-/cozy-jobs-cli-1.0.17.tgz#09187486ef92baed8aeb5fee9b2cd71a1247943a"
@@ -1996,9 +2005,9 @@ cozy-jobs-cli@1.0.17:
     opn "^5.1.0"
     regenerator-runtime "^0.11.1"
 
-cozy-konnector-libs@4.1.8:
-  version "4.1.8"
-  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-4.1.8.tgz#0cda8dca8846a7b9beeedde396ae4c9037fd8be5"
+cozy-konnector-libs@4.1.9:
+  version "4.1.9"
+  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-4.1.9.tgz#8fee74ccb9d67f4e86318baa527d79629e8a0c9e"
   dependencies:
     babel-cli "^6.26.0"
     babel-plugin-transform-object-rest-spread "^6.26.0"
@@ -2010,8 +2019,8 @@ cozy-konnector-libs@4.1.8:
     cheerio "^1.0.0-rc.2"
     commander "^2.12.2"
     core-js "^2.4.1"
-    cozy-client-js "^0.8.0"
-    cozy-logger "^1.1.4"
+    cozy-client-js "^0.9.0"
+    cozy-logger "^1.1.5"
     date-fns "^1.29.0"
     geco "^0.11.1"
     isomorphic-fetch "^2.2.1"
@@ -2063,6 +2072,12 @@ cozy-konnector-libs@^4.1.7:
 cozy-logger@^1.1.4:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/cozy-logger/-/cozy-logger-1.1.4.tgz#201132c8d47cc7b64452fe2bed4f24bbb5059a3c"
+  dependencies:
+    json-stringify-safe "5.0.1"
+
+cozy-logger@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/cozy-logger/-/cozy-logger-1.1.5.tgz#34745aa636cffa0ab4bcfb9464c82c77e34b9f45"
   dependencies:
     json-stringify-safe "5.0.1"
 
@@ -6206,6 +6221,13 @@ pn@^1.1.0:
 posix-character-classes@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
+
+"pouchdb-adapter-cordova-sqlite@git+https://github.com/SnceGroup/pouchdb-adapter-cordova-sqlite.git#f3ee23009b70209c611435d57491aa77fb88802a":
+  version "2.0.2"
+  uid f3ee23009b70209c611435d57491aa77fb88802a
+  resolved "git+https://github.com/SnceGroup/pouchdb-adapter-cordova-sqlite.git#f3ee23009b70209c611435d57491aa77fb88802a"
+  dependencies:
+    pouchdb-adapter-websql-core "^6.1.1"
 
 "pouchdb-adapter-cordova-sqlite@https://github.com/SnceGroup/pouchdb-adapter-cordova-sqlite.git#f3ee23009b70209c611435d57491aa77fb88802a":
   version "2.0.2"
