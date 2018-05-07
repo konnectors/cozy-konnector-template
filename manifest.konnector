@@ -10,6 +10,12 @@
   "vendor_link": "Link to the target website",
   "categories": ["other"],
   "fields": {
+    "login": {
+      "type": "text"
+    },
+    "password": {
+      "type": "password"
+    },
     "advancedFields": {
       "folderPath": {
         "advanced": true,
@@ -22,8 +28,11 @@
   ],
   "screenshots": [ "screenshots/screenshot1.png" ],
   "permissions": {
-    "books": {
-      "type": "io.cozy.books"
+    "bank operations": {
+      "type": "io.cozy.bank.operations"
+    },
+    "bills": {
+      "type": "io.cozy.bills"
     },
     "files": {
       "type": "io.cozy.files"
@@ -43,8 +52,11 @@
       "short_description": "Template de connecteur",
       "long_description": "Ce template récupère une liste de livres sur un site de scraping",
       "permissions": {
-        "books": {
-          "description": "Utilisé pour sauvegarder les références des livres"
+        "bank operations": {
+          "description": "Utilisé pour relier les factures à des operations bancaires"
+        },
+        "bills": {
+          "description": "Utilisé pour sauver les données des factures"
         },
         "files": {
           "description": "Utilisé pour sauvegarder les factures"
@@ -58,8 +70,11 @@
       "short_description": "Connector template",
       "long_description": "This template fetches a list of books from a scraping website",
       "permissions": {
-        "books": {
-          "description": "Required to save books references"
+        "bank operations": {
+          "description": "Required to link bank operations to bills"
+        },
+        "bills": {
+          "description": "Required to save the bills data"
         },
         "files": {
           "description": "Required to save the bills"
