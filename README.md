@@ -6,20 +6,42 @@ What's Cozy?
 
 ![Cozy Logo](https://cdn.rawgit.com/cozy/cozy-guidelines/master/templates/cozy_logo_small.svg)
 
-[Cozy] is a platform that brings all your web services in the same private space. With it, your webapps and your devices can share data easily, providing you with a new experience. You can install Cozy on your own hardware where no one's tracking you.
+[Cozy] is a personal data platform that brings all your web services in the same private space. With it, your webapps and your devices can share data easily, providing you with a new experience. You can install Cozy on your own hardware where no one's tracking you.
 
-What's this new konnector?
---------------------------
+What is this konnector about ?
+------------------------------
 
+This konnector retrieves your <SOME DATA> and <SOME OTHER DATA> from <SERVICE>
 <YOUR DESCRIPTION HERE>
 
 ### Open a Pull-Request
 
-If you want to work on this konnector and submit code modifications, feel free to open pull-requests! See the [contributing guide][contribute] for more information about how to properly open pull-requests.
+If you want to work on this konnector and submit code modifications, feel free to open pull-requests!
+</br>See :
+* the [contributing guide][contribute] for more information about how to properly open pull-requests.
+* the [konnectors development guide](https://docs.cozy.io/en/dev/konnector/)
+
+### Run and test
+
+Create a `konnector-dev-config.json` file at the root with your test credentials :
+
+```javascript
+{
+  "COZY_URL": "http://cozy.tools:8080",
+  "fields": {"login":"zuck.m@rk.fb", "password":"123456"}
+}
+```
+Then :
+
+```sh
+yarn
+yarn standalone
+```
+For running the konnector connected to a Cozy server and more details see [konnectors documentation](https://docs.cozy.io/en/dev/konnector/)
 
 ### Cozy-konnector-libs
 
-This connector uses [cozy-konnector-libs](https://github.com/cozy/cozy-konnector-libs). You can find more documentation about it there.
+This connector uses [cozy-konnector-libs](https://github.com/cozy/cozy-konnector-libs). It brings a bunch of helpers to interact with the Cozy server and to fetch data from an online service.
 
 ### Maintainer
 
@@ -30,6 +52,7 @@ The lead maintainers for this konnector is <YOUR NAME>
 
 You can reach the Cozy Community by:
 
+- [konnectors documentation](https://docs.cozy.io/en/dev/konnector/)
 - Chatting with us on IRC [#cozycloud on Freenode][freenode]
 - Posting on our [Forum]
 - Posting issues on the [Github repos][github]
