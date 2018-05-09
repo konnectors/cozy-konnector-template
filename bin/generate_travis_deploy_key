@@ -1,0 +1,49 @@
+#!/bin/bash
+
+set -e
+
+if [ -z "$GITHUB_TOKEN" ]; then
+  echo ""
+  echo "GITHUB_TOKEN environment variable is missing"
+  echo ""
+  echo "TRAVIS DEPLOY KEY GENERATOR"
+  echo ""
+  echo "What it does : generate a new private and public key, add the public key as a deploy key
+  with write access to the origin remote github repository, encrypt the private key as
+  github_deploy_key.enc and add the configuration necessary to use it in .travis.yml file"
+  echo ""
+  echo "Use it like this:"
+  echo ""
+  echo "  GITHUB_TOKEN=\`cat ~/secret/GITHUB_TOKEN\` ./generate_travis_deploy_key"
+  echo ""
+  echo "where ~/secret/GITHUB_TOKEN is a file containing a github token with write access to the current repository : (origin)"
+  echo ""
+  echo "You must have the travis executable installed on your system and available in the PATH"
+  echo ""
+  exit
+fi
+
+url="$(git config --get remote.origin.url)"
+reponame="$(echo $url | cut -d/ -f2 | cut -d. -f1)"
+
+# generate a new private and public key
+ssh-keygen -t rsa -b 4096 -f github_deploy_key -N '' -C $url -q 1>/dev/null
+
+pubkey="$(cat github_deploy_key.pub)"
+
+# add the PUBLIC key to the github repository as a deploy key with write access
+curl https://api.github.com/repos/konnectors/$reponame/keys -H "Authorization: token $GITHUB_TOKEN" --data @- << EOF
+{
+  "title": "travis deploy key",
+  "key": "$pubkey",
+  "read_only": false
+}
+EOF
+
+# use travis to encrypt the private key as github_deploy_key.enc and remove the private key
+travis encrypt-file github_deploy_key --add --no-interactive -w /tmp/github_deploy_key
+git add github_deploy_key.enc
+
+# cleaning
+rm github_deploy_key
+rm github_deploy_key.pub
