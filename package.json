@@ -31,18 +31,18 @@
     "cozyPublish": "cozy-app-publish --token $REGISTRY_TOKEN --build-commit $(git rev-parse ${DEPLOY_BRANCH:-build})"
   },
   "dependencies": {
-    "cozy-konnector-libs": "4.1.9"
+    "cozy-konnector-libs": "4.2.0"
   },
   "devDependencies": {
     "copy-webpack-plugin": "4.5.1",
     "cozy-app-publish": "0.3.6",
-    "cozy-jobs-cli": "1.0.18",
+    "cozy-jobs-cli": "1.1.0",
     "eslint": "4.19.1",
-    "eslint-config-cozy-app": "0.5.1",
+    "eslint-config-cozy-app": "0.7.0",
     "git-directory-deploy": "1.5.1",
     "husky": "0.14.3",
     "konitor": "0.8.2",
-    "webpack": "4.7.0",
+    "webpack": "4.8.1",
     "webpack-cli": "2.1.3"
   }
 }
