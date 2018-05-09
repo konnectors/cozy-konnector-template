@@ -1960,6 +1960,10 @@ copy-webpack-plugin@4.5.1:
     p-limit "^1.0.0"
     serialize-javascript "^1.4.0"
 
+core-js@2.5.6:
+  version "2.5.6"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.5.6.tgz#0fe6d45bf3cac3ac364a9d72de7576f4eb221b9d"
+
 core-js@^1.0.0:
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
@@ -2007,7 +2011,39 @@ cozy-jobs-cli@1.0.18:
     opn "^5.1.0"
     regenerator-runtime "^0.11.1"
 
-cozy-konnector-libs@4.1.9, cozy-konnector-libs@^4.1.9:
+cozy-konnector-libs@4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-4.2.0.tgz#0bdb971ddc902d2a01c889c95c0cd095f2734f5e"
+  dependencies:
+    babel-cli "^6.26.0"
+    babel-plugin-transform-object-rest-spread "^6.26.0"
+    babel-preset-env "^1.6.0"
+    bluebird "^3.5.0"
+    bluebird-retry "^0.11.0"
+    btoa "^1.1.2"
+    chalk "^2.3.2"
+    cheerio "^1.0.0-rc.2"
+    commander "^2.12.2"
+    core-js "2.5.6"
+    cozy-client-js "^0.9.0"
+    cozy-logger "^1.1.6"
+    date-fns "^1.29.0"
+    geco "^0.11.1"
+    isomorphic-fetch "^2.2.1"
+    jest "^22.0.0"
+    jsdoc-to-markdown "^4.0.1"
+    lodash "4.17.10"
+    moment "^2.18.1"
+    opn "^5.1.0"
+    raven "^2.4.0"
+    regenerator-runtime "^0.11.0"
+    replay "^2.1.2"
+    request "^2.81.0"
+    request-debug "^0.2.0"
+    request-promise "^4.2.1"
+    uuid "^3.1.0"
+
+cozy-konnector-libs@^4.1.9:
   version "4.1.9"
   resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-4.1.9.tgz#8fee74ccb9d67f4e86318baa527d79629e8a0c9e"
   dependencies:
@@ -2042,6 +2078,12 @@ cozy-konnector-libs@4.1.9, cozy-konnector-libs@^4.1.9:
 cozy-logger@^1.1.5:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/cozy-logger/-/cozy-logger-1.1.5.tgz#34745aa636cffa0ab4bcfb9464c82c77e34b9f45"
+  dependencies:
+    json-stringify-safe "5.0.1"
+
+cozy-logger@^1.1.6:
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/cozy-logger/-/cozy-logger-1.1.6.tgz#977b64c2829de621f1274eaf40144872224c0579"
   dependencies:
     json-stringify-safe "5.0.1"
 
@@ -5217,13 +5259,13 @@ lodash.sortby@^4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
 
+lodash@4.17.10, lodash@^4.17.10:
+  version "4.17.10"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
+
 lodash@4.17.5, lodash@^4.13.1, lodash@^4.14.0, lodash@^4.14.2, lodash@^4.15.0, lodash@^4.17.2, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.0, lodash@^4.3.0:
   version "4.17.5"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
-
-lodash@^4.17.10:
-  version "4.17.10"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
 
 log-symbols@^1.0.2:
   version "1.0.2"
