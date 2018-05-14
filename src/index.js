@@ -27,14 +27,19 @@ module.exports = new BaseKonnector(start)
 // information (fields). When you run this connector yourself in "standalone" mode or "dev" mode,
 // the account information come from ./konnector-dev-config.json file
 async function start(fields) {
+  log('info', 'Authenticating ...')
   await authenticate(fields.login, fields.password)
+  log('info', 'Successfully logged in')
   // The BaseKonnector instance expects a Promise as return of the function
+  log('info', 'Fetching the list of documents')
   const $ = await request(`${baseUrl}/index.html`)
   // cheerio (https://cheerio.js.org/) uses the same api as jQuery (http://jquery.com/)
+  log('info', 'Parsing list of documents')
   const documents = await parseDocuments($)
 
   // here we use the saveBills function even if what we fetch are not bills, but this is the most
   // common case in connectors
+  log('info', 'Saving data to Cozy')
   await saveBills(documents, fields.folderPath, {
     // this is a bank identifier which will be used to link bills to bank operations. These
     // identifiers should be at least a word found in the title of a bank operation related to this
