@@ -71,7 +71,7 @@ function authenticate(username, password) {
 }
 
 // The goal of this function is to parse a html page wrapped by a cheerio instance
-// and return an array of js objects which will be saved to the cozy by saveBills (https://github.com/cozy/cozy-konnector-libs/blob/master/docs/api.md#savebills)
+// and return an array of js objects which will be saved to the cozy by saveBills (https://github.com/konnectors/libs/blob/master/packages/cozy-konnector-libs/docs/api.md#savebills)
 function parseDocuments($) {
   // you can find documentation about the scrape function here :
   // https://github.com/konnectors/libs/blob/master/packages/cozy-konnector-libs/docs/api.md#scrape
@@ -123,5 +123,5 @@ function parseDocuments($) {
 
 // convert a price string to a float
 function normalizePrice(price) {
-  return parseFloat(price.trim().replace('£', ''))
+  return parseFloat(price.replace('£', '').trim())
 }
