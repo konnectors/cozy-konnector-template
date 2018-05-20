@@ -2799,15 +2799,16 @@ escodegen@^1.9.0:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-cozy-app@0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-cozy-app/-/eslint-config-cozy-app-0.7.0.tgz#eef630b42124f2495c695522bf960bdaf5b5641d"
+eslint-config-cozy-app@0.7.3:
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/eslint-config-cozy-app/-/eslint-config-cozy-app-0.7.3.tgz#68e9b28dc7de81df86c8e4697cf569072bbcc5e2"
   dependencies:
     babel-eslint "^8.0.1"
     eslint "^4.9.0"
     eslint-config-prettier "^2.9.0"
     eslint-plugin-prettier "^2.6.0"
     eslint-plugin-react "^7.7.0"
+    eslint-plugin-vue "^4.5.0"
     prettier "^1.11.1"
 
 eslint-config-prettier@^2.9.0:
@@ -2831,6 +2832,12 @@ eslint-plugin-react@^7.7.0:
     has "^1.0.1"
     jsx-ast-utils "^2.0.1"
     prop-types "^15.6.0"
+
+eslint-plugin-vue@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-vue/-/eslint-plugin-vue-4.5.0.tgz#09d6597f4849e31a3846c2c395fccf17685b69c3"
+  dependencies:
+    vue-eslint-parser "^2.0.3"
 
 eslint-scope@^3.7.1, eslint-scope@~3.7.1:
   version "3.7.1"
@@ -2890,7 +2897,7 @@ esmangle-evaluator@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/esmangle-evaluator/-/esmangle-evaluator-1.0.1.tgz#620d866ef4861b3311f75766d52a8572bb3c6336"
 
-espree@^3.5.4:
+espree@^3.5.2, espree@^3.5.4:
   version "3.5.4"
   resolved "https://registry.yarnpkg.com/espree/-/espree-3.5.4.tgz#b0f447187c8a8bed944b815a660bddf5deb5d1a7"
   dependencies:
@@ -8439,6 +8446,17 @@ vm-browserify@0.0.4:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-0.0.4.tgz#5d7ea45bbef9e4a6ff65f95438e0a87c357d5a73"
   dependencies:
     indexof "0.0.1"
+
+vue-eslint-parser@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/vue-eslint-parser/-/vue-eslint-parser-2.0.3.tgz#c268c96c6d94cfe3d938a5f7593959b0ca3360d1"
+  dependencies:
+    debug "^3.1.0"
+    eslint-scope "^3.7.1"
+    eslint-visitor-keys "^1.0.0"
+    espree "^3.5.2"
+    esquery "^1.0.0"
+    lodash "^4.17.4"
 
 vuvuzela@1.0.3:
   version "1.0.3"
