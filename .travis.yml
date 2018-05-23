@@ -14,6 +14,7 @@ cache:
 script:
 - yarn lint
 - yarn build
+# - npx konitor check . # uncomment when ready
 deploy:
 - provider: script
   skip-cleanup: true
