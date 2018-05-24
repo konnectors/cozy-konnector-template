@@ -12,6 +12,10 @@ cache:
   yarn: true
   directories:
   - node_modules
+branches:
+  except:
+  - build
+  - latest
 script:
 - yarn lint
 - yarn build
