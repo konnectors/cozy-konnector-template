@@ -3,6 +3,7 @@
 .token.json
 konnector-dev-config.json*
 fixtures/*
+importedData.json
 
 # NPM
 node_modules/
