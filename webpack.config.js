@@ -16,6 +16,7 @@ module.exports = {
       { from: 'package.json' },
       { from: 'README.md' },
       { from: 'assets' },
+      { from: '.travis.yml' },
       { from: 'LICENSE' }
     ])
   ]
