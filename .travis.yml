@@ -27,11 +27,6 @@ deploy:
     branch: master
 - provider: script
   skip-cleanup: true
-  script: DEPLOY_BRANCH=latest yarn deploy
-  on:
-    branch: prod
-- provider: script
-  skip-cleanup: true
   script: DEPLOY_BRANCH=build yarn deploy && yarn cozyPublish
   on:
     tags: true
