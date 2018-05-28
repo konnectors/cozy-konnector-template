@@ -88,7 +88,7 @@ function parseDocuments($) {
       },
       url: {
         sel: 'h3 a',
-        attr: 'title',
+        attr: 'href',
         parse: url => `${baseUrl}/${url}`
       },
       fileurl: {
