@@ -1,0 +1,2 @@
+# dont run travis on build branches
+script: true
