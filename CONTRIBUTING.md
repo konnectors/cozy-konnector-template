@@ -1,4 +1,4 @@
-How to contribute to Cozy <APP_NAME>?
+How to contribute to Cozy Connector?
 ====================================
 
 Thank you for your interest in contributing to Cozy! There are many ways to contribute, and we appreciate all of them.
@@ -23,7 +23,7 @@ Opening an issue is as easy as following [this link][issues] and filling out the
 - What did you try, step by step?
 - What did you expect?
 - What did happen instead?
-- What is the version of the Cozy <APP_NAME>?
+- What is the version of the Cozy Connector?
 
 
 Pull Requests
@@ -35,85 +35,26 @@ Please keep in mind that:
 - You need to cover your code and feature by tests
 - You may add documentation in the `/docs` directory to explain your choices if needed
 - We recommend to use [task lists][checkbox] to explain steps / features in your Pull-Request description
-- you do _not_ need to build app to submit a PR
-- you should update the Transifex source locale file if you modify it for your feature needs (see [Localization section in README][localization])
-
+- You do __not__ need to build app to submit a PR
 
 ### Workflow
 
 Pull requests are the primary mechanism we use to change Cozy. GitHub itself has some [great documentation][pr] on using the Pull Request feature. We use the _fork and pull_ model described there.
 
-#### Step 1: Fork
-
-Fork the project on GitHub and [check out your copy locally][forking].
-
-```
-$ git clone github.com/<USERNAME_GH>/<SLUG_GH>.git
-$ cd <SLUG_GH>
-$ git remote add fork git://github.com/yourusername/<SLUG_GH>.git
-```
-
-#### Step 2: Branch
-
-Create a branch and start hacking:
-
-```
-$ git checkout -b my-branch origin/master
-```
-
-#### Step 3: Code
-
-Well, we think you know how to do that. Just be sure to follow the coding guidelines from the community ([standard JS][stdjs], comment the code, etc).
-
-#### Step 4: Test
-
-Don't forget to add tests and be sure they are green:
-
-```
-$ cd <SLUG_GH>
-$ npm run test
-```
-
-#### Step 5: Commit
-
-Writing [good commit messages][commitmsg] is important. A commit message should describe what changed and why.
-
-#### Step 6: Rebase
-
-Use `git rebase` (_not_ `git merge`) to sync your work from time to time.
-
-```
-$ git fetch origin
-$ git rebase origin/master my-branch
-```
-
-#### Step 7: Push
-
-```
-$ git push -u fork my-branch
-```
-
-Go to https://github.com/yourusername/<SLUG_GH> and select your branch. Click the 'Pull Request' button and fill out the form.
-
-Alternatively, you can use [hub] to open the pull request from your terminal:
-
-```
-$ git pull-request -b master -m "My PR message" -o
-```
-
-Pull requests are usually reviewed within a few days. If there are comments to address, apply your changes in a separate commit and push that to your branch. Post a comment in the pull request afterwards; GitHub doesn't send out notifications when you add commits.
+- [ ] clone the repository with `git clone`
+- [ ] add a remote to your profile with `git remote add fork`
+- [ ] create a new branch for the work with `git checkout --branch my-branch origin/master`
+- [ ] add some changes with `git add --patch .`
+- [ ] create at least one commit with `git commit --message '{fix,feat,chore,test,doc}: a 70 character long description of the changes'`
+- [ ] check styleguide, formating, linting and tests
+- [ ] push to your remote with `git push fork my-branch`
+- [ ] create a Pull-Request with a detailed description
 
 
 Writing documentation
 ---------------------
 
 Documentation improvements are very welcome. We try to keep a good documentation in the `/docs` folder. But, you know, we are developers, we can forget to document important stuff that look obvious to us. And documentation can always be improved.
-
-
-Translations
-------------
-
-The Cozy <APP_NAME> is translated on a platform called [Transifex][tx]. [This tutorial][tx-start] can help you to learn how to make your first steps here. If you have any question, don't hesitate to ask us!
 
 
 Community
@@ -123,14 +64,6 @@ You can help us by making our community even more vibrant. For example, you can 
 
 
 
-[issues]: https://github.com/<USERNAME_GH>/<SLUG_GH>/issues/new
-[checkbox]: https://github.com/blog/1375-task-lists-in-gfm-issues-pulls-comments
+[issues]: ../../issues
 [pr]: https://help.github.com/categories/collaborating-with-issues-and-pull-requests/
-[forking]: http://blog.campoy.cat/2014/03/github-and-go-forking-pull-requests-and.html
-[stdjs]: http://standardjs.com/
-[commitmsg]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
-[localization]: https://github.com/<USERNAME_GH>/<SLUG_GH>/blob/master/README.md#localization
-[hub]: https://hub.github.com/
-[tx]: https://www.transifex.com/cozy/
-[tx-start]: http://docs.transifex.com/getting-started/translators/
 [forum]: https://forum.cozy.io/
