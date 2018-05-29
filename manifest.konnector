@@ -5,41 +5,22 @@
   "language": "node",
   "icon": "icon.png",
   "slug": "template",
-  "source": "git://github.com/konnectors/cozy-konnector-template.git",
+  "source": "git://github.com/konnectors/tricount.git",
   "editor": "Cozy",
   "vendor_link": "Link to the target website",
   "categories": ["other"],
   "fields": {
-    "login": {
+    "tricountUrl": {
       "type": "text"
-    },
-    "password": {
-      "type": "password"
-    },
-    "advancedFields": {
-      "folderPath": {
-        "advanced": true,
-        "isRequired": false
-      }
     }
   },
   "data_types": [
     "bill"
   ],
-  "screenshots": [ "screenshots/screenshot1.png" ],
+  "screenshots": [],
   "permissions": {
-    "bank operations": {
-      "type": "io.cozy.bank.operations"
-    },
-    "bills": {
-      "type": "io.cozy.bills"
-    },
-    "files": {
-      "type": "io.cozy.files"
-    },
-    "accounts": {
-      "type": "io.cozy.accounts",
-      "verbs": ["GET"]
+    "tricount expenses": {
+      "type": "com.tricount.expenses"
     }
   },
   "developer": {
@@ -49,38 +30,20 @@
   "langs": ["fr", "en"],
   "locales": {
     "fr": {
-      "short_description": "Template de connecteur",
-      "long_description": "Ce template récupère une liste de livres sur un site de scraping",
+      "short_description": "Connecteur Tricount",
+      "long_description": "Ce connecteur récupère une liste de dépenses Tricount",
       "permissions": {
-        "bank operations": {
-          "description": "Utilisé pour relier les factures à des operations bancaires"
-        },
-        "bills": {
-          "description": "Utilisé pour sauver les données des factures"
-        },
-        "files": {
-          "description": "Utilisé pour sauvegarder les factures"
-        },
-        "accounts": {
-          "description": "Utilisé pour obtenir les données du compte"
+        "tricount expenses": {
+          "description": "Utilisé pour sauver les dépenses"
         }
       }
     },
     "en": {
-      "short_description": "Connector template",
-      "long_description": "This template fetches a list of books from a scraping website",
+      "short_description": "Tricount connector",
+      "long_description": "This connector retrieves Tricount expenses",
       "permissions": {
-        "bank operations": {
-          "description": "Required to link bank operations to bills"
-        },
-        "bills": {
-          "description": "Required to save the bills data"
-        },
-        "files": {
-          "description": "Required to save the bills"
-        },
-        "accounts": {
-          "description": "Required to get the account's data"
+        "tricount expenses": {
+          "description": "Uses to save expenses"
         }
       }
     }
