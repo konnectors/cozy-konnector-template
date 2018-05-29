@@ -1,3 +1,7 @@
+process.env.SENTRY_DSN =
+  process.env.SENTRY_DSN ||
+  'https://9a321d2a82b346dfb601dc832676b00f:bd60e562e02c4b2aacb9162164dc914d@sentry.cozycloud.cc/62'
+
 const {
   BaseKonnector,
   log,
@@ -71,7 +75,11 @@ async function start(fields) {
       keys: ['id']
     }
 
-    const newExpenses = await hydrateAndFilter(expenses, TRICOUNT_EXPENSE_DOCTYPE, options)
+    const newExpenses = await hydrateAndFilter(
+      expenses,
+      TRICOUNT_EXPENSE_DOCTYPE,
+      options
+    )
     await addData(newExpenses, TRICOUNT_EXPENSE_DOCTYPE, options)
   } catch (e) {
     if (e.detailMessage.includes('500 Internal Server Error')) {
