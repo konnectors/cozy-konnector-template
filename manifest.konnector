@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "name": "Connector template",
+  "name": "Tricount connector",
   "type": "konnector",
   "language": "node",
   "icon": "icon.png",
-  "slug": "template",
+  "slug": "tricount",
   "source": "git://github.com/konnectors/tricount.git",
   "editor": "Cozy",
   "vendor_link": "Link to the target website",
