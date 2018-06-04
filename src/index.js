@@ -86,11 +86,6 @@ function parseDocuments($) {
         sel: '.price_color',
         parse: normalizePrice
       },
-      url: {
-        sel: 'h3 a',
-        attr: 'href',
-        parse: url => `${baseUrl}/${url}`
-      },
       fileurl: {
         sel: 'img',
         attr: 'src',
