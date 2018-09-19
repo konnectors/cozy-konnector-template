@@ -7,7 +7,7 @@ const {
   log
 } = require('cozy-konnector-libs')
 const request = requestFactory({
-  // the debug mode shows all the details about http request and responses. Very usefull for
+  // the debug mode shows all the details about http request and responses. Very useful for
   // debugging but very verbose. That is why it is commented out by default
   // debug: true,
   // activates [cheerio](https://cheerio.js.org/) parsing on each page
@@ -108,9 +108,9 @@ function parseDocuments($) {
     vendor: 'template',
     metadata: {
       // it can be interesting that we add the date of import. This is not mandatory but may be
-      // usefull for debugging or data migration
+      // useful for debugging or data migration
       importDate: new Date(),
-      // document version, usefull for migration after change of document structure
+      // document version, useful for migration after change of document structure
       version: 1
     }
   }))
