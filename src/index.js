@@ -55,8 +55,15 @@ function authenticate(username, password) {
     url: `http://quotes.toscrape.com/login`,
     formSelector: 'form',
     formData: { username, password },
-    // the validate function will check if
-    validate: (statusCode, $) => {
+    // the validate function will check if the login request was a success. Every website has
+    // different ways respond: http status code, error message in html ($), http redirection
+    // (fullResponse.request.uri.href)...
+    validate: (statusCode, $, fullResponse) => {
+      log(
+        'debug',
+        fullResponse.request.uri.href,
+        'not used here but should be usefull for other connectors'
+      )
       // The login in toscrape.com always works excepted when no password is set
       if ($(`a[href='/logout']`).length === 1) {
         return true
