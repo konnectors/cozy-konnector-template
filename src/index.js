@@ -40,7 +40,7 @@ async function start(fields) {
   // here we use the saveBills function even if what we fetch are not bills, but this is the most
   // common case in connectors
   log('info', 'Saving data to Cozy')
-  await saveBills(documents, fields.folderPath, {
+  await saveBills(documents, fields, {
     // this is a bank identifier which will be used to link bills to bank operations. These
     // identifiers should be at least a word found in the title of a bank operation related to this
     // bill. It is not case sensitive.
