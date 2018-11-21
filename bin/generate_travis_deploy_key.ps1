@@ -61,7 +61,7 @@ curl https://api.github.com/repos/$owner/$reponame/keys -H @{"Authorization" = "
 "@
 
 # use travis to encrypt the private key as github_deploy_key.enc and remove the private key
-travis encrypt-file github_deploy_key --add --no-interactive -w /tmp/github_deploy_key -f
+travis encrypt-file github_deploy_key --pro --add --no-interactive -w /tmp/github_deploy_key -f
 git add github_deploy_key.enc
 
 # cleaning
