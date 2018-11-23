@@ -5,7 +5,15 @@ const SvgoInstance = require('svgo')
 
 const entry = require('./package.json').main
 
-const svgo = new SvgoInstance()
+const svgo = new SvgoInstance({
+  plugins: [
+    {
+      inlineStyles: {
+        onlyMatchedOnce: false
+      }
+    }
+  ]
+})
 
 let iconName
 try {
