@@ -12,7 +12,7 @@
   "main": "./src/index.js",
   "eslintConfig": {
     "extends": [
-      "eslint-config-cozy-app"
+      "cozy-app"
     ]
   },
   "eslintIgnore": [
@@ -34,14 +34,15 @@
     "travisDeployKey": "./bin/generate_travis_deploy_key"
   },
   "dependencies": {
-    "cozy-konnector-libs": "4.11.8"
+    "cozy-konnector-libs": "4.12.1"
   },
   "devDependencies": {
     "copy-webpack-plugin": "4.6.0",
     "cozy-app-publish": "0.9.1",
-    "cozy-jobs-cli": "1.5.8",
+    "cozy-jobs-cli": "1.6.1",
     "eslint": "5.10.0",
     "eslint-config-cozy-app": "1.1.5",
+    "eslint-plugin-prettier": "^3.0.0",
     "git-directory-deploy": "1.5.1",
     "husky": "1.2.0",
     "konitor": "0.10.1",
