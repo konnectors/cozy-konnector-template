@@ -20,8 +20,8 @@
   ],
   "scripts": {
     "start": "node ./src/index.js",
-    "dev": "cozy-run-dev",
-    "standalone": "cozy-run-standalone",
+    "dev": "cozy-konnector-dev",
+    "standalone": "cozy-konnector-standalone",
     "pretest": "npm run clean",
     "test": "konitor testit .",
     "check": "konitor check .",
