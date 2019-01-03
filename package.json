@@ -45,7 +45,7 @@
     "cozy-app-publish": "0.10.1",
     "cozy-jobs-cli": "1.6.1",
     "eslint": "5.11.1",
-    "eslint-config-cozy-app": "1.1.5",
+    "eslint-config-cozy-app": "1.1.7",
     "eslint-plugin-prettier": "^3.0.1",
     "git-directory-deploy": "1.5.1",
     "husky": "1.3.1",
