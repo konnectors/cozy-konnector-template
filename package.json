@@ -46,12 +46,12 @@
     "cozy-jobs-cli": "1.6.1",
     "eslint": "5.11.1",
     "eslint-config-cozy-app": "1.1.5",
-    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
     "git-directory-deploy": "1.5.1",
     "husky": "1.3.1",
     "konitor": "0.10.1",
     "svgo": "1.1.1",
     "webpack": "4.28.3",
-    "webpack-cli": "3.1.2"
+    "webpack-cli": "3.2.0"
   }
 }
