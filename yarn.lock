@@ -1647,10 +1647,10 @@ cozy-client-js@0.9.0:
     pouchdb-adapter-cordova-sqlite "https://github.com/SnceGroup/pouchdb-adapter-cordova-sqlite.git#f3ee23009b70209c611435d57491aa77fb88802a"
     pouchdb-find "0.10.4"
 
-cozy-jobs-cli@1.6.2:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/cozy-jobs-cli/-/cozy-jobs-cli-1.6.2.tgz#93a559b8e9d42501fedf4951e0e3618b71abdb78"
-  integrity sha512-/wNKRGZtnDKrdL4yPfA7/bX8o1UcoC+gq6WDHHbXyHrfmQqjrzkEyq7DaeVros7xSLF/slY6cWAb9Zh2ojLBfg==
+cozy-jobs-cli@1.6.3:
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/cozy-jobs-cli/-/cozy-jobs-cli-1.6.3.tgz#9e98a8b1207161b59758c565e5061fafd7c62420"
+  integrity sha512-9RhBEn6Tx14WtPe/l9MR5zTctLQsHECFORoOJ8zFr+yp4Ez60tzR91YyAmdkQYhE32ZvzLPZ+8t5IO0tSWvevw==
   dependencies:
     btoa "1.2.1"
     cheerio "1.0.0-rc.2"
@@ -1658,17 +1658,42 @@ cozy-jobs-cli@1.6.2:
     commander "2.19.0"
     core-js "2.5.7"
     cozy-client-js "0.9.0"
-    cozy-konnector-libs "^4.12.2"
+    cozy-konnector-libs "^4.12.3"
     cozy-logger "^1.3.1"
     opn "5.4.0"
     pretty "2.0.0"
     regenerator-runtime "0.12.1"
     replay "2.4.0"
 
-cozy-konnector-libs@4.12.2, cozy-konnector-libs@^4.12.2:
+cozy-konnector-libs@4.12.2:
   version "4.12.2"
   resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-4.12.2.tgz#7cf603dbb9f1fb25dd916f76d7b1a2e42cf316ca"
   integrity sha512-dzgPpScsT6gz54dku1iHcoRquPIwyIU9CnEltTaSUO93KzDIUn8T1GFp9GWRi422WY98n8fg1IpWVPkfrJHOoQ==
+  dependencies:
+    bluebird "3.5.3"
+    bluebird-retry "0.11.0"
+    btoa "1.2.1"
+    cheerio "1.0.0-rc.2"
+    cozy-client-js "0.9.0"
+    cozy-logger "^1.3.1"
+    date-fns "1.30.1"
+    geco "0.11.1"
+    isomorphic-fetch "^2.2.1"
+    lodash "4.17.11"
+    lodash-id "^0.14.0"
+    lowdb "1.0.0"
+    pdfjs "2.1.0"
+    pdfjs-dist "2.0.943"
+    raven "2.6.4"
+    raw-body "2.3.3"
+    request "2.88.0"
+    request-debug "0.2.0"
+    request-promise "4.2.2"
+
+cozy-konnector-libs@^4.12.3:
+  version "4.12.3"
+  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-4.12.3.tgz#17051772da0c491c5bc717d06c3c1bd0b03f82d0"
+  integrity sha512-C6P9Mu7+LCUsxpx4uBEvs5IKhNUuoFG5fx1nzXqqN3hmDDt4Vo2YCaUUCYEryHIrCyWN3h/gRVkfzbKAvHU48w==
   dependencies:
     bluebird "3.5.3"
     bluebird-retry "0.11.0"
