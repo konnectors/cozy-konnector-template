@@ -44,7 +44,7 @@
     "copy-webpack-plugin": "4.6.0",
     "cozy-app-publish": "0.10.3",
     "cozy-jobs-cli": "1.6.4",
-    "eslint": "5.12.0",
+    "eslint": "5.12.1",
     "eslint-config-cozy-app": "1.1.7",
     "eslint-plugin-prettier": "^3.0.1",
     "git-directory-deploy": "1.5.1",
