@@ -33,7 +33,7 @@
     "clean": "rm -rf ./data",
     "build": "webpack",
     "lint": "eslint --fix .",
-    "deploy": "git-directory-deploy --directory build/ --branch ${DEPLOY_BRANCH:-build} --repo=${DEPLOY_REPOSITORY:-https://$GITHUB_TOKEN@github.com/konnectors/cozy-konnector-template.git}",
+    "deploy": "git-directory-deploy --directory build/ --branch ${DEPLOY_BRANCH:-build} --repo=${DEPLOY_REPOSITORY:-git@github.com:konnectors/template.git}",
     "cozyPublish": "cozy-app-publish --token $REGISTRY_TOKEN --build-commit $(git rev-parse ${DEPLOY_BRANCH:-build})",
     "travisDeployKey": "./bin/generate_travis_deploy_key"
   },
@@ -46,7 +46,7 @@
     "cozy-jobs-cli": "1.6.4",
     "eslint": "5.12.1",
     "eslint-config-cozy-app": "1.1.7",
-    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-prettier": "3.0.1",
     "git-directory-deploy": "1.5.1",
     "husky": "1.3.1",
     "konitor": "0.10.1",
