@@ -13,17 +13,11 @@
     "isp"
   ],
   "fields": {
-    "login": {
-      "type": "text"
+    "access_token": {
+      "type": "hidden"
     },
-    "password": {
-      "type": "password"
-    },
-    "advancedFields": {
-      "folderPath": {
-        "advanced": true,
-        "isRequired": false
-      }
+    "refresh_token": {
+      "type": "hidden"
     }
   },
   "oauth": {
