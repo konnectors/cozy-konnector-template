@@ -4,7 +4,8 @@ const {
   signin,
   scrape,
   saveBills,
-  log
+  log,
+  utils
 } = require('cozy-konnector-libs')
 const request = requestFactory({
   // the debug mode shows all the details about http request and responses. Very useful for
@@ -19,6 +20,7 @@ const request = requestFactory({
   jar: true
 })
 
+const VENDOR = 'template'
 const baseUrl = 'http://books.toscrape.com'
 
 module.exports = new BaseKonnector(start)
@@ -97,11 +99,6 @@ function parseDocuments($) {
         sel: 'img',
         attr: 'src',
         parse: src => `${baseUrl}/${src}`
-      },
-      filename: {
-        sel: 'h3 a',
-        attr: 'title',
-        parse: title => `${title}.jpg`
       }
     },
     'article'
@@ -112,7 +109,10 @@ function parseDocuments($) {
     // even if it is a little artificial here (these are not real bills)
     date: new Date(),
     currency: '€',
-    vendor: 'template',
+    filename: `${utils.formatDate(new Date())}_${VENDOR}_${doc.amount.toFixed(
+      2
+    )}€${doc.vendorRef ? '_' + doc.vendorRef : ''}.jpg`,
+    vendor: VENDOR,
     metadata: {
       // it can be interesting that we add the date of import. This is not mandatory but may be
       // useful for debugging or data migration
