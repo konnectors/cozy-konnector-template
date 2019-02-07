@@ -1641,10 +1641,10 @@ cozy-client-js@0.9.0:
     pouchdb-adapter-cordova-sqlite "https://github.com/SnceGroup/pouchdb-adapter-cordova-sqlite.git#f3ee23009b70209c611435d57491aa77fb88802a"
     pouchdb-find "0.10.4"
 
-cozy-jobs-cli@1.7.1:
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/cozy-jobs-cli/-/cozy-jobs-cli-1.7.1.tgz#8f183bf4acaa9f5f152dce9e9b45a2231260be79"
-  integrity sha512-wp6AeTepRvNmcyi7RHc9WbrfEga0jzCEN9/pQ7GMuez3PyGaZVBpyC/dxENCNvVoso3Gs8WFWT5ycQ0kmfGTrg==
+cozy-jobs-cli@1.7.5:
+  version "1.7.5"
+  resolved "https://registry.yarnpkg.com/cozy-jobs-cli/-/cozy-jobs-cli-1.7.5.tgz#cd6093a709843a06b5092e08499b0fc2dab3eddc"
+  integrity sha512-AtahHxZwDcqx2pYKPYsMyD+6lUycS7uPj1me7o32U1Tz1vswUjXvg1FI8mMuGdncQM+MTbSRThvHE9mq3WS0yA==
   dependencies:
     btoa "1.2.1"
     cheerio "1.0.0-rc.2"
@@ -1652,27 +1652,27 @@ cozy-jobs-cli@1.7.1:
     commander "2.19.0"
     core-js "2.5.7"
     cozy-client-js "0.9.0"
-    cozy-konnector-libs "^4.13.1"
+    cozy-konnector-libs "^4.14.2"
     cozy-logger "^1.3.1"
     opn "5.4.0"
     pretty "2.0.0"
     regenerator-runtime "0.12.1"
     replay "2.4.0"
 
-cozy-konnector-libs@4.13.1, cozy-konnector-libs@^4.13.1:
-  version "4.13.1"
-  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-4.13.1.tgz#9d12d8d656471c535e3908f44b27fe8ea124e8c1"
-  integrity sha512-FI6NQo8897ju47GsKt5nm2pn5ZfZ/6rz3L4RCyuSuq1+n5VZvzGMcnVe2dlBMoBC8iN9mXLBgS+lYvjxs9GO7g==
+cozy-konnector-libs@4.14.3, cozy-konnector-libs@^4.14.2:
+  version "4.14.3"
+  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-4.14.3.tgz#35fedff7835253c839d1732749ab752c06a6efd0"
+  integrity sha512-zbN3YRodrrVS36z2zHwLeQMo3oOQEbpUTd+/tLy19klQZOv+5BoJxa8nY4/HAkgDiHFWfAOsMGzMJNTfQRnGjA==
   dependencies:
     bluebird "3.5.3"
     bluebird-retry "0.11.0"
     btoa "1.2.1"
     cheerio "1.0.0-rc.2"
     cozy-client-js "0.9.0"
-    cozy-logger "^1.3.1"
+    cozy-logger "1.3.1"
     date-fns "1.30.1"
     geco "0.11.1"
-    isomorphic-fetch "^2.2.1"
+    isomorphic-fetch "2.2.1"
     lodash "4.17.11"
     lodash-id "^0.14.0"
     lowdb "1.0.0"
@@ -1684,7 +1684,7 @@ cozy-konnector-libs@4.13.1, cozy-konnector-libs@^4.13.1:
     request-debug "0.2.0"
     request-promise "4.2.2"
 
-cozy-logger@^1.3.1:
+cozy-logger@1.3.1, cozy-logger@^1.3.1:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/cozy-logger/-/cozy-logger-1.3.1.tgz#27d9578756b318b1460a135cda94475c734b9f39"
   integrity sha512-oa2h6wkLuCTucUeeFQKOYE0hGtP6VZ+tRMxV/MKqIRKMq8xngareUusQX03jXP3C+O1GeaEhSmaboHlIDJnH7A==
@@ -2487,10 +2487,10 @@ eslint-visitor-keys@^1.0.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
   integrity sha512-qzm/XxIbxm/FHyH341ZrbnMUpe+5Bocte9xkmFMzPMjRaZMcXww+MpBptFvtU+79L362nqiLhekCxCxDPaUMBQ==
 
-eslint@5.12.1:
-  version "5.12.1"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-5.12.1.tgz#5ca9931fb9029d04e7be92b03ce3b58edfac7e3b"
-  integrity sha512-54NV+JkTpTu0d8+UYSA8mMKAG4XAsaOrozA9rCW7tgneg1mevcL7wIotPC+fZ0SkWwdhNqoXoxnQCTBp7UvTsg==
+eslint@5.13.0:
+  version "5.13.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-5.13.0.tgz#ce71cc529c450eed9504530939aa97527861ede9"
+  integrity sha512-nqD5WQMisciZC5EHZowejLKQjWGuFS5c70fxqSKlnDME+oz9zmE8KTlX+lHSg+/5wsC/kf9Q9eMkC8qS3oM2fg==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     ajv "^6.5.3"
@@ -2521,7 +2521,6 @@ eslint@5.12.1:
     natural-compare "^1.4.0"
     optionator "^0.8.2"
     path-is-inside "^1.0.2"
-    pluralize "^7.0.0"
     progress "^2.0.0"
     regexpp "^2.0.1"
     semver "^5.5.1"
@@ -3252,11 +3251,6 @@ glob@^7.0.3, glob@^7.0.5, glob@^7.1.2:
     minimatch "^3.0.4"
     once "^1.3.0"
     path-is-absolute "^1.0.0"
-
-global-modules-path@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/global-modules-path/-/global-modules-path-2.3.0.tgz#b0e2bac6beac39745f7db5c59d26a36a0b94f7dc"
-  integrity sha512-HchvMJNYh9dGSCy8pOQ2O8u/hoXaL+0XhnrwH0RyLiSXMMTl9W3N6KUU73+JFOg5PGjtzl6VZzUQsnrpm7Szag==
 
 global-modules@^1.0.0:
   version "1.0.0"
@@ -4200,7 +4194,7 @@ isobject@^3.0.0, isobject@^3.0.1:
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
   integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
 
-isomorphic-fetch@^2.2.1:
+isomorphic-fetch@2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/isomorphic-fetch/-/isomorphic-fetch-2.2.1.tgz#611ae1acf14f5e81f729507472819fe9733558a9"
   integrity sha1-YRrhrPFPXoH3KVB0coGf6XM1WKk=
@@ -4523,11 +4517,6 @@ lie@3.1.1:
   integrity sha1-mkNrLMd0bKWd56QfpGmz77dr2H4=
   dependencies:
     immediate "~3.0.5"
-
-lightercollective@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/lightercollective/-/lightercollective-0.1.0.tgz#70df102c530dcb8d0ccabfe6175a8d00d5f61300"
-  integrity sha512-J9tg5uraYoQKaWbmrzDDexbG6hHnMcWS1qLYgJSWE+mpA3U5OCSeMUhb+K55otgZJ34oFdR0ECvdIb3xuO5JOQ==
 
 load-json-file@^2.0.0:
   version "2.0.0"
@@ -6652,14 +6641,6 @@ schema-utils@^0.4.0:
     ajv "^6.1.0"
     ajv-keywords "^3.1.0"
 
-schema-utils@^0.4.4:
-  version "0.4.5"
-  resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-0.4.5.tgz#21836f0608aac17b78f9e3e24daff14a5ca13a3e"
-  integrity sha512-yYrjb9TX2k/J1Y5UNy3KYdZq10xhYcF8nMpAW6o3hy6Q8WSIEf9lJHG/ePnOBfziPM3fvQwfOwa13U/Fh8qTfA==
-  dependencies:
-    ajv "^6.1.0"
-    ajv-keywords "^3.1.0"
-
 schema-utils@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-1.0.0.tgz#0b79a93204d7b600d4b2850d1f66c2a34951c770"
@@ -7898,20 +7879,18 @@ wcwidth@^1.0.1:
   dependencies:
     defaults "^1.0.3"
 
-webpack-cli@3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/webpack-cli/-/webpack-cli-3.2.1.tgz#779c696c82482491f0803907508db2e276ed3b61"
-  integrity sha512-jeJveHwz/vwpJ3B8bxEL5a/rVKIpRNJDsKggfKnxuYeohNDW4Y/wB9N/XHJA093qZyS0r6mYL+/crLsIol4WKA==
+webpack-cli@3.2.3:
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/webpack-cli/-/webpack-cli-3.2.3.tgz#13653549adfd8ccd920ad7be1ef868bacc22e346"
+  integrity sha512-Ik3SjV6uJtWIAN5jp5ZuBMWEAaP5E4V78XJ2nI+paFPh8v4HPSwo/myN0r29Xc/6ZKnd2IdrAlpSgNOu2CDQ6Q==
   dependencies:
     chalk "^2.4.1"
     cross-spawn "^6.0.5"
     enhanced-resolve "^4.1.0"
     findup-sync "^2.0.0"
     global-modules "^1.0.0"
-    global-modules-path "^2.3.0"
     import-local "^2.0.0"
     interpret "^1.1.0"
-    lightercollective "^0.1.0"
     loader-utils "^1.1.0"
     supports-color "^5.5.0"
     v8-compile-cache "^2.0.2"
@@ -7933,10 +7912,10 @@ webpack-sources@^1.3.0:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-webpack@4.29.0:
-  version "4.29.0"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.29.0.tgz#f2cfef83f7ae404ba889ff5d43efd285ca26e750"
-  integrity sha512-pxdGG0keDBtamE1mNvT5zyBdx+7wkh6mh7uzMOo/uRQ/fhsdj5FXkh/j5mapzs060forql1oXqXN9HJGju+y7w==
+webpack@4.29.3:
+  version "4.29.3"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.29.3.tgz#e0b406a7b4201ed5e4fb4f84fd7359f9a7db4647"
+  integrity sha512-xPJvFeB+8tUflXFq+OgdpiSnsCD5EANyv56co5q8q8+YtEasn5Sj3kzY44mta+csCIEB0vneSxnuaHkOL2h94A==
   dependencies:
     "@webassemblyjs/ast" "1.7.11"
     "@webassemblyjs/helper-module-context" "1.7.11"
@@ -7957,7 +7936,7 @@ webpack@4.29.0:
     mkdirp "~0.5.0"
     neo-async "^2.5.0"
     node-libs-browser "^2.0.0"
-    schema-utils "^0.4.4"
+    schema-utils "^1.0.0"
     tapable "^1.1.0"
     terser-webpack-plugin "^1.1.0"
     watchpack "^1.5.0"
