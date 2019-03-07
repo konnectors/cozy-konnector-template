@@ -1688,10 +1688,10 @@ cosmiconfig@^5.0.7:
     js-yaml "^3.9.0"
     parse-json "^4.0.0"
 
-cozy-app-publish@0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/cozy-app-publish/-/cozy-app-publish-0.11.0.tgz#cee8551580d78aeeebcfaaf2d983876f50c312a2"
-  integrity sha512-HRRuBkcTO8iYhKJ+DCQADkf0w7wMLQROrEOFk7374av3uvT7taNcyV0W9SXU6X1u6yilZXhKXhcrVdV77vS9hw==
+cozy-app-publish@0.12.1:
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/cozy-app-publish/-/cozy-app-publish-0.12.1.tgz#204209982fbff79639e42ba72b515bffbfcd27a9"
+  integrity sha512-0ZZL0qco+q9oAm8ak4podbt4DDZFszkQ1zYLOwJat4hj1hj9qnzKRDdqinYgJV6Fd837LkBdiNGoxDXkTie1/g==
   dependencies:
     chalk "2.4.2"
     commander "2.19.0"
@@ -6020,13 +6020,6 @@ pouchdb-abstract-mapreduce@6.4.3:
     pouchdb-md5 "6.4.3"
     pouchdb-promise "6.4.3"
     pouchdb-utils "6.4.3"
-
-"pouchdb-adapter-cordova-sqlite@git+https://github.com/SnceGroup/pouchdb-adapter-cordova-sqlite.git#f3ee23009b70209c611435d57491aa77fb88802a":
-  version "2.0.2"
-  uid f3ee23009b70209c611435d57491aa77fb88802a
-  resolved "git+https://github.com/SnceGroup/pouchdb-adapter-cordova-sqlite.git#f3ee23009b70209c611435d57491aa77fb88802a"
-  dependencies:
-    pouchdb-adapter-websql-core "^6.1.1"
 
 "pouchdb-adapter-cordova-sqlite@https://github.com/SnceGroup/pouchdb-adapter-cordova-sqlite.git#f3ee23009b70209c611435d57491aa77fb88802a":
   version "2.0.2"
