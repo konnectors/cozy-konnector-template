@@ -8,15 +8,15 @@ const {
   utils
 } = require('cozy-konnector-libs')
 const request = requestFactory({
-  // the debug mode shows all the details about http request and responses. Very useful for
-  // debugging but very verbose. That is why it is commented out by default
+  // The debug mode shows all the details about HTTP requests and responses. Very useful for
+  // debugging but very verbose. This is why it is commented out by default
   // debug: true,
-  // activates [cheerio](https://cheerio.js.org/) parsing on each page
+  // Activates [cheerio](https://cheerio.js.org/) parsing on each page
   cheerio: true,
   // If cheerio is activated do not forget to deactivate json parsing (which is activated by
   // default in cozy-konnector-libs
   json: false,
-  // this allows request-promise to keep cookies between requests
+  // This allows request-promise to keep cookies between requests
   jar: true
 })
 
@@ -39,34 +39,34 @@ async function start(fields) {
   log('info', 'Parsing list of documents')
   const documents = await parseDocuments($)
 
-  // here we use the saveBills function even if what we fetch are not bills, but this is the most
-  // common case in connectors
+  // Here we use the saveBills function even if what we fetch are not bills,
+  // but this is the most common case in connectors
   log('info', 'Saving data to Cozy')
   await saveBills(documents, fields, {
-    // this is a bank identifier which will be used to link bills to bank operations. These
+    // This is a bank identifier which will be used to link bills to bank operations. These
     // identifiers should be at least a word found in the title of a bank operation related to this
     // bill. It is not case sensitive.
     identifiers: ['books']
   })
 }
 
-// this shows authentication using the [signin function](https://github.com/konnectors/libs/blob/master/packages/cozy-konnector-libs/docs/api.md#module_signin)
+// This shows authentication using the [signin function](https://github.com/konnectors/libs/blob/master/packages/cozy-konnector-libs/docs/api.md#module_signin)
 // even if this in another domain here, but it works as an example
 function authenticate(username, password) {
   return signin({
     url: `http://quotes.toscrape.com/login`,
     formSelector: 'form',
     formData: { username, password },
-    // the validate function will check if the login request was a success. Every website has
-    // different ways respond: http status code, error message in html ($), http redirection
+    // The validate function will check if the login request was a success. Every website has a
+    // different way to respond: HTTP status code, error message in HTML ($), HTTP redirection
     // (fullResponse.request.uri.href)...
     validate: (statusCode, $, fullResponse) => {
       log(
         'debug',
         fullResponse.request.uri.href,
-        'not used here but should be usefull for other connectors'
+        'not used here but should be useful for other connectors'
       )
-      // The login in toscrape.com always works excepted when no password is set
+      // The login in toscrape.com always works except when no password is set
       if ($(`a[href='/logout']`).length === 1) {
         return true
       } else {
@@ -79,10 +79,11 @@ function authenticate(username, password) {
   })
 }
 
-// The goal of this function is to parse a html page wrapped by a cheerio instance
-// and return an array of js objects which will be saved to the cozy by saveBills (https://github.com/konnectors/libs/blob/master/packages/cozy-konnector-libs/docs/api.md#savebills)
+// The goal of this function is to parse a HTML page wrapped by a cheerio instance
+// and return an array of JS objects which will be saved to the cozy by saveBills
+// (https://github.com/konnectors/libs/blob/master/packages/cozy-konnector-libs/docs/api.md#savebills)
 function parseDocuments($) {
-  // you can find documentation about the scrape function here :
+  // You can find documentation about the scrape function here:
   // https://github.com/konnectors/libs/blob/master/packages/cozy-konnector-libs/docs/api.md#scrape
   const docs = scrape(
     $,
@@ -105,7 +106,7 @@ function parseDocuments($) {
   )
   return docs.map(doc => ({
     ...doc,
-    // the saveBills function needs a date field
+    // The saveBills function needs a date field
     // even if it is a little artificial here (these are not real bills)
     date: new Date(),
     currency: '€',
@@ -114,16 +115,16 @@ function parseDocuments($) {
     )}€${doc.vendorRef ? '_' + doc.vendorRef : ''}.jpg`,
     vendor: VENDOR,
     metadata: {
-      // it can be interesting that we add the date of import. This is not mandatory but may be
+      // It can be interesting to add the date of import. This is not mandatory but may be
       // useful for debugging or data migration
       importDate: new Date(),
-      // document version, useful for migration after change of document structure
+      // Document version, useful for migration after change of document structure
       version: 1
     }
   }))
 }
 
-// convert a price string to a float
+// Convert a price string to a float
 function normalizePrice(price) {
   return parseFloat(price.replace('£', '').trim())
 }
