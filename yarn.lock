@@ -1448,15 +1448,16 @@ cosmiconfig@^5.0.7:
     lodash.get "^4.4.2"
     parse-json "^4.0.0"
 
-cozy-app-publish@0.12.2:
-  version "0.12.2"
-  resolved "https://registry.yarnpkg.com/cozy-app-publish/-/cozy-app-publish-0.12.2.tgz#1facfe3b1aff06de13b73852c9bdfadeed06a79f"
-  integrity sha512-8EjxNbjGqWHFT1TsM3/3GanBHvWK+nsf9h3YlghYnLjiRBBS6nEnEgwL8nlThtYeL5WFxNVT+DArIzmYXUQamw==
+cozy-app-publish@0.13.1:
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/cozy-app-publish/-/cozy-app-publish-0.13.1.tgz#7fa5bf25cb4f1a7fec436e177e0389d963480dff"
+  integrity sha512-+i3TFGLILqII9cxTzymZbVblFLHb09zNGgi66z3eDipP8aRympKye9FvhTziXGSmVss5f8Ib8bV2V0Ue3Kz7nQ==
   dependencies:
     chalk "2.4.2"
     commander "2.19.0"
     cross-spawn "6.0.5"
     fs-extra "7.0.1"
+    lodash "4.17.11"
     node-fetch "2.3.0"
     prompt "1.0.0"
     request "2.88.0"
@@ -5230,9 +5231,10 @@ posix-character-classes@^0.1.0:
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
   integrity sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=
 
-"pouchdb-adapter-cordova-sqlite@git+https://github.com/SnceGroup/pouchdb-adapter-cordova-sqlite.git#f3ee23009b70209c611435d57491aa77fb88802a":
+"pouchdb-adapter-cordova-sqlite@https://github.com/SnceGroup/pouchdb-adapter-cordova-sqlite.git#f3ee23009b70209c611435d57491aa77fb88802a":
   version "2.0.2"
-  resolved "git+https://github.com/SnceGroup/pouchdb-adapter-cordova-sqlite.git#f3ee23009b70209c611435d57491aa77fb88802a"
+  uid f3ee23009b70209c611435d57491aa77fb88802a
+  resolved "https://github.com/SnceGroup/pouchdb-adapter-cordova-sqlite.git#f3ee23009b70209c611435d57491aa77fb88802a"
   dependencies:
     pouchdb-adapter-websql-core "^6.1.1"
 
