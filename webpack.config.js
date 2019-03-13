@@ -54,16 +54,7 @@ module.exports = {
     // Critical dependency: the request of a dependency is an expression
     // Since we cannot change this dependency. I think it won't hide more important messages
     exprContextCritical: false
-  },
-  externals: [
-    {
-      // pouchdb comes from cozy-client-js and is not used by the connectors
-      pouchdb: 'PouchDB'
-      // If you want to make the built version of the connector lighter and you do not read pdf
-      // files content
-      // 'pdfjs-dist': 'pdfjs'
-    }
-  ]
+  }
 }
 
 function optimizeSVGIcon(buffer, path) {
