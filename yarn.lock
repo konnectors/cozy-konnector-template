@@ -1166,10 +1166,10 @@ cosmiconfig@^5.0.7:
     lodash.get "^4.4.2"
     parse-json "^4.0.0"
 
-cozy-app-publish@0.14.0:
-  version "0.14.0"
-  resolved "https://registry.yarnpkg.com/cozy-app-publish/-/cozy-app-publish-0.14.0.tgz#b1ceec2ecc17ec73d6b8ae9b049dc8ec168c20c5"
-  integrity sha512-bL1I9Yiw1phCg6COI0tklzJm6xRvATFVy+75Q1BAWt2GOmJ7MVQPzHGA0oMATLj0nqg5tUuL2Le+FfKW+FCYPw==
+cozy-app-publish@0.15.0:
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/cozy-app-publish/-/cozy-app-publish-0.15.0.tgz#25562e00814a8759e1927c56ee050cd357453d9a"
+  integrity sha512-kEyqd7vTkdlS8d9aU2OzZSTlth+ZNn4KHHOpMSTk/nbM21CeHpdNDlO/WvAy/atyJhxdiS6Zca0z6l2DMyjB6Q==
   dependencies:
     chalk "2.4.2"
     commander "2.19.0"
