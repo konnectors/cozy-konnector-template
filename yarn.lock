@@ -1166,10 +1166,10 @@ cosmiconfig@^5.0.7:
     lodash.get "^4.4.2"
     parse-json "^4.0.0"
 
-cozy-app-publish@0.13.1:
-  version "0.13.1"
-  resolved "https://registry.yarnpkg.com/cozy-app-publish/-/cozy-app-publish-0.13.1.tgz#7fa5bf25cb4f1a7fec436e177e0389d963480dff"
-  integrity sha512-+i3TFGLILqII9cxTzymZbVblFLHb09zNGgi66z3eDipP8aRympKye9FvhTziXGSmVss5f8Ib8bV2V0Ue3Kz7nQ==
+cozy-app-publish@0.14.0:
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/cozy-app-publish/-/cozy-app-publish-0.14.0.tgz#b1ceec2ecc17ec73d6b8ae9b049dc8ec168c20c5"
+  integrity sha512-bL1I9Yiw1phCg6COI0tklzJm6xRvATFVy+75Q1BAWt2GOmJ7MVQPzHGA0oMATLj0nqg5tUuL2Le+FfKW+FCYPw==
   dependencies:
     chalk "2.4.2"
     commander "2.19.0"
@@ -1201,10 +1201,10 @@ cozy-doctypes@1.38.6:
     es6-promise-pool "2.5.0"
     lodash "4.17.11"
 
-cozy-jobs-cli@1.8.0:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/cozy-jobs-cli/-/cozy-jobs-cli-1.8.0.tgz#d31df0a43f20c0077b9910635f128b22b5053fcc"
-  integrity sha512-o6LlmaDWIqqvwUhuRYKRNxtoLVcPfmMtRJ92nhLnC43U54R6th/5foLTOiTHX52UFaEVWtLSIPfbdR6KG27gxA==
+cozy-jobs-cli@1.8.1:
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/cozy-jobs-cli/-/cozy-jobs-cli-1.8.1.tgz#a485f2633e96582175bb257b2827101b2cd7c860"
+  integrity sha512-xEDqoZ3FQ+jvrSed1rljcdTRhcu07gyGrh3NXvdI8qYGEqqSWmK9i0dklMLVkbIBucTjoZKfUDKckSflYXsloQ==
   dependencies:
     btoa "1.2.1"
     cheerio "1.0.0-rc.2"
@@ -1212,17 +1212,17 @@ cozy-jobs-cli@1.8.0:
     commander "2.19.0"
     core-js "2.6.5"
     cozy-client-js "0.15.0"
-    cozy-konnector-libs "^4.15.0"
+    cozy-konnector-libs "^4.15.1"
     cozy-logger "^1.3.1"
     opn "5.4.0"
     pretty "2.0.0"
     regenerator-runtime "0.13.1"
     replay "2.4.0"
 
-cozy-konnector-libs@4.15.0, cozy-konnector-libs@^4.15.0:
-  version "4.15.0"
-  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-4.15.0.tgz#16bad5f442773868ed8f3309204091d73c43304a"
-  integrity sha512-oWP8JVjW5IPcervC7zToXz8Vdrkt7suLFZz/vkQlON5p5uaWEmrkGBfo4ebs47+UI06SuedHgxO4A3yyo4c46g==
+cozy-konnector-libs@4.15.1, cozy-konnector-libs@^4.15.1:
+  version "4.15.1"
+  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-4.15.1.tgz#edd0c753d90695102dec584f1e26edfae7618e06"
+  integrity sha512-awK2M5ssMYlXaFVTNb8s/Q76PbMOsD75J6sSZNFto9GQkbMS9mXGnYMHzFRu/xkSUM7ouy4zHyG0NrKkmCsjbg==
   dependencies:
     bluebird "3.5.3"
     bluebird-retry "0.11.0"
