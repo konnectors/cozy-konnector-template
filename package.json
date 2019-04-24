@@ -41,7 +41,7 @@
     "cozy-konnector-libs": "4.15.3"
   },
   "devDependencies": {
-    "copy-webpack-plugin": "5.0.2",
+    "copy-webpack-plugin": "5.0.3",
     "cozy-app-publish": "0.15.0",
     "cozy-jobs-cli": "1.8.3",
     "eslint": "5.16.0",
