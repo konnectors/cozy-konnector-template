@@ -109,10 +109,10 @@ function parseDocuments($) {
     // The saveBills function needs a date field
     // even if it is a little artificial here (these are not real bills)
     date: new Date(),
-    currency: '€',
+    currency: 'EUR',
     filename: `${utils.formatDate(new Date())}_${VENDOR}_${doc.amount.toFixed(
       2
-    )}€${doc.vendorRef ? '_' + doc.vendorRef : ''}.jpg`,
+    )}EUR${doc.vendorRef ? '_' + doc.vendorRef : ''}.jpg`,
     vendor: VENDOR,
     metadata: {
       // It can be interesting to add the date of import. This is not mandatory but may be
