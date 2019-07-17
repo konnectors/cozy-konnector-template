@@ -28,8 +28,11 @@ module.exports = new BaseKonnector(start)
 // The start function is run by the BaseKonnector instance only when it got all the account
 // information (fields). When you run this connector yourself in "standalone" mode or "dev" mode,
 // the account information come from ./konnector-dev-config.json file
-async function start(fields) {
+// cozyParameters are static parameters, independents from the account. Most often, it can be a
+// secret api key.
+async function start(fields, cozyParameters) {
   log('info', 'Authenticating ...')
+  if (cozyParameters) log('debug', 'Found COZY_PARAMETERS')
   await authenticate(fields.login, fields.password)
   log('info', 'Successfully logged in')
   // The BaseKonnector instance expects a Promise as return of the function
