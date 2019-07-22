@@ -1254,7 +1254,34 @@ cozy-jobs-cli@1.8.22:
     replay "2.4.0"
     strip-json-comments "^3.0.1"
 
-cozy-konnector-libs@4.18.0, cozy-konnector-libs@^4.18.0:
+cozy-konnector-libs@4.18.3:
+  version "4.18.3"
+  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-4.18.3.tgz#467543c710c43b0e32aedda834ad9cb80d344b53"
+  integrity sha512-II/FD3NAkU/9nbXIqXimmn+Gvah1TmUXm2hNDnLfpuKx3jDAORc8n44LdvakZBN30yH+j6InzuOvNIhdrK6tBw==
+  dependencies:
+    bluebird "3.5.5"
+    bluebird-retry "0.11.0"
+    cheerio "1.0.0-rc.3"
+    classificator "0.3.3"
+    cozy-client-js "0.16.4"
+    cozy-doctypes "1.39.0"
+    cozy-logger "1.3.1"
+    date-fns "1.30.1"
+    file-type "12.0.1"
+    geco "0.11.1"
+    lodash-id "0.14.0"
+    lowdb "1.0.0"
+    mime-types "2.1.24"
+    pdfjs "2.1.0"
+    pdfjs-dist "2.1.266"
+    raven "2.6.4"
+    raw-body "2.4.1"
+    request "2.88.0"
+    request-debug "0.2.0"
+    request-promise "4.2.4"
+    strip-json-comments "^3.0.1"
+
+cozy-konnector-libs@^4.18.0:
   version "4.18.0"
   resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-4.18.0.tgz#97d99b5ae4114f1f8a9130068afcc146107f8da4"
   integrity sha512-ad5Xp+kZgV38gTb1KCFLC71BAF1t3R+fGvx7qXHmx1qiV7yEn5m7Nw/tOYnQt+5/TLZzCyJCjCMLoyBcBXoloQ==
@@ -2228,6 +2255,11 @@ file-type@11.1.0:
   version "11.1.0"
   resolved "https://registry.yarnpkg.com/file-type/-/file-type-11.1.0.tgz#93780f3fed98b599755d846b99a1617a2ad063b8"
   integrity sha512-rM0UO7Qm9K7TWTtA6AShI/t7H5BPjDeGVDaNyg9BjHAj3PysKy7+8C8D137R88jnR3rFJZQB/tFgydl5sN5m7g==
+
+file-type@12.0.1:
+  version "12.0.1"
+  resolved "https://registry.yarnpkg.com/file-type/-/file-type-12.0.1.tgz#50c6a15025511e3f29e88a796103f80db0bfce7b"
+  integrity sha512-YIs1E51cmqcmgF38ODjy0+M/l5DyfIIy3vngTOujQr/lXqkaSskfBniaZoZ1HVIpa5FTf5e7hCXS4TzxfNGMRQ==
 
 fill-range@^4.0.0:
   version "4.0.0"
@@ -4184,6 +4216,14 @@ pdfjs-dist@2.0.943:
   version "2.0.943"
   resolved "https://registry.yarnpkg.com/pdfjs-dist/-/pdfjs-dist-2.0.943.tgz#32fb9a2d863df5a1d89521a0b3cd900c16e7edde"
   integrity sha512-iLhNcm4XceTHRaSU5o22ZGCm4YpuW5+rf4+BJFH/feBhMQLbCGBry+Jet8Q419QDI4qgARaIQzXuiNrsNWS8Yw==
+  dependencies:
+    node-ensure "^0.0.0"
+    worker-loader "^2.0.0"
+
+pdfjs-dist@2.1.266:
+  version "2.1.266"
+  resolved "https://registry.yarnpkg.com/pdfjs-dist/-/pdfjs-dist-2.1.266.tgz#cded02268b389559e807f410d2a729db62160026"
+  integrity sha512-Jy7o1wE3NezPxozexSbq4ltuLT0Z21ew/qrEiAEeUZzHxMHGk4DUV1D7RuCXg5vJDvHmjX1YssN+we9QfRRgXQ==
   dependencies:
     node-ensure "^0.0.0"
     worker-loader "^2.0.0"
