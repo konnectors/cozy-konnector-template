@@ -1202,10 +1202,10 @@ cosmiconfig@^5.2.1:
     js-yaml "^3.13.1"
     parse-json "^4.0.0"
 
-cozy-app-publish@0.16.4:
-  version "0.16.4"
-  resolved "https://registry.yarnpkg.com/cozy-app-publish/-/cozy-app-publish-0.16.4.tgz#ca34c40e7338eb9e620a7e7a1949e5cee98f260f"
-  integrity sha512-YLBBA+K/2PhxnuicZtr0cmuz0bnydU338J9pWB/xlEy8R1TVDQhdyiErjbOOdvtkCafJDT/7Bm1dCFk1KQMQ8A==
+cozy-app-publish@0.18.0:
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/cozy-app-publish/-/cozy-app-publish-0.18.0.tgz#f30d5058cd0e6a6455287b51680e0039ae8e995e"
+  integrity sha512-Bd0HLd5xLr2pJ2SZNw/M+ORtKX54N90Gg2n9CxPm4HElwhnyrVT8ceevXHkt7GDLkyjt1RFtOZifbS5hMX8DaQ==
   dependencies:
     argparse "^1.0.10"
     chalk "2.4.2"
@@ -1261,10 +1261,10 @@ cozy-doctypes@1.61.0:
     lodash "4.17.15"
     prop-types "^15.7.2"
 
-cozy-jobs-cli@1.9.6:
-  version "1.9.6"
-  resolved "https://registry.yarnpkg.com/cozy-jobs-cli/-/cozy-jobs-cli-1.9.6.tgz#e3c8cc50ccec2b4d52539251961368137edfd385"
-  integrity sha512-ttURBCmf0nQhBhawgKMNru46G+VGqyUVxvnKzVuTt+IiPpyojntP/CecivWuqKNk/hOmPEKT886ec6hZObrpKw==
+cozy-jobs-cli@1.9.7:
+  version "1.9.7"
+  resolved "https://registry.yarnpkg.com/cozy-jobs-cli/-/cozy-jobs-cli-1.9.7.tgz#c0b0f9cd1a6e82400577579c5d44ba60ca794cf0"
+  integrity sha512-Mvkwd+34Z6OiVOR96dZngT3PjeMvIfTW6SE0wiSTAwHMKIVPzQ0ZrS38E0t5/QmQAu882FVmL8N19MkDtgjKMw==
   dependencies:
     btoa "1.2.1"
     cheerio "1.0.0-rc.3"
@@ -1272,7 +1272,7 @@ cozy-jobs-cli@1.9.6:
     commander "2.20.0"
     core-js "3.1.4"
     cozy-client-js "0.16.4"
-    cozy-konnector-libs "^4.19.2"
+    cozy-konnector-libs "^4.19.3"
     cozy-logger "1.5.0"
     opn "6.0.0"
     pretty "2.0.0"
@@ -1280,10 +1280,10 @@ cozy-jobs-cli@1.9.6:
     replay "2.4.0"
     strip-json-comments "3.0.1"
 
-cozy-konnector-libs@4.19.2, cozy-konnector-libs@^4.19.2:
-  version "4.19.2"
-  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-4.19.2.tgz#d0cf92e7b3f2ecbb815132ccd127ecc63bb5ac96"
-  integrity sha512-LcpgTDlh7T4zcEqe+sbR8ZbzcmwR/p7iE2+Ro+LicPokBWjILfPD41DoxIguEU8r2aKIjwkEJvgd7idhE4Jf6g==
+cozy-konnector-libs@4.19.3, cozy-konnector-libs@^4.19.3:
+  version "4.19.3"
+  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-4.19.3.tgz#dc034e4a26cd98cf978f3af6a8ce91c02a659cf7"
+  integrity sha512-cuzHEteWcLNnQgTR8XqXl+XujlcgJyoNvRF74jbq6H12aqGNoDrYCluGkIGX8xUk+az/svjlPKtRb3yNFOm0CQ==
   dependencies:
     bluebird "3.5.5"
     bluebird-retry "0.11.0"
@@ -5950,10 +5950,10 @@ webpack-sources@^1.4.0, webpack-sources@^1.4.1:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-webpack@4.39.1:
-  version "4.39.1"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.39.1.tgz#60ed9fb2b72cd60f26ea526c404d2a4cc97a1bd8"
-  integrity sha512-/LAb2TJ2z+eVwisldp3dqTEoNhzp/TLCZlmZm3GGGAlnfIWDgOEE758j/9atklNLfRyhKbZTCOIoPqLJXeBLbQ==
+webpack@4.39.2:
+  version "4.39.2"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.39.2.tgz#c9aa5c1776d7c309d1b3911764f0288c8c2816aa"
+  integrity sha512-AKgTfz3xPSsEibH00JfZ9sHXGUwIQ6eZ9tLN8+VLzachk1Cw2LVmy+4R7ZiwTa9cZZ15tzySjeMui/UnSCAZhA==
   dependencies:
     "@webassemblyjs/ast" "1.8.5"
     "@webassemblyjs/helper-module-context" "1.8.5"
