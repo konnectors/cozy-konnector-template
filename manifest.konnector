@@ -1,23 +1,20 @@
 {
   "version": "1.0.0",
-  "name": "Orange",
+  "name": "Connector template",
   "type": "konnector",
   "language": "node",
   "icon": "icon.png",
-  "slug": "orangeapi",
-  "source": "git://github.com/konnectors/orangeapi.git",
+  "slug": "template",
+  "source": "git@github.com:konnectors/template.git",
   "editor": "Cozy",
-  "vendor_link": "https://developer.orange.com/",
-  "categories": [
-    "telecom",
-    "isp"
-  ],
+  "vendor_link": "Link to the target website",
+  "categories": ["other"],
   "fields": {
-    "access_token": {
-      "type": "hidden"
+    "login": {
+      "type": "text"
     },
-    "refresh_token": {
-      "type": "hidden"
+    "password": {
+      "type": "password"
     },
     "advancedFields": {
       "folderPath": {
@@ -25,11 +22,6 @@
         "isRequired": false
       }
     }
-  },
-  "oauth": {
-    "scope": [
-      "profile_limited form_filling customer_bill_last"
-    ]
   },
   "data_types": [
     "bill"
@@ -57,8 +49,8 @@
   "langs": ["fr", "en"],
   "locales": {
     "fr": {
-      "short_description": "Template de connecteur",
-      "long_description": "Ce template récupère une liste de livres sur un site de scraping",
+      "short_description": "Récupère la liste de livres",
+      "long_description": "Récupère la liste de livre sur le site exemple",
       "permissions": {
         "bank operations": {
           "description": "Utilisé pour relier les factures à des operations bancaires"
@@ -75,8 +67,8 @@
       }
     },
     "en": {
-      "short_description": "Connector template",
-      "long_description": "This template fetches a list of books from a scraping website",
+      "short_description": "Fetch a list of books",
+      "long_description": "Fetch a list of books from the example website",
       "permissions": {
         "bank operations": {
           "description": "Required to link bank operations to bills"
@@ -93,6 +85,6 @@
       }
     }
   },
-  "banksTransactionRegExp": "\\borange\\b",
+  "banksTransactionRegExp": "\\bbooks\\b",
   "manifest_version": "2"
 }
