@@ -49,7 +49,9 @@ async function start(fields, cozyParameters) {
     // This is a bank identifier which will be used to link bills to bank operations. These
     // identifiers should be at least a word found in the title of a bank operation related to this
     // bill. It is not case sensitive.
-    identifiers: ['books']
+    identifiers: ['books'],
+    sourceAccount: this.accountId,
+    sourceAccountIdentifier: fields.login
   })
 }
 
