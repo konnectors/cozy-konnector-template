@@ -46,7 +46,7 @@
     "cozy-jobs-cli": "1.9.17",
     "eslint-config-cozy-app": "1.2.2",
     "git-directory-deploy": "1.5.1",
-    "husky": "3.0.4",
+    "husky": "3.0.5",
     "konitor": "0.10.3",
     "svgo": "1.3.0",
     "webpack": "4.39.3",
