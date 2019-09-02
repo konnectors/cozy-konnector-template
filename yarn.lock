@@ -1077,10 +1077,10 @@ combined-stream@^1.0.6, combined-stream@~1.0.6:
   dependencies:
     delayed-stream "~1.0.0"
 
-commander@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-3.0.0.tgz#0641ea00838c7a964627f04cddc336a2deddd60a"
-  integrity sha512-pl3QrGOBa9RZaslQiqnnKX2J068wcQw7j9AIaBQ9/JEp5RY6je4jKTImg0Bd+rpoONSe7GUFSgkxLeo17m3Pow==
+commander@3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-3.0.1.tgz#4595aec3530525e671fb6f85fb173df8ff8bf57a"
+  integrity sha512-UNgvDd+csKdc9GD4zjtkHKQbT8Aspt2jCBqNSPp53vAS0L1tS9sXB2TCEOPHJ7kt9bN/niWkYj8T3RQSoMXdSQ==
 
 commander@^2.19.0, commander@^2.20.0:
   version "2.20.0"
@@ -1249,9 +1249,9 @@ cozy-client-js@0.16.4, cozy-client-js@^0.16.4:
     pouchdb-find "7.0.0"
 
 cozy-client@^6.58.1:
-  version "6.58.2"
-  resolved "https://registry.yarnpkg.com/cozy-client/-/cozy-client-6.58.2.tgz#a3bdd905b51825fa71e58ed9250e023f7b5f1d07"
-  integrity sha512-uBe/koWWrDN8aO1OFQ8d4k4KMMXjec+ISFQ3zoL8ySly/IiQzvtJQE1PbGsqu29zIFHTzuW4UxC0BppvArXukg==
+  version "6.59.0"
+  resolved "https://registry.yarnpkg.com/cozy-client/-/cozy-client-6.59.0.tgz#86372471ecaea354ebb1c786f7981192c91cff17"
+  integrity sha512-nS36tUeRRRsnjIsYkQzqwa/q5cG/W3pXXyQ8MKhIhPhqVazHoirP5Wp9LiE40Uus7oyw5QXsVIOjRTYuKPDlxQ==
   dependencies:
     cozy-device-helper "^1.7.3"
     cozy-stack-client "^6.58.2"
@@ -1272,9 +1272,9 @@ cozy-device-helper@^1.7.3:
     lodash "4.17.15"
 
 cozy-doctypes@^1.63.2:
-  version "1.63.4"
-  resolved "https://registry.yarnpkg.com/cozy-doctypes/-/cozy-doctypes-1.63.4.tgz#2491efc1d1d88ee9f79ea09fa7bf4a2ac259dbb5"
-  integrity sha512-VyfI9d8v4VatqWiZ/PTrOYpTHVENg5uDOVbBcyBhO+3YbDqPZ32kkT91rA8AzDsbnu0MBeiR8SSGGEMIDFWA2w==
+  version "1.63.5"
+  resolved "https://registry.yarnpkg.com/cozy-doctypes/-/cozy-doctypes-1.63.5.tgz#43a8179d3547841033983491056e553648cb7d8f"
+  integrity sha512-o5ngl3/0gtbZwhmt7/Skx442Ez4Z9wdrl/d/k9wewZjl6qi6O56tGa1eo1KDr1nVL3n3sCkDMcqdNyxJ1kXcDw==
   dependencies:
     "@babel/runtime" "7.5.5"
     cozy-logger "^1.5.1"
@@ -1283,18 +1283,18 @@ cozy-doctypes@^1.63.2:
     lodash "4.17.15"
     prop-types "^15.7.2"
 
-cozy-jobs-cli@1.9.17:
-  version "1.9.17"
-  resolved "https://registry.yarnpkg.com/cozy-jobs-cli/-/cozy-jobs-cli-1.9.17.tgz#5a4dfd2026c30c1ddc491d1307e1774d8120089d"
-  integrity sha512-VE0VQZp1aE2x27y2Bb4ZsYIOsd6CDEwX/RK3bLhF+mSRIhYM9BmigF/Z0VhBQvMFqIAZS3KMtZQvLosqa39bpg==
+cozy-jobs-cli@1.9.19:
+  version "1.9.19"
+  resolved "https://registry.yarnpkg.com/cozy-jobs-cli/-/cozy-jobs-cli-1.9.19.tgz#43ffba89442f2a4478d032de5449109656ba1889"
+  integrity sha512-7Kd0+VgKFH+utjJkt6hXrAINoDUaXipeOHndyAlp3PlDAlsdP4pIeju02gLgdnRGMb5N5EMTftb1aKGtclsjCA==
   dependencies:
     btoa "1.2.1"
     cheerio "1.0.0-rc.3"
     cli-highlight "2.1.1"
-    commander "3.0.0"
+    commander "3.0.1"
     core-js "3.2.1"
     cozy-client-js "0.16.4"
-    cozy-konnector-libs "^4.24.2"
+    cozy-konnector-libs "^4.26.0"
     cozy-logger "1.5.1"
     open "6.4.0"
     pretty "2.0.0"
@@ -1302,10 +1302,10 @@ cozy-jobs-cli@1.9.17:
     replay "2.4.0"
     strip-json-comments "3.0.1"
 
-cozy-konnector-libs@4.24.2, cozy-konnector-libs@^4.24.2:
-  version "4.24.2"
-  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-4.24.2.tgz#d21a29f4ffdb38c47caf1a2db692fe98cc3725d9"
-  integrity sha512-H5IRnvG4Gl9Fu9jdlLwJoTBi6g3aae/3xTbm/KHT9ZUFBVxvL7vQniwUx9DiwG/stTjvCBpzA7T0N8joSzCZFQ==
+cozy-konnector-libs@4.26.0, cozy-konnector-libs@^4.26.0:
+  version "4.26.0"
+  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-4.26.0.tgz#c19e5b9d2b49629a56eaec7cee1602f1ce81fb9c"
+  integrity sha512-BKF8cbnUDNt8Ent04uhw3BQ5jtKWJLouLKwORjwcGI6AcUYbIxesjdTibt2JGMSRO4VepITYuPGeFyKBJPDgdw==
   dependencies:
     bluebird "^3.5.5"
     bluebird-retry "^0.11.0"
@@ -2728,10 +2728,10 @@ https-browserify@^1.0.0:
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
   integrity sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
 
-husky@3.0.4:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-3.0.4.tgz#10a48ac11ab50859b0939750fa0b4e07ad0bf669"
-  integrity sha512-7Rnt8aJfy+MlV28snmYK7O7vWwtOfeVxV6KhLpUFXlmx5ukQ1nQmNUB7QsAwSgdySB5X+bm7q7JIRgazqBUzKA==
+husky@3.0.5:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-3.0.5.tgz#d7db27c346645a8dc52df02aa534a377ad7925e0"
+  integrity sha512-cKd09Jy9cDyNIvAdN2QQAP/oA21sle4FWXjIMDttailpLAYZuBE7WaPmhrkj+afS8Sj9isghAtFvWSQ0JiwOHg==
   dependencies:
     chalk "^2.4.2"
     cosmiconfig "^5.2.1"
