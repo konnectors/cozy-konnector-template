@@ -1223,10 +1223,10 @@ cosmiconfig@^5.2.1:
     js-yaml "^3.13.1"
     parse-json "^4.0.0"
 
-cozy-app-publish@0.18.3:
-  version "0.18.3"
-  resolved "https://registry.yarnpkg.com/cozy-app-publish/-/cozy-app-publish-0.18.3.tgz#be8792ba4972522af074f2d3c3c2e9939d439f13"
-  integrity sha512-eghogBs+K1vzx7lKkD3TpbpnRCgNwuTy0VIUyFTaDdHKC8FPG4lbI4xFzinGa6LosUl7TuRX7kIOV4Y1KxTVMA==
+cozy-app-publish@0.19.1:
+  version "0.19.1"
+  resolved "https://registry.yarnpkg.com/cozy-app-publish/-/cozy-app-publish-0.19.1.tgz#d82fb56b547eb8fb04ebf29354b2d01b48b7569e"
+  integrity sha512-00pt8MfU7GadSya9yWy4hmlTCJaNvEIQsKx00B8qlZwNs59+XMzOz3lNP2yZ6GyKuRHQ96V4znXX99dmUWAKDw==
   dependencies:
     argparse "^1.0.10"
     chalk "2.4.2"
@@ -1236,7 +1236,7 @@ cozy-app-publish@0.18.3:
     node-fetch "2.6.0"
     prompt "1.0.0"
     request "2.88.0"
-    tar "4.4.8"
+    tar "4.4.10"
 
 cozy-client-js@0.16.4, cozy-client-js@^0.16.4:
   version "0.16.4"
@@ -3613,7 +3613,7 @@ minimist@^1.1.0, minimist@^1.2.0:
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
   integrity sha1-o1AIsg9BOD7sH7kU9M1d95omQoQ=
 
-minipass@^2.2.1, minipass@^2.3.4, minipass@^2.3.5:
+minipass@^2.2.1, minipass@^2.3.5:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/minipass/-/minipass-2.5.0.tgz#dddb1d001976978158a05badfcbef4a771612857"
   integrity sha512-9FwMVYhn6ERvMR8XFdOavRz4QK/VJV8elU1x50vYexf9lslDcWe/f4HBRxCPd185ekRSjU6CfYyJCECa/CQy7Q==
@@ -3621,7 +3621,7 @@ minipass@^2.2.1, minipass@^2.3.4, minipass@^2.3.5:
     safe-buffer "^5.1.2"
     yallist "^3.0.0"
 
-minizlib@^1.1.1, minizlib@^1.2.1:
+minizlib@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/minizlib/-/minizlib-1.2.1.tgz#dd27ea6136243c7c880684e8672bb3a45fd9b614"
   integrity sha512-7+4oTUOWKg7AuL3vloEWekXY2/D20cevzsrNT2kGWm+39J9hGTCBv8VI5Pm5lXZ/o3/mdR4f8rflAPhnQb8mPA==
@@ -5470,20 +5470,7 @@ tapable@^1.0.0, tapable@^1.1.3:
   resolved "https://registry.yarnpkg.com/tapable/-/tapable-1.1.3.tgz#a1fccc06b58db61fd7a45da2da44f5f3a3e67ba2"
   integrity sha512-4WK/bYZmj8xLr+HUCODHGF1ZFzsYffasLUgEiMBY4fgtltdO6B4WJtlSbPaDTLpYTcGVwM2qLnFTICEcNxs3kA==
 
-tar@4.4.8:
-  version "4.4.8"
-  resolved "https://registry.yarnpkg.com/tar/-/tar-4.4.8.tgz#b19eec3fde2a96e64666df9fdb40c5ca1bc3747d"
-  integrity sha512-LzHF64s5chPQQS0IYBn9IN5h3i98c12bo4NCO7e0sGM2llXQ3p2FGC5sdENN4cTW48O915Sh+x+EXx7XW96xYQ==
-  dependencies:
-    chownr "^1.1.1"
-    fs-minipass "^1.2.5"
-    minipass "^2.3.4"
-    minizlib "^1.1.1"
-    mkdirp "^0.5.0"
-    safe-buffer "^5.1.2"
-    yallist "^3.0.2"
-
-tar@^4:
+tar@4.4.10, tar@^4:
   version "4.4.10"
   resolved "https://registry.yarnpkg.com/tar/-/tar-4.4.10.tgz#946b2810b9a5e0b26140cf78bea6b0b0d689eba1"
   integrity sha512-g2SVs5QIxvo6OLp0GudTqEf05maawKUxXru104iaayWA09551tFCTI8f1Asb4lPfkBr91k07iL4c11XO3/b0tA==
