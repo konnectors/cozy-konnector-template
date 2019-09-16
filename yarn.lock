@@ -739,6 +739,11 @@ btoa-lite@^1.0.0:
   resolved "https://registry.yarnpkg.com/btoa-lite/-/btoa-lite-1.0.0.tgz#337766da15801210fdd956c22e9c6891ab9d0337"
   integrity sha1-M3dm2hWAEhD92VbCLpxokaudAzc=
 
+btoa@1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/btoa/-/btoa-1.2.1.tgz#01a9909f8b2c93f6bf680ba26131eb30f7fa3d73"
+  integrity sha512-SB4/MIGlsiVkMcHmT+pSmIPoNDoHg+7cMzmt3Uxt628MTz2487DKSqK/fuhFBrkuqrYv5UCEnACpF4dTFNKc/g==
+
 buffer-from@1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.1.0.tgz#87fcaa3a298358e0ade6e442cfce840740d1ad04"
@@ -1273,29 +1278,30 @@ cozy-doctypes@^1.63.2:
     lodash "4.17.15"
     prop-types "^15.7.2"
 
-cozy-jobs-cli@1.9.22:
-  version "1.9.22"
-  resolved "https://registry.yarnpkg.com/cozy-jobs-cli/-/cozy-jobs-cli-1.9.22.tgz#bcaf42510a8ff284a26170c556a5d9ed82c8c68e"
-  integrity sha512-0LPLt192/0GM2qT6sbOEIXkxbxzttb2qQAvNvCI6FDcGnz1WMYHx1xN5UBHUwON16c4nHr6lTf1m2qqvHNhkkw==
+cozy-jobs-cli@1.9.23:
+  version "1.9.23"
+  resolved "https://registry.yarnpkg.com/cozy-jobs-cli/-/cozy-jobs-cli-1.9.23.tgz#0a9d2a0256218c6eeecdb44c4eaaceb712c67c3a"
+  integrity sha512-Z4prlieNuq3hrkoigVmaxV3AwD+qaCMFmUXWE/xV2A8CiJbdiJ3VFUhTEfJpVedlPMseDvAUtLuH2k58X3/Zjw==
   dependencies:
     cheerio "1.0.0-rc.3"
     cli-highlight "2.1.1"
     commander "3.0.1"
     cozy-client-js "0.16.4"
-    cozy-konnector-libs "^4.28.1"
+    cozy-konnector-libs "^4.28.2"
     cozy-logger "1.6.0"
     open "6.4.0"
     pretty "2.0.0"
     replay "2.4.0"
     strip-json-comments "3.0.1"
 
-cozy-konnector-libs@4.28.1, cozy-konnector-libs@^4.28.1:
-  version "4.28.1"
-  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-4.28.1.tgz#4038de72749c519c542c82a5ffd02a6931a279fb"
-  integrity sha512-f3d8nU/Jidld67oCi+IL3SVZkEePWd9THZWTF1T/kA/0GCAMS+6z/kgW/9LtgtwKGJaZ14CK2MmBN8QRxezvYQ==
+cozy-konnector-libs@4.28.2, cozy-konnector-libs@^4.28.2:
+  version "4.28.2"
+  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-4.28.2.tgz#c033320f43c5219571a033e6581fed816e97ffeb"
+  integrity sha512-daDuPmgz8VJrGVOVUsWxB3FcsNHlQ59T71TuCYQSSQGv1Gz2tUwVJxr4QILnspSAUf3eQgGxbc7/I/QQmEpNUQ==
   dependencies:
     bluebird "^3.5.5"
     bluebird-retry "^0.11.0"
+    btoa "1.2.1"
     cheerio "^1.0.0-rc.3"
     classificator "^0.3.3"
     cozy-client "^6.58.1"
