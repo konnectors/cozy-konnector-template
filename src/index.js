@@ -1,24 +1,16 @@
 const {
   BaseKonnector,
-  requestFactory,
-  signin,
   scrape,
   saveBills,
   log,
-  utils
+  utils,
+  errors
 } = require('cozy-konnector-libs')
-const request = requestFactory({
-  // The debug mode shows all the details about HTTP requests and responses. Very useful for
-  // debugging but very verbose. This is why it is commented out by default
-  // debug: true,
-  // Activates [cheerio](https://cheerio.js.org/) parsing on each page
-  cheerio: true,
-  // If cheerio is activated do not forget to deactivate json parsing (which is activated by
-  // default in cozy-konnector-libs
-  json: false,
-  // This allows request-promise to keep cookies between requests
-  jar: true
-})
+
+const Browser = require('cozy-konnector-libs/dist/libs/CozyBrowser')
+
+const browser = new Browser()
+const cheerio = require('cheerio')
 
 const VENDOR = 'template'
 const baseUrl = 'http://books.toscrape.com'
@@ -35,10 +27,11 @@ async function start(fields, cozyParameters) {
   if (cozyParameters) log('debug', 'Found COZY_PARAMETERS')
   await authenticate(fields.login, fields.password)
   log('info', 'Successfully logged in')
-  // The BaseKonnector instance expects a Promise as return of the function
+
   log('info', 'Fetching the list of documents')
-  const $ = await request(`${baseUrl}/index.html`)
-  // cheerio (https://cheerio.js.org/) uses the same api as jQuery (http://jquery.com/)
+  await browser.visit(`${baseUrl}/index.html`)
+
+  const $ = cheerio.load(browser.html())
   log('info', 'Parsing list of documents')
   const documents = await parseDocuments($)
 
@@ -57,31 +50,19 @@ async function start(fields, cozyParameters) {
 
 // This shows authentication using the [signin function](https://github.com/konnectors/libs/blob/master/packages/cozy-konnector-libs/docs/api.md#module_signin)
 // even if this in another domain here, but it works as an example
-function authenticate(username, password) {
-  return signin({
-    url: `http://quotes.toscrape.com/login`,
-    formSelector: 'form',
-    formData: { username, password },
-    // The validate function will check if the login request was a success. Every website has a
-    // different way to respond: HTTP status code, error message in HTML ($), HTTP redirection
-    // (fullResponse.request.uri.href)...
-    validate: (statusCode, $, fullResponse) => {
-      log(
-        'debug',
-        fullResponse.request.uri.href,
-        'not used here but should be useful for other connectors'
-      )
-      // The login in toscrape.com always works except when no password is set
-      if ($(`a[href='/logout']`).length === 1) {
-        return true
-      } else {
-        // cozy-konnector-libs has its own logging function which format these logs with colors in
-        // standalone and dev mode and as JSON in production mode
-        log('error', $('.error').text())
-        return false
-      }
-    }
-  })
+async function authenticate(username, password) {
+  await browser.visit('http://quotes.toscrape.com/login')
+  await browser.fill('#username', username)
+  await browser.fill('#password', password)
+  await browser.pressButton(`[type=submit]`)
+
+  if (
+    !browser.redirected ||
+    browser.location._url !== 'http://quotes.toscrape.com/'
+  ) {
+    log('error', browser.query('.error').innerHTML)
+    throw new Error(errors.LOGIN_FAILED)
+  }
 }
 
 // The goal of this function is to parse a HTML page wrapped by a cheerio instance

@@ -37,7 +37,9 @@
     "travisDeployKey": "./bin/generate_travis_deploy_key"
   },
   "dependencies": {
-    "cozy-konnector-libs": "4.32.2"
+    "cheerio": "1.0.0-rc.3",
+    "cozy-konnector-libs": "4.32.2",
+    "zombie": "6.1.4"
   },
   "devDependencies": {
     "copy-webpack-plugin": "5.1.1",
