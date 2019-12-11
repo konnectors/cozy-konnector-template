@@ -651,7 +651,7 @@ bluebird-retry@^0.11.0:
   resolved "https://registry.yarnpkg.com/bluebird-retry/-/bluebird-retry-0.11.0.tgz#1289ab22cbbc3a02587baad35595351dd0c1c047"
   integrity sha1-EomrIsu8OgJYe6rTVZU1HdDBwEc=
 
-bluebird@^3.5.0, bluebird@^3.5.5, bluebird@^3.7.1:
+bluebird@^3.5.0, bluebird@^3.5.5, bluebird@^3.7.1, bluebird@^3.7.2:
   version "3.7.2"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
   integrity sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
@@ -1292,6 +1292,22 @@ cozy-client@^7.12.0:
     sift "^6.0.0"
     url-search-params-polyfill "^7.0.0"
 
+cozy-client@^8.7.1:
+  version "8.7.1"
+  resolved "https://registry.yarnpkg.com/cozy-client/-/cozy-client-8.7.1.tgz#a22bbae22fac4b5b9bdbf8a8a9cd66eb7deb1014"
+  integrity sha512-EU+bh71fvCfBg8WtjFolx7xjR44EzYY8+/KC6Vd70N+FRnevmrKCMc0pc1X/V9RBXlhW9Aj3SispTThtWmZGPQ==
+  dependencies:
+    cozy-device-helper "^1.7.3"
+    cozy-stack-client "^8.7.1"
+    lodash "^4.17.13"
+    microee "^0.0.6"
+    prop-types "^15.6.2"
+    react-redux "^5.0.7"
+    redux "^3.7.2"
+    redux-thunk "^2.3.0"
+    sift "^6.0.0"
+    url-search-params-polyfill "^7.0.0"
+
 cozy-device-helper@^1.7.3:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/cozy-device-helper/-/cozy-device-helper-1.8.0.tgz#17b41d0ea28a504b906669a43449952e72615abb"
@@ -1299,7 +1315,7 @@ cozy-device-helper@^1.7.3:
   dependencies:
     lodash "4.17.15"
 
-cozy-doctypes@^1.69.0:
+cozy-doctypes@^1.69.0, cozy-doctypes@^1.70.0:
   version "1.70.0"
   resolved "https://registry.yarnpkg.com/cozy-doctypes/-/cozy-doctypes-1.70.0.tgz#22c031b2d0f50174a06bd9d7fd3d2e88cc8187ea"
   integrity sha512-F9u2gff90Fz4RF1pI6rGmhgoWmHHzjK25N4fuUgkTgTgn5cL6mb8jiDDjFPEJsFkis6a+ah5TX3ttsFa2ms35w==
@@ -1327,7 +1343,34 @@ cozy-jobs-cli@1.10.5:
     replay "2.4.0"
     strip-json-comments "3.0.1"
 
-cozy-konnector-libs@4.32.1, cozy-konnector-libs@^4.32.1:
+cozy-konnector-libs@4.32.2:
+  version "4.32.2"
+  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-4.32.2.tgz#1b7628b6036d4123c7db0efb17b073d643c4fa47"
+  integrity sha512-0TcCsnH/louKlhKEpKxZp2U/bBJh0Zod0k9I2Hpso7oJu36/EQN+RAunlQiNwg21a4/s2hNMwcY2bA2lnrrEgQ==
+  dependencies:
+    bluebird "^3.7.2"
+    bluebird-retry "^0.11.0"
+    btoa "1.2.1"
+    cheerio "^1.0.0-rc.3"
+    classificator "^0.3.3"
+    cozy-client "^8.7.1"
+    cozy-client-js "^0.16.4"
+    cozy-doctypes "^1.70.0"
+    cozy-logger "^1.6.0"
+    date-fns "^1.30.1"
+    file-type "^12.4.0"
+    geco "^0.11.1"
+    lodash-id "^0.14.0"
+    lowdb "^1.0.0"
+    mime-types "^2.1.25"
+    raven "^2.6.4"
+    raw-body "^2.4.1"
+    request "^2.88.0"
+    request-debug "^0.2.0"
+    request-promise "^4.2.5"
+    strip-json-comments "^3.0.1"
+
+cozy-konnector-libs@^4.32.1:
   version "4.32.1"
   resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-4.32.1.tgz#6f1320d420e6cad075a799454e773ba188d31dc9"
   integrity sha512-0pLLu9+1Cq2jcx46deFnCRsnnIavzN/3CtZs1n1Uo1l8kI0ObVLEextFCmd8jYQe1wNXfCj2RzU5LhRk/xpyBw==
@@ -1366,6 +1409,15 @@ cozy-stack-client@^7.12.0:
   version "7.12.0"
   resolved "https://registry.yarnpkg.com/cozy-stack-client/-/cozy-stack-client-7.12.0.tgz#9a5df9fa77730d04cf1a31c1e5db9c931c8db94d"
   integrity sha512-ld0/Hm4F9HGjGESEg/QbO71cRFslprxo4EZ4bWKhm5gi1iMeUnOBeDHSTI36iI+xs4ouZTvf9KxTcnkchKG8Cw==
+  dependencies:
+    detect-node "^2.0.4"
+    mime "^2.4.0"
+    qs "^6.7.0"
+
+cozy-stack-client@^8.7.1:
+  version "8.7.1"
+  resolved "https://registry.yarnpkg.com/cozy-stack-client/-/cozy-stack-client-8.7.1.tgz#c461c96281db5f2fa447fcd58c48e2163ffeb028"
+  integrity sha512-ANpE2DPp2x902VMbKdHRpnh3eOlnmMj/GqgG8acpL/Psn5RYWjxYp25MvoBUHXfA7BZPCQTOnqIXF8pu420yeQ==
   dependencies:
     detect-node "^2.0.4"
     mime "^2.4.0"
