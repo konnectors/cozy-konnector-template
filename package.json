@@ -4,7 +4,7 @@
   "description": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/konnectors/template.git"
+    "url": "git@github.com:konnectors/template.git"
   },
   "keywords": [],
   "author": "Cozy Cloud",
@@ -28,12 +28,11 @@
     "dev": "cozy-konnector-dev",
     "standalone": "cozy-konnector-standalone",
     "pretest": "npm run clean",
-    "test": "konitor testit .",
     "check": "konitor check .",
     "clean": "rm -rf ./data",
     "build": "webpack",
     "lint": "eslint --fix .",
-    "deploy": "git-directory-deploy --directory build/ --branch ${DEPLOY_BRANCH:-build} --repo=${DEPLOY_REPOSITORY:-git@github.com:konnectors/template.git}",
+    "deploy": "git-directory-deploy --directory build/ --branch ${DEPLOY_BRANCH:-build} --repo=${DEPLOY_REPOSITORY:-$npm_package_repository_url}",
     "cozyPublish": "cozy-app-publish --token $REGISTRY_TOKEN --build-commit $(git rev-parse ${DEPLOY_BRANCH:-build})",
     "travisDeployKey": "./bin/generate_travis_deploy_key"
   },
