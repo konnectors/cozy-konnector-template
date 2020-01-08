@@ -15,14 +15,9 @@
     },
     "password": {
       "type": "password"
-    },
-    "advancedFields": {
-      "folderPath": {
-        "advanced": true,
-        "isRequired": false
-      }
     }
   },
+  "folders": [{"defaultDir": "$administrative/$konnector/$account"}],
   "data_types": [
     "bill"
   ],
@@ -38,8 +33,7 @@
       "type": "io.cozy.files"
     },
     "accounts": {
-      "type": "io.cozy.accounts",
-      "verbs": ["GET"]
+      "type": "io.cozy.accounts"
     }
   },
   "developer": {
