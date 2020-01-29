@@ -1337,11 +1337,12 @@ cozy-jobs-cli@1.10.6:
     replay "2.4.0"
     strip-json-comments "3.0.1"
 
-cozy-konnector-libs@4.32.3:
-  version "4.32.3"
-  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-4.32.3.tgz#025a1b4871d68ec569421df79ab77a6a3bb2386d"
-  integrity sha512-py9lsbfy7ggkNy9m9oO0TzbBW+ia6xBxPby50/3UJ7etf4/1wFVAFvOV9H63wY5kL13Bjs+pE8dDdzPC5N4YWA==
+cozy-konnector-libs@4.32.4:
+  version "4.32.4"
+  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-4.32.4.tgz#cf32e6a39ba6cac20508b0b2b19442bebec45e2a"
+  integrity sha512-w3IJ98gsdjS3LO/qPfKBEcQ9jR3iJqJzTlG4bdncFD/Y8BXNUvcFxdh6AZdFV3yAc05GhOxeH36f+y3IJL2wwg==
   dependencies:
+    babel-runtime "^6.26.0"
     bluebird "^3.7.2"
     bluebird-retry "^0.11.0"
     btoa "1.2.1"
