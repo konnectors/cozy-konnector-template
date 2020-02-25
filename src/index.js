@@ -3,7 +3,6 @@ const {
   requestFactory,
   signin,
   scrape,
-  saveBills,
   log,
   utils
 } = require('cozy-konnector-libs')
@@ -45,13 +44,11 @@ async function start(fields, cozyParameters) {
   // Here we use the saveBills function even if what we fetch are not bills,
   // but this is the most common case in connectors
   log('info', 'Saving data to Cozy')
-  await saveBills(documents, fields, {
+  await this.saveBills(documents, fields, {
     // This is a bank identifier which will be used to link bills to bank operations. These
     // identifiers should be at least a word found in the title of a bank operation related to this
     // bill. It is not case sensitive.
-    identifiers: ['books'],
-    sourceAccount: this.accountId,
-    sourceAccountIdentifier: fields.login
+    identifiers: ['books']
   })
 }
 
