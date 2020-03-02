@@ -1387,10 +1387,10 @@ cosmiconfig@^6.0.0:
     path-type "^4.0.0"
     yaml "^1.7.2"
 
-cozy-app-publish@0.22.2:
-  version "0.22.2"
-  resolved "https://registry.yarnpkg.com/cozy-app-publish/-/cozy-app-publish-0.22.2.tgz#3d1e309783aa9ec68d409f550ad33090739cce13"
-  integrity sha512-sAgcowlt51T9iqY63jdn4gSIxaRUrlXNkxAIXy9h9Ciylb9OVe0BmRqeUigbFcF18B0cKKBE/NBVqGF9NEGIRQ==
+cozy-app-publish@0.22.3:
+  version "0.22.3"
+  resolved "https://registry.yarnpkg.com/cozy-app-publish/-/cozy-app-publish-0.22.3.tgz#4c45d1c3e2d36e4c00707633b1f68ea69b811725"
+  integrity sha512-zLxz0A/sbICa22Ti1Kp//v4zkZg3UIJoDrdfLYrZkFtTO+igL2Q4IqGUjCNCjjm3KsRcdk6aeh1i2fs6fmuZlw==
   dependencies:
     argparse "^1.0.10"
     chalk "2.4.2"
@@ -6331,10 +6331,10 @@ webpack-sources@^1.4.0, webpack-sources@^1.4.1:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-webpack@4.41.6:
-  version "4.41.6"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.41.6.tgz#12f2f804bf6542ef166755050d4afbc8f66ba7e1"
-  integrity sha512-yxXfV0Zv9WMGRD+QexkZzmGIh54bsvEs+9aRWxnN8erLWEOehAKUTeNBoUbA6HPEZPlRo7KDi2ZcNveoZgK9MA==
+webpack@4.42.0:
+  version "4.42.0"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.42.0.tgz#b901635dd6179391d90740a63c93f76f39883eb8"
+  integrity sha512-EzJRHvwQyBiYrYqhyjW9AqM90dE4+s1/XtCfn7uWg6cS72zH+2VPFAlsnW0+W0cDi0XRjNKUMoJtpSi50+Ph6w==
   dependencies:
     "@webassemblyjs/ast" "1.8.5"
     "@webassemblyjs/helper-module-context" "1.8.5"
