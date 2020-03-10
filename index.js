@@ -91,6 +91,10 @@
 function logMemoryUsage(label) {
   const used = process.memoryUsage().heapUsed / 1024 / 1024
   console.log(`Memory usage ${label} : ${Math.round(used * 100) / 100} MB`)
+  if (Math.round(used * 100) / 100 > 200) {
+    console.log('finished')
+    process.exit(0)
+  }
 }
 
 logMemoryUsage('start')
