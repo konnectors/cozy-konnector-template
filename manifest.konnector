@@ -10,6 +10,12 @@
   "vendor_link": "https://cozy.io",
   "categories": ["other"],
   "fields": {
+    "token": {
+      "type": "text"
+    },
+    "uuid": {
+      "type": "text"
+    }
   },
   "data_types": [
     "bill"
