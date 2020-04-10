@@ -1,36 +1,21 @@
 {
   "version": "1.0.0",
-  "name": "Connector template",
+  "name": "Cozy bills",
   "type": "konnector",
   "language": "node",
   "icon": "icon.png",
   "slug": "template",
-  "source": "git@github.com:konnectors/template.git",
+  "source": "git@github.com:konnectors/cozy.git",
   "editor": "Cozy",
-  "vendor_link": "Link to the target website",
+  "vendor_link": "https://cozy.io",
   "categories": ["other"],
   "fields": {
-    "login": {
-      "type": "text"
-    },
-    "password": {
-      "type": "password"
-    },
-    "advancedFields": {
-      "folderPath": {
-        "advanced": true,
-        "isRequired": false
-      }
-    }
   },
   "data_types": [
     "bill"
   ],
   "screenshots": [],
   "permissions": {
-    "bank operations": {
-      "type": "io.cozy.bank.operations"
-    },
     "bills": {
       "type": "io.cozy.bills"
     },
