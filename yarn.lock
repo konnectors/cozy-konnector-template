@@ -1474,10 +1474,10 @@ cozy-doctypes@^1.72.0:
     lodash "4.17.15"
     prop-types "^15.7.2"
 
-cozy-jobs-cli@1.13.3:
-  version "1.13.3"
-  resolved "https://registry.yarnpkg.com/cozy-jobs-cli/-/cozy-jobs-cli-1.13.3.tgz#7ad76f690fac6b9295bc57d46dd0d32578cef0e8"
-  integrity sha512-Yz/e7bEvsmiZjvg253I2BoGJn+eHtCZ1QcZQSxPrq0RS6F6XHbCPfz1h94NskKC33t4fmVYngQbwCJAMJ20I3A==
+cozy-jobs-cli@1.13.2:
+  version "1.13.2"
+  resolved "https://registry.yarnpkg.com/cozy-jobs-cli/-/cozy-jobs-cli-1.13.2.tgz#33e227e82ba4485f6ea144dd357f6cf70d18c9ec"
+  integrity sha512-Mndu83ic0JdKFYbE8WPDMF/zR9PzZwvtZUGq8koXgc86hmdt8+04qZgKXlvX3xEkMxzldQKjuhdp7V1Ie6pmpw==
   dependencies:
     "@pollyjs/adapter-node-http" "4.1.0"
     "@pollyjs/core" "4.1.0"
