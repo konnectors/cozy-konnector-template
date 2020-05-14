@@ -175,27 +175,27 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@pollyjs/adapter-node-http@4.2.1":
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/@pollyjs/adapter-node-http/-/adapter-node-http-4.2.1.tgz#70645866c411fadda9d2bef39d3e74d6fd50c82e"
-  integrity sha512-W+eTXQXPVHb1c9oI8gOQNgyiM5at6lQpGXfk4r8Sik4jxN9MJ+EBfLSXgmrfqN3xRD6R61px//hx88a/6uESCQ==
+"@pollyjs/adapter-node-http@4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@pollyjs/adapter-node-http/-/adapter-node-http-4.1.0.tgz#7be98225da35819d18f8d52d8efe85b94be3a7c2"
+  integrity sha512-mqdeMCWcwkAViiAc+Oil7+XlsdxRuySy6mqMs+sWiaWLiKz8xYKoDrCSCndiqu2qnVIVLi9gb+3m3XYk7N6mkg==
   dependencies:
-    "@pollyjs/adapter" "^4.2.1"
+    "@pollyjs/adapter" "^4.1.0"
     "@pollyjs/utils" "^4.1.0"
     lodash-es "^4.17.11"
     nock "^12.0.3"
 
-"@pollyjs/adapter@^4.2.1":
+"@pollyjs/adapter@^4.1.0":
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/@pollyjs/adapter/-/adapter-4.2.1.tgz#223dff3124261ea36df65f61454f8dbd821d576d"
   integrity sha512-MZLqsff1hveWhmNKBBpN25giM43gApW4kRFAhCeX4HinoO2W33Dscy/V3D8FUktvyJWmr84LQQX5DsW0dGsOmQ==
   dependencies:
     "@pollyjs/utils" "^4.1.0"
 
-"@pollyjs/core@4.2.1":
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/@pollyjs/core/-/core-4.2.1.tgz#928d8553920482b3892baeb567785d24f3dbe7a4"
-  integrity sha512-hx8rmbN7POWcYaivluYy8CvSaEiC4Hdbob3P3r6JCLjo3k2IUzlBW2/fy/VBNlB5ulA/Q3YsE+i2i6LmhP66aA==
+"@pollyjs/core@4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@pollyjs/core/-/core-4.1.0.tgz#e7bebb377a0c3ef99d268e9658a43aef817b4842"
+  integrity sha512-s3tSpwN/MXKRUFtR8S0faesQHNDweJiAKLHc3iRHmJPh8EAseHluZP3UW8GS+q5mWgKEghIXKhlQ5Y47cR9t0w==
   dependencies:
     "@pollyjs/utils" "^4.1.0"
     "@sindresorhus/fnv1a" "^1.2.0"
@@ -206,7 +206,7 @@
     route-recognizer "^0.3.4"
     slugify "^1.3.4"
 
-"@pollyjs/node-server@^4.2.0":
+"@pollyjs/node-server@^4.1.0":
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/@pollyjs/node-server/-/node-server-4.2.0.tgz#7a2345b249c410e94d742838883c978fec7fcfd2"
   integrity sha512-2wYb2iirTVgVQV+h9sflcpYpWFEUzJC/vYwAmf6g3GsiqXzzwKgI405UA5LckPxAjR1Id6Nfm+x+3v2r75MPnQ==
@@ -220,15 +220,15 @@
     morgan "^1.9.1"
     nocache "^2.1.0"
 
-"@pollyjs/persister-fs@4.2.1":
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/@pollyjs/persister-fs/-/persister-fs-4.2.1.tgz#0929129cb92e3c80257a1ee01650bd5998d6bb45"
-  integrity sha512-qr4pclsV9Xo9iceLbSdYN0ExYO5htulFk5fuitfPEfIbdG7mhbjWMq7r9K98Ux21Ql9Whi/WaWMj+It7HqW6PQ==
+"@pollyjs/persister-fs@4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@pollyjs/persister-fs/-/persister-fs-4.1.0.tgz#fa140d007068c4ff290109acc181a0a916aeb116"
+  integrity sha512-8V8aaqNJYjhJhuuVIxl0dinuCOVS43+zPjz+nGocQO2Ig2i5GPueQl7hjIE5HnJshjXRbPx8AAxjZFiLNXmxQw==
   dependencies:
-    "@pollyjs/node-server" "^4.2.0"
-    "@pollyjs/persister" "^4.2.1"
+    "@pollyjs/node-server" "^4.1.0"
+    "@pollyjs/persister" "^4.1.0"
 
-"@pollyjs/persister@^4.2.1":
+"@pollyjs/persister@^4.1.0":
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/@pollyjs/persister/-/persister-4.2.1.tgz#317ab68cc9f8055fcdf9fe605121bbea84014d7a"
   integrity sha512-zWuOIWhqQRA7FiWH6vcHvx+b/5HMa3IoOyNUZUEqvE794hYp3AVrh8PcBknK2WlmKxd0ETcfuA3ltpaBI744nw==
@@ -1433,7 +1433,29 @@ cozy-client-js@^0.16.4:
     pouchdb-browser "7.0.0"
     pouchdb-find "7.0.0"
 
-cozy-client@13.6.0, cozy-client@^13.6.0:
+cozy-client@13.5.2:
+  version "13.5.2"
+  resolved "https://registry.yarnpkg.com/cozy-client/-/cozy-client-13.5.2.tgz#f0fa82c744f355d4fd9877347e4aeaed307de181"
+  integrity sha512-+L8eZlPTasXc1DOSUBZeWPpj8xhOu0HSb9LLtQjpnqClYZSqo0tP9Via0todyi+ZeDPt8e/lhbfQN8ltIE4abA==
+  dependencies:
+    btoa "^1.2.1"
+    cozy-device-helper "^1.7.3"
+    cozy-logger "^1.6.0"
+    cozy-stack-client "^13.5.2"
+    isomorphic-fetch "^2.2.1"
+    lodash "^4.17.13"
+    microee "^0.0.6"
+    minilog "git+https://github.com/cozy/minilog.git#master"
+    open "^7.0.2"
+    prop-types "^15.6.2"
+    react-redux "^7.2.0"
+    redux "^3.7.2"
+    redux-thunk "^2.3.0"
+    server-destroy "^1.0.1"
+    sift "^6.0.0"
+    url-search-params-polyfill "^7.0.0"
+
+cozy-client@^13.6.0:
   version "13.6.0"
   resolved "https://registry.yarnpkg.com/cozy-client/-/cozy-client-13.6.0.tgz#2d47944d6c5a5cb994a318f7ae7a080c7c925c95"
   integrity sha512-ytSzywfdxPqhJ83BjcauTO3aPb7hB74J4ZIwxbRArAbxrnK1wJRl4TxEvdER2/Ht78dhACE5tqXNbEuMqYMtsQ==
@@ -1474,26 +1496,26 @@ cozy-doctypes@^1.72.0:
     lodash "4.17.15"
     prop-types "^15.7.2"
 
-cozy-jobs-cli@1.13.4:
-  version "1.13.4"
-  resolved "https://registry.yarnpkg.com/cozy-jobs-cli/-/cozy-jobs-cli-1.13.4.tgz#0bae10d7cb0d365ee09e52fd1a8b7cc604f67e31"
-  integrity sha512-O709feIycQd9wbDL5cFBuxPhvweIoHD2Yl8rtH0yt//jwBbIJGV31pI7Lh7XrbeglVA88yJEH3avsvzKsQ6aeg==
+cozy-jobs-cli@1.13.3:
+  version "1.13.3"
+  resolved "https://registry.yarnpkg.com/cozy-jobs-cli/-/cozy-jobs-cli-1.13.3.tgz#7ad76f690fac6b9295bc57d46dd0d32578cef0e8"
+  integrity sha512-Yz/e7bEvsmiZjvg253I2BoGJn+eHtCZ1QcZQSxPrq0RS6F6XHbCPfz1h94NskKC33t4fmVYngQbwCJAMJ20I3A==
   dependencies:
-    "@pollyjs/adapter-node-http" "4.2.1"
-    "@pollyjs/core" "4.2.1"
-    "@pollyjs/persister-fs" "4.2.1"
+    "@pollyjs/adapter-node-http" "4.1.0"
+    "@pollyjs/core" "4.1.0"
+    "@pollyjs/persister-fs" "4.1.0"
     babel-runtime "6.26.0"
     cheerio "1.0.0-rc.3"
     cli-highlight "2.1.4"
     commander "5.1.0"
-    cozy-client "13.6.0"
-    cozy-konnector-libs "^4.34.3"
+    cozy-client "13.5.2"
+    cozy-konnector-libs "^4.34.2"
     cozy-logger "1.6.0"
     open "7.0.3"
     pretty "2.0.0"
     strip-json-comments "3.1.0"
 
-cozy-konnector-libs@4.34.3, cozy-konnector-libs@^4.34.3:
+cozy-konnector-libs@4.34.3, cozy-konnector-libs@^4.34.2:
   version "4.34.3"
   resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-4.34.3.tgz#ac897c34c1ae9e203cf75cc1095ba28cb38c2674"
   integrity sha512-t+3YEgDIF/MfQyJUOskVBuIxqV7k3L8BL1z6vbJfFj1qFGu96tTOkPiwsxS556tBZbOZJsDsBl2I/1k9I0YXlA==
@@ -1529,7 +1551,7 @@ cozy-logger@1.6.0, cozy-logger@^1.6.0:
     chalk "^2.4.2"
     json-stringify-safe "5.0.1"
 
-cozy-stack-client@^13.5.3:
+cozy-stack-client@^13.5.2, cozy-stack-client@^13.5.3:
   version "13.5.3"
   resolved "https://registry.yarnpkg.com/cozy-stack-client/-/cozy-stack-client-13.5.3.tgz#d8f2489becd6c8da5b558ec07c1c7bdfced35971"
   integrity sha512-VpnDGeSjlmaoKOtM/b0tEbJgceQXdd9fyHn5/GkXUWfdhFazjNw8Tw4SOlF8cJC4keEhVw0oAdIgh4BhlJQ/Rg==
@@ -3902,6 +3924,13 @@ mimic-fn@^2.0.0, mimic-fn@^2.1.0:
 "minilog@git+https://github.com/cozy/minilog.git#master":
   version "3.1.0"
   resolved "git+https://github.com/cozy/minilog.git#f01f7d9dfe20981177dd34b9662c2f077d818f82"
+  dependencies:
+    microee "0.0.6"
+
+"minilog@https://github.com/cozy/minilog.git#master":
+  version "3.1.0"
+  uid f01f7d9dfe20981177dd34b9662c2f077d818f82
+  resolved "https://github.com/cozy/minilog.git#f01f7d9dfe20981177dd34b9662c2f077d818f82"
   dependencies:
     microee "0.0.6"
 
