@@ -36,14 +36,16 @@ module.exports = {
     filename: 'index.js'
   },
   plugins: [
-    new CopyPlugin([
-      { from: 'manifest.konnector' },
-      { from: 'package.json' },
-      { from: 'README.md' },
-      { from: 'assets', transform: optimizeSVGIcon },
-      { from: '.travis.yml' },
-      { from: 'LICENSE' }
-    ]),
+    new CopyPlugin({
+      patterns: [
+        { from: 'manifest.konnector' },
+        { from: 'package.json' },
+        { from: 'README.md' },
+        { from: 'assets', transform: optimizeSVGIcon },
+        { from: '.travis.yml' },
+        { from: 'LICENSE' }
+      ]
+    }),
     new webpack.DefinePlugin({
       __WEBPACK_PROVIDED_MANIFEST__: JSON.stringify(readManifest())
     })
