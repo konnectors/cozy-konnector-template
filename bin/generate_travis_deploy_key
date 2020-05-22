@@ -24,6 +24,7 @@ if [ -z "$GITHUB_TOKEN" ]; then
 fi
 
 url="$(git config --get remote.origin.url)"
+owner="$(echo $url | cut -d: -f2 | cut -d/ -f1)"
 reponame="$(echo $url | cut -d/ -f2 | cut -d. -f1)"
 
 # generate a new private and public key
@@ -32,7 +33,7 @@ ssh-keygen -t rsa -b 4096 -f github_deploy_key -N '' -C $url -q 1>/dev/null
 pubkey="$(cat github_deploy_key.pub)"
 
 # add the PUBLIC key to the github repository as a deploy key with write access
-curl https://api.github.com/repos/konnectors/$reponame/keys -H "Authorization: token $GITHUB_TOKEN" --data @- << EOF
+curl https://api.github.com/repos/$owner/$reponame/keys -H "Authorization: token $GITHUB_TOKEN" --data @- << EOF
 {
   "title": "travis deploy key",
   "key": "$pubkey",
