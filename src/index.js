@@ -115,14 +115,7 @@ function parseDocuments($) {
     filename: `${utils.formatDate(new Date())}_${VENDOR}_${doc.amount.toFixed(
       2
     )}EUR${doc.vendorRef ? '_' + doc.vendorRef : ''}.jpg`,
-    vendor: VENDOR,
-    metadata: {
-      // It can be interesting to add the date of import. This is not mandatory but may be
-      // useful for debugging or data migration
-      importDate: new Date(),
-      // Document version, useful for migration after change of document structure
-      version: 1
-    }
+    vendor: VENDOR
   }))
 }
 
