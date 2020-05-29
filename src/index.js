@@ -1,7 +1,6 @@
 const {
   BaseKonnector,
   requestFactory,
-  signin,
   scrape,
   log,
   utils
@@ -32,7 +31,7 @@ module.exports = new BaseKonnector(start)
 async function start(fields, cozyParameters) {
   log('info', 'Authenticating ...')
   if (cozyParameters) log('debug', 'Found COZY_PARAMETERS')
-  await authenticate(fields.login, fields.password)
+  await authenticate.bind(this)(fields.login, fields.password)
   log('info', 'Successfully logged in')
   // The BaseKonnector instance expects a Promise as return of the function
   log('info', 'Fetching the list of documents')
@@ -55,7 +54,7 @@ async function start(fields, cozyParameters) {
 // This shows authentication using the [signin function](https://github.com/konnectors/libs/blob/master/packages/cozy-konnector-libs/docs/api.md#module_signin)
 // even if this in another domain here, but it works as an example
 function authenticate(username, password) {
-  return signin({
+  return this.signin({
     url: `http://quotes.toscrape.com/login`,
     formSelector: 'form',
     formData: { username, password },
