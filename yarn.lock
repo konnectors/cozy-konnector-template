@@ -1385,10 +1385,10 @@ cosmiconfig@^6.0.0:
     path-type "^4.0.0"
     yaml "^1.7.2"
 
-cozy-app-publish@0.23.0:
-  version "0.23.0"
-  resolved "https://registry.yarnpkg.com/cozy-app-publish/-/cozy-app-publish-0.23.0.tgz#b90362cd4904dbce9f6b43b82a89755dd1c374d1"
-  integrity sha512-M151miphsQ8JnHzekWpqPEuKJ51yXKcFChVHYjTAKrQdgNx5bv9Eai+5LKfZlUuIQKHcfPDm+i24ioXkx7cQqg==
+cozy-app-publish@0.23.1:
+  version "0.23.1"
+  resolved "https://registry.yarnpkg.com/cozy-app-publish/-/cozy-app-publish-0.23.1.tgz#2031ded0a9200fbbe63bcf25c4e9923f107f55b3"
+  integrity sha512-40t264DiSm83U9gO/hBZ9LsQnn+9KPRw4+n1ashpGcCzjBtIrd3oov88oy5sWLR2vShn1y/JJ20rBYjDPl2spg==
   dependencies:
     argparse "^1.0.10"
     chalk "2.4.2"
@@ -3704,9 +3704,9 @@ mimic-fn@^1.0.0:
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-1.2.0.tgz#820c86a39334640e99516928bd03fca88057d022"
   integrity sha512-jf84uxzwiuiIVKiOLpfYk7N46TSy8ubTonmneY9vrpHNAnp0QBt2BxWV9dO3/j+BoVAb+a5G6YDPW3M5HOdMWQ==
 
-"minilog@git+https://github.com/cozy/minilog.git#master":
+"minilog@https://github.com/cozy/minilog.git#master":
   version "3.1.0"
-  resolved "git+https://github.com/cozy/minilog.git#f01f7d9dfe20981177dd34b9662c2f077d818f82"
+  resolved "https://github.com/cozy/minilog.git#f01f7d9dfe20981177dd34b9662c2f077d818f82"
   dependencies:
     microee "0.0.6"
 
