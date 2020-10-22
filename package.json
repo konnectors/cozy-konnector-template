@@ -42,7 +42,7 @@
   "devDependencies": {
     "copy-webpack-plugin": "6.2.1",
     "cozy-app-publish": "0.25.0",
-    "cozy-jobs-cli": "1.13.6",
+    "cozy-jobs-cli": "1.13.7",
     "eslint-config-cozy-app": "2.0.0",
     "git-directory-deploy": "1.5.1",
     "husky": "4.3.0",
