@@ -37,7 +37,7 @@
     "travisDeployKey": "./bin/generate_travis_deploy_key"
   },
   "dependencies": {
-    "cozy-konnector-libs": "4.34.5"
+    "cozy-konnector-libs": "4.35.0"
   },
   "devDependencies": {
     "copy-webpack-plugin": "6.2.1",
