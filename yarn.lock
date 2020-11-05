@@ -1403,17 +1403,17 @@ cosmiconfig@^7.0.0:
     path-type "^4.0.0"
     yaml "^1.10.0"
 
-cozy-app-publish@0.25.0:
-  version "0.25.0"
-  resolved "https://registry.yarnpkg.com/cozy-app-publish/-/cozy-app-publish-0.25.0.tgz#7f70efb15cc9369b219e49decc6cb792feb58a2d"
-  integrity sha512-tlXX1Hj+C1E0udH4hrMRw/VHop2dbLKdI2NH1DKUGVEhhNKVG52IJ2C7L2MBhHFAC0Nd0tu7voszrm7TYDBDeQ==
+cozy-app-publish@0.25.1:
+  version "0.25.1"
+  resolved "https://registry.yarnpkg.com/cozy-app-publish/-/cozy-app-publish-0.25.1.tgz#0964ce3f82f3c5f1f514882f0150e6fd644c74bc"
+  integrity sha512-+6TpgGloLH5C8Uo0anqu/1teheTwLDkmqis+y1fm+47vtYX9h0eXYfbE7tSYAmoBy/N3PjMJxQz2A7yL6rOZPw==
   dependencies:
     argparse "^1.0.10"
     chalk "2.4.2"
     cross-spawn "6.0.5"
     fs-extra "7.0.1"
     lodash "4.17.19"
-    node-fetch "2.6.0"
+    node-fetch "2.6.1"
     prompt "1.0.0"
     request "2.88.0"
     tar "4.4.13"
@@ -3989,11 +3989,6 @@ nock@^12.0.3:
     json-stringify-safe "^5.0.1"
     lodash "^4.17.13"
     propagate "^2.0.0"
-
-node-fetch@2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
-  integrity sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
 
 node-fetch@2.6.1, node-fetch@^2.0.0:
   version "2.6.1"
