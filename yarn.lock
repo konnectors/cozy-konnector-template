@@ -1111,7 +1111,7 @@ cozy-doctypes@^1.75.1:
     lodash "4.17.19"
     prop-types "^15.7.2"
 
-cozy-jobs-cli@1.15.4, cozy-jobs-cli@^1.15.4:
+cozy-jobs-cli@1.15.4:
   version "1.15.4"
   resolved "https://registry.yarnpkg.com/cozy-jobs-cli/-/cozy-jobs-cli-1.15.4.tgz#df88bdd746f91814d1f1a50aaf30a5f0c04bc9ae"
   integrity sha512-CfYlQorpXDwHPMDQsfyVJwSmboenojL7qjKcGDmcQ/y2Gbs+l//mD7N7kzZjz8MtVSCCAwDZDWtEKFM6aclz4A==
@@ -1130,14 +1130,13 @@ cozy-jobs-cli@1.15.4, cozy-jobs-cli@^1.15.4:
     pretty "2.0.0"
     strip-json-comments "3.1.1"
 
-cozy-konnector-build@1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/cozy-konnector-build/-/cozy-konnector-build-1.1.4.tgz#822adf5f0fc89cba03071b91ae0e7ef56df7f671"
-  integrity sha512-8g31+8cuBSSoVYExK5lFVLi2KVgkAbVwsjGcR76b691T4HcMpaDFPvLGW8wZ2vZe+3musYcfL2nzSuLzwaIL4g==
+cozy-konnector-build@1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/cozy-konnector-build/-/cozy-konnector-build-1.1.5.tgz#87745ddded6f773b26fbf4d8f08b1be0bd39354c"
+  integrity sha512-pf71K2JBkws+azxsFJRADCfqaAAZpEVpE4/3aWD3tYvCKOjEo5Abg1AMFXKRbSMMzzZMTJdr36vMVRYV4QLhrA==
   dependencies:
     copy-webpack-plugin "7.0.0"
     cozy-app-publish "0.26.0"
-    cozy-jobs-cli "^1.15.4"
     eslint-config-cozy-app "2.0.0"
     git-directory-deploy "1.5.1"
     husky "4.3.6"
