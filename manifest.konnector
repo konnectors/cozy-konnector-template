@@ -11,8 +11,8 @@
   "categories": [
     "transport"
   ],
+  "client_side" : true,
   "fields": {},
-  "folders": [{"defaultDir": "$administrative/$konnector/$account"}],
   "data_types": [
     "bill"
   ],
