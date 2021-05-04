@@ -1,13 +1,13 @@
 {
   "version": "1.0.0",
-  "name": "Oui.sncf",
+  "name": "template",
   "type": "konnector",
   "language": "node",
-  "icon": "icon.svg",
+  "icon": "icon.png",
   "slug": "template",
   "source": "git@github.com:konnectors/template.git",
   "editor": "Cozy",
-  "vendor_link": "https://www.oui.sncf/espaceclient/accueil",
+  "vendor_link": "http://quotes.toscrape.com/login",
   "categories": [
     "transport"
   ],
