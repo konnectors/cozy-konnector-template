@@ -1,0 +1,48 @@
+{
+  "version": "1.0.0",
+  "name": "Blablacar",
+  "type": "konnector",
+  "language": "node",
+  "icon": "icon.sncf",
+  "slug": "blablacar",
+  "source": "git@github.com:konnectors/template.git",
+  "editor": "Cozy",
+  "vendor_link": "https://www.blablacar.fr/login/email",
+  "categories": [
+    "transport"
+  ],
+  "client_side" : true,
+  "fields": {},
+  "folders": [{"defaultDir": "$administrative/$konnector/$account"}],
+  "data_types": [
+    "bill"
+  ],
+  "screenshots": [],
+  "permissions": {
+    "bills": {
+      "type": "io.cozy.bills"
+    },
+    "files": {
+      "type": "io.cozy.files"
+    },
+    "accounts": {
+      "type": "io.cozy.accounts"
+    }
+  },
+  "developer": {
+    "name": "Cozy Cloud",
+    "url": "https://cozy.io"
+  },
+  "langs": ["fr", "en"],
+  "locales": {
+    "fr": {
+      "short_description": "Récupérer vos données Blablacar dans votre Cozy",
+      "long_description": "Récupérer vos données Blablacar dans votre Cozy"
+    },
+    "en": {
+      "short_description": "Fetch your Blablacar data in your Cozy",
+      "long_description": "Fetch your Blablacar data in your Cozy"
+    }
+  },
+  "manifest_version": "2"
+}
