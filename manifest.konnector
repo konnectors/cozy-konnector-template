@@ -7,7 +7,7 @@
   "slug": "template",
   "source": "git@github.com:konnectors/template.git",
   "editor": "Cozy",
-  "vendor_link": "Link to the target website",
+  "vendor_link": "http://books.toscrape.com/",
   "categories": ["others"],
   "fields": {
     "login": {
