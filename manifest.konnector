@@ -10,12 +10,6 @@
   "vendor_link": "http://books.toscrape.com/",
   "categories": ["others"],
   "fields": {
-    "login": {
-      "type": "text"
-    },
-    "password": {
-      "type": "password"
-    }
   },
   "folders": [{"defaultDir": "$administrative/$konnector/$account"}],
   "data_types": [
