@@ -9,8 +9,7 @@
   "editor": "Cozy",
   "vendor_link": "http://books.toscrape.com/",
   "categories": ["others"],
-  "fields": {
-  },
+  "fields": { },
   "folders": [{"defaultDir": "$administrative/$konnector/$account"}],
   "data_types": [
     "bill"
