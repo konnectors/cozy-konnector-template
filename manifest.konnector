@@ -3,7 +3,7 @@
   "name": "Template",
   "type": "konnector",
   "language": "node",
-  "clientSide": "true",
+  "clientSide": true,
   "icon": "icon.png",
   "slug": "template",
   "source": "git@github.com:konnectors/cozy-konnector-template.git",
