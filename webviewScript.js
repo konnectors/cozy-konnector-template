@@ -25501,9 +25501,11 @@ class TemplateContentScript extends _connectorLibs_ContentScript__WEBPACK_IMPORT
   }
 
   async checkAuthenticated() {
-    return Boolean(
+    const result = Boolean(
       Array.from(document.querySelectorAll("a[href='/logout']")).length,
     )
+    console.log('checkAuthenticated result', result)
+    return result
   }
 
   async showLoginFormAndWaitForAuthentication() {
