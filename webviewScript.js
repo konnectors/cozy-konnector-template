@@ -78,12 +78,11 @@ class ContentScript {
    * @returns Promise.<Boolean>
    */
   async waitForAuthenticated() {
-    const result = await p_wait_for__WEBPACK_IMPORTED_MODULE_1___default()(this.checkAuthenticated, {
+    await p_wait_for__WEBPACK_IMPORTED_MODULE_1___default()(this.checkAuthenticated, {
       interval: 1000,
       timeout: DEFAULT_LOGIN_TIMEOUT,
     })
-    console.log('waitForAuthenticated result', result)
-    return result
+    return true
   }
 
   /**
