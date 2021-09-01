@@ -78,10 +78,12 @@ class ContentScript {
    * @returns Promise.<Boolean>
    */
   waitForAuthenticated() {
-    return p_wait_for__WEBPACK_IMPORTED_MODULE_1___default()(this.checkAuthenticated, {
+    const result = p_wait_for__WEBPACK_IMPORTED_MODULE_1___default()(this.checkAuthenticated, {
       interval: 1000,
       timeout: DEFAULT_LOGIN_TIMEOUT,
     })
+    console.log('waitForAuthenticated result', result)
+    return result
   }
 
   /**
@@ -25518,7 +25520,9 @@ class TemplateContentScript extends _connectorLibs_ContentScript__WEBPACK_IMPORT
       url: 'http://quotes.toscrape.com/login',
       visible: true,
     })
+    console.log('before runInWorkerUntilTrue')
     await this.runInWorkerUntilTrue({method: 'waitForAuthenticated'})
+    console.log('after runInWorkerUntilTrue')
     await this.bridge.call('setWorkerState', {
       visible: false,
     })
