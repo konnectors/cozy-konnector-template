@@ -12,5 +12,10 @@
   "categories": [
     "transport"
   ],
-  "fields": { }
+  "fields": { },
+  "folders": [
+    {
+      "defaultDir": "$administrative/$konnector/$account"
+    }
+  ],
 }
