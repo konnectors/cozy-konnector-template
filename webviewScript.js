@@ -25486,12 +25486,10 @@ const baseUrl = 'http://books.toscrape.com'
 
 class TemplateContentScript extends _connectorLibs_ContentScript__WEBPACK_IMPORTED_MODULE_0__.default {
   async ensureAuthenticated() {
-    console.log('setWorkerState')
     await this.bridge.call('setWorkerState', {
       url: 'http://quotes.toscrape.com/login',
       visible: false,
     })
-    console.log('checkAuthenticated')
     const authenticated = await this.bridge.call(
       'runInWorker',
       'checkAuthenticated',
@@ -25504,13 +25502,9 @@ class TemplateContentScript extends _connectorLibs_ContentScript__WEBPACK_IMPORT
   }
 
   async checkAuthenticated() {
-    const intermediate = document.querySelectorAll("a[href='/logout']")
-    console.log('intermediate', intermediate)
-    const result = Boolean(
+    return Boolean(
       Array.from(document.querySelectorAll("a[href='/logout']")).length,
     )
-    console.log('checkAuthenticated result', result)
-    return result
   }
 
   async showLoginFormAndWaitForAuthentication() {
@@ -25519,9 +25513,7 @@ class TemplateContentScript extends _connectorLibs_ContentScript__WEBPACK_IMPORT
       url: 'http://quotes.toscrape.com/login',
       visible: true,
     })
-    console.log('before runInWorkerUntilTrue')
     await this.runInWorkerUntilTrue({method: 'waitForAuthenticated'})
-    console.log('after runInWorkerUntilTrue')
     await this.bridge.call('setWorkerState', {
       visible: false,
     })
