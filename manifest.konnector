@@ -10,10 +10,5 @@
   "editor": "Cozy",
   "vendor_link": "http://books.toscrape.com/",
   "categories": ["transport"],
-  "fields": {},
-  "folders": [
-    {
-      "defaultDir": "$administrative/$konnector/$account"
-    }
-  ]
+  "fields": {}
 }
