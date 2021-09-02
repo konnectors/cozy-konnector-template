@@ -4,7 +4,7 @@
   "type": "konnector",
   "language": "node",
   "clientSide": true,
-  "icon": "icon.png",
+  "icon": "icon.svg",
   "slug": "template",
   "source": "git@github.com:konnectors/cozy-konnector-template.git",
   "editor": "Cozy",
