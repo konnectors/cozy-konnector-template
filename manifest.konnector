@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "name": "Connector template",
+  "name": "No slug",
   "id": "Connector template",
   "type": "konnector",
   "language": "node",
