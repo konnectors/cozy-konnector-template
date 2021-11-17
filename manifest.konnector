@@ -3,7 +3,7 @@
   "name": "Sncf",
   "type": "konnector",
   "language": "node",
-  "icon": "icon.png",
+  "icon": "icon.svg",
   "slug": "sncf",
   "clientSide": true,
   "source": "git@github.com:konnectors/template.git",
