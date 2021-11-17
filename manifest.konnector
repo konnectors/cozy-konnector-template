@@ -10,14 +10,7 @@
   "editor": "Cozy",
   "vendor_link": "Link to the target website",
   "categories": ["others"],
-  "fields": {
-    "login": {
-      "type": "text"
-    },
-    "password": {
-      "type": "password"
-    }
-  },
+  "fields": { },
   "folders": [{"defaultDir": "$administrative/$konnector/$account"}],
   "data_types": [
     "bill"
