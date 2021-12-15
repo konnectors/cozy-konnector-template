@@ -1,0 +1,46 @@
+{
+  "name": "cozy-konnector-template",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:konnectors/template.git"
+  },
+  "keywords": [],
+  "author": "Cozy Cloud",
+  "license": "AGPL-3.0",
+  "main": "./src/index.js",
+  "eslintConfig": {
+    "extends": [
+      "cozy-app"
+    ]
+  },
+  "eslintIgnore": [
+    "build",
+    "data"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
+  },
+  "scripts": {
+    "start": "node ./src/index.js",
+    "dev": "cozy-konnector-dev",
+    "standalone": "cozy-konnector-standalone",
+    "pretest": "npm run clean",
+    "clean": "rm -rf ./data",
+    "build": "webpack",
+    "lint": "eslint --fix .",
+    "deploy": "git-directory-deploy --directory build/ --branch ${DEPLOY_BRANCH:-build} --repo=${DEPLOY_REPOSITORY:-$npm_package_repository_url}",
+    "cozyPublish": "cozy-app-publish --token $REGISTRY_TOKEN --build-commit $(git rev-parse ${DEPLOY_BRANCH:-build})",
+    "travisDeployKey": "./bin/generate_travis_deploy_key"
+  },
+  "dependencies": {
+    "cozy-konnector-libs": "4.42.2"
+  },
+  "devDependencies": {
+    "cozy-jobs-cli": "1.16.2",
+    "cozy-konnector-build": "1.2.2"
+  }
+}
