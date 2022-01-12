@@ -1,11 +1,10 @@
 {
   "version": "1.0.0",
-  "name": "No slug",
-  "id": "Connector template",
+  "name": "Connector template",
   "type": "konnector",
   "language": "node",
   "icon": "icon.png",
-  "slug": "noslug",
+  "slug": "template",
   "source": "git@github.com:konnectors/template.git",
   "editor": "Cozy",
   "vendor_link": "Link to the target website",
