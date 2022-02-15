@@ -1,22 +1,16 @@
 {
   "version": "1.0.0",
-  "name": "Connector template",
+  "name": "Edf",
   "type": "konnector",
   "language": "node",
-  "icon": "icon.png",
-  "slug": "template",
+  "icon": "icon.svg",
+  "slug": "edf",
+  "clientSide": true,
   "source": "git@github.com:konnectors/template.git",
   "editor": "Cozy",
   "vendor_link": "Link to the target website",
   "categories": ["others"],
-  "fields": {
-    "login": {
-      "type": "text"
-    },
-    "password": {
-      "type": "password"
-    }
-  },
+  "fields": { },
   "folders": [{"defaultDir": "$administrative/$konnector/$account"}],
   "data_types": [
     "bill"
