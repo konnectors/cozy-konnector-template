@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "name": "Edf",
+  "name": "Google Takeout",
   "type": "konnector",
   "language": "node",
   "icon": "icon.svg",
@@ -8,14 +8,10 @@
   "clientSide": true,
   "source": "git@github.com:konnectors/template.git",
   "editor": "Cozy",
-  "vendor_link": "Link to the target website",
-  "categories": ["others"],
+  "vendor_link": "https://www.google.com",
+  "categories": ["online_services"],
   "fields": { },
   "folders": [{"defaultDir": "$administrative/$konnector/$account"}],
-  "data_types": [
-    "bill"
-  ],
-  "screenshots": [],
   "permissions": {
     "bank operations": {
       "type": "io.cozy.bank.operations"
@@ -37,42 +33,11 @@
   "langs": ["fr", "en"],
   "locales": {
     "fr": {
-      "short_description": "Récupère la liste de livres",
-      "long_description": "Récupère la liste de livre sur le site exemple",
-      "permissions": {
-        "bank operations": {
-          "description": "Utilisé pour relier les factures à des operations bancaires"
-        },
-        "bills": {
-          "description": "Utilisé pour sauver les données des factures"
-        },
-        "files": {
-          "description": "Utilisé pour sauvegarder les factures"
-        },
-        "accounts": {
-          "description": "Utilisé pour obtenir les données du compte"
-        }
-      }
+      "short_description": "Google Takeout"
     },
     "en": {
-      "short_description": "Fetch a list of books",
-      "long_description": "Fetch a list of books from the example website",
-      "permissions": {
-        "bank operations": {
-          "description": "Required to link bank operations to bills"
-        },
-        "bills": {
-          "description": "Required to save the bills data"
-        },
-        "files": {
-          "description": "Required to save the bills"
-        },
-        "accounts": {
-          "description": "Required to get the account's data"
-        }
-      }
+      "short_description": "Google Takeout"
     }
   },
-  "banksTransactionRegExp": "\\bbooks\\b",
   "manifest_version": "2"
 }
