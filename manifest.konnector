@@ -1,0 +1,49 @@
+{
+  "version": "1.0.0",
+  "name": "Google Takeout",
+  "type": "konnector",
+  "language": "node",
+  "icon": "icon.svg",
+  "slug": "google-takeout",
+  "clientSide": true,
+  "source": "git@github.com:konnectors/google-takeout.git",
+  "editor": "Cozy",
+  "vendor_link": "https://www.google.com",
+  "categories": ["online_services"],
+  "fields": { },
+  "folders": [{"defaultDir": "$administrative/$konnector/$account"}],
+  "data_types": [
+    "bill"
+  ],
+  "screenshots": [],
+  "permissions": {
+    "bank operations": {
+      "type": "io.cozy.bank.operations"
+    },
+    "bills": {
+      "type": "io.cozy.bills"
+    },
+    "files": {
+      "type": "io.cozy.files"
+    },
+    "accounts": {
+      "type": "io.cozy.accounts"
+    }
+  },
+  "developer": {
+    "name": "Cozy Cloud",
+    "url": "https://cozy.io"
+  },
+  "langs": ["fr", "en"],
+  "locales": {
+    "fr": {
+      "short_description": "Google takeout",
+      "long_description": "Google takeout"
+    },
+    "en": {
+      "short_description": "Google takeout",
+      "long_description": "Google takeout"
+    }
+  },
+  "manifest_version": "2"
+}
