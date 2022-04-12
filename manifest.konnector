@@ -11,17 +11,7 @@
   "vendor_link": "https://www.google.com",
   "categories": ["online_services"],
   "fields": { },
-  "folders": [{"defaultDir": "$administrative/$konnector/$account"}],
   "permissions": {
-    "bank operations": {
-      "type": "io.cozy.bank.operations"
-    },
-    "bills": {
-      "type": "io.cozy.bills"
-    },
-    "files": {
-      "type": "io.cozy.files"
-    },
     "accounts": {
       "type": "io.cozy.accounts"
     }
