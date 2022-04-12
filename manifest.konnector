@@ -4,7 +4,7 @@
   "type": "konnector",
   "language": "node",
   "icon": "icon.svg",
-  "slug": "edf",
+  "slug": "google-takeout",
   "clientSide": true,
   "source": "git@github.com:konnectors/template.git",
   "editor": "Cozy",
