@@ -4,24 +4,14 @@
   "type": "konnector",
   "language": "node",
   "icon": "icon.svg",
-  "slug": "edf",
+  "slug": "google-takeout",
   "clientSide": true,
   "source": "git@github.com:konnectors/template.git",
   "editor": "Cozy",
   "vendor_link": "https://www.google.com",
   "categories": ["online_services"],
   "fields": { },
-  "folders": [{"defaultDir": "$administrative/$konnector/$account"}],
   "permissions": {
-    "bank operations": {
-      "type": "io.cozy.bank.operations"
-    },
-    "bills": {
-      "type": "io.cozy.bills"
-    },
-    "files": {
-      "type": "io.cozy.files"
-    },
     "accounts": {
       "type": "io.cozy.accounts"
     }
