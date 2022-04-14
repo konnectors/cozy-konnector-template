@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "name": "Orange",
+  "type": "konnector",
+  "language": "node",
+  "icon": "icon.svg",
+  "slug": "orange",
+  "clientSide": true,
+  "source": "git@github.com:konnectors/template.git",
+  "editor": "Cozy",
+  "vendor_link": "https://www.orange.fr",
+  "categories": ["online_services"],
+  "fields": { },
+  "permissions": {
+    "accounts": {
+      "type": "io.cozy.accounts"
+    }
+  },
+  "developer": {
+    "name": "Cozy Cloud",
+    "url": "https://cozy.io"
+  },
+  "langs": ["fr", "en"],
+  "locales": {
+    "fr": {
+      "short_description": "Connecteur Orange"
+    },
+    "en": {
+      "short_description": "Orange connector"
+    }
+  },
+  "manifest_version": "2"
+}
