@@ -1,14 +1,14 @@
 {
   "version": "1.0.0",
-  "name": "Google Takeout",
+  "name": "Orange",
   "type": "konnector",
   "language": "node",
   "icon": "icon.svg",
-  "slug": "google-takeout",
+  "slug": "orange",
   "clientSide": true,
   "source": "git@github.com:konnectors/template.git",
   "editor": "Cozy",
-  "vendor_link": "https://www.google.com",
+  "vendor_link": "https://www.orange.fr",
   "categories": ["online_services"],
   "fields": { },
   "permissions": {
@@ -23,10 +23,10 @@
   "langs": ["fr", "en"],
   "locales": {
     "fr": {
-      "short_description": "Google Takeout"
+      "short_description": "Connecteur Orange"
     },
     "en": {
-      "short_description": "Google Takeout"
+      "short_description": "Orange connector"
     }
   },
   "manifest_version": "2"
