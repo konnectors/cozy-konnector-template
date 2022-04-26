@@ -1,84 +1,69 @@
 {
-  "version": "1.0.0",
-  "name": "Connector template",
+  "slug": "visionskonnector",
+  "name": "visions-konnectors",
   "type": "konnector",
   "language": "node",
-  "icon": "icon.png",
-  "slug": "template",
-  "source": "git@github.com:konnectors/template.git",
+  "version": "0.0.1",
   "editor": "Cozy",
-  "vendor_link": "Link to the target website",
-  "categories": ["others"],
-  "fields": {
-    "login": {
-      "type": "text"
-    },
-    "password": {
-      "type": "password"
-    }
-  },
-  "folders": [{"defaultDir": "$administrative/$konnector/$account"}],
-  "data_types": [
-    "bill"
-  ],
   "screenshots": [],
-  "permissions": {
-    "bank operations": {
-      "type": "io.cozy.bank.operations"
-    },
-    "bills": {
-      "type": "io.cozy.bills"
-    },
-    "files": {
-      "type": "io.cozy.files"
-    },
-    "accounts": {
-      "type": "io.cozy.accounts"
-    }
-  },
+  "categories": [
+    "others"
+  ],
+  "frequency": "weekly",
   "developer": {
-    "name": "Cozy Cloud",
-    "url": "https://cozy.io"
+    "name": "Cozy Cloud"
   },
-  "langs": ["fr", "en"],
+  "description": "Import your datas from Visions Trust Partners",
+  "short_description": "Import your datas from Visions Trust Partners",
+  "long_description": "Import your datas from Visions Trust Partners",
+  "langs": [
+    "fr",
+    "en"
+  ],
   "locales": {
     "fr": {
-      "short_description": "Récupère la liste de livres",
-      "long_description": "Récupère la liste de livre sur le site exemple",
+      "short_description": "Importez vos donnéss depuis les partenaires Visiosns Trust",
+      "long_description": "Importez vos donnéss depuis les partenaires Visiosns Trust",
       "permissions": {
-        "bank operations": {
-          "description": "Utilisé pour relier les factures à des operations bancaires"
-        },
-        "bills": {
-          "description": "Utilisé pour sauver les données des factures"
+        "accounts": {
+          "description": "Utilisé pour créer un compte Linxo"
         },
         "files": {
-          "description": "Utilisé pour sauvegarder les factures"
+          "description": "Utilisé pour afficher les factures"
         },
-        "accounts": {
-          "description": "Utilisé pour obtenir les données du compte"
+        "triggers": {
+          "description": "Utilisé pour communiquer avec l'api Visions Trust"
         }
       }
     },
     "en": {
-      "short_description": "Fetch a list of books",
-      "long_description": "Fetch a list of books from the example website",
+      "short_description": "Import your datas from Visions Trust Partners",
+      "long_description": "Import your datas from Visions Trust Partners",
       "permissions": {
-        "bank operations": {
-          "description": "Required to link bank operations to bills"
-        },
-        "bills": {
-          "description": "Required to save the bills data"
+        "accounts": {
+          "description": "Needed for creating a Linxo account"
         },
         "files": {
-          "description": "Required to save the bills"
+          "description": "Needed for displaying your bills"
         },
-        "accounts": {
-          "description": "Required to get the account's data"
+        "triggers": {
+          "description": "Needed for using Visions Trust API"
         }
       }
     }
   },
-  "banksTransactionRegExp": "\\bbooks\\b",
-  "manifest_version": "2"
+  "permissions": {
+    "accounts": {
+      "description": "Required to create a Linxo account",
+      "type": "io.cozy.accounts"
+    },
+    "files": {
+      "description": "Required to save files",
+      "type": "io.cozy.files"
+    },
+    "triggers": {
+      "description": "Required to create webhooks",
+      "type": "io.cozy.triggers"
+    }
+  }
 }
