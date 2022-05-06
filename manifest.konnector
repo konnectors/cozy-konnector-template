@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "name": "Edf",
+  "name": "Amazon",
   "type": "konnector",
   "language": "node",
   "icon": "icon.svg",
