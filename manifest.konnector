@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "name": "Edf",
+  "name": "Template ccc",
   "type": "konnector",
   "language": "node",
   "icon": "icon.svg",
-  "slug": "edf",
+  "slug": "template",
   "clientSide": true,
   "source": "git@github.com:konnectors/template.git",
   "editor": "Cozy",
