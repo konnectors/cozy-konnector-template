@@ -16,7 +16,7 @@
       "type": "io.cozy.accounts"
     }
   },
-  "folders":[{"defaultDir": "$administrative/$konnector/$account"}],
+  "folders": [{"defaultDir": "$administrative/$konnector/$account"}],
   "developer": {
     "name": "Cozy Cloud",
     "url": "https://cozy.io"
