@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "name": "Orange",
+  "name": "Sosh",
   "type": "konnector",
   "language": "node",
   "icon": "icon.svg",
-  "slug": "orange",
+  "slug": "sosh",
   "clientSide": true,
   "source": "git@github.com:konnectors/template.git",
   "editor": "Cozy",
@@ -23,10 +23,10 @@
   "langs": ["fr", "en"],
   "locales": {
     "fr": {
-      "short_description": "Connecteur Orange"
+      "short_description": "Connecteur Sosh"
     },
     "en": {
-      "short_description": "Orange connector"
+      "short_description": "Sosh connector"
     }
   },
   "manifest_version": "2"
