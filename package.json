@@ -19,11 +19,6 @@
     "build",
     "data"
   ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint"
-    }
-  },
   "scripts": {
     "start": "node ./src/index.js",
     "dev": "cozy-konnector-dev",

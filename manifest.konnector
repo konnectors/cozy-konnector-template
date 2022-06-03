@@ -3,6 +3,7 @@
   "name": "Connector template",
   "type": "konnector",
   "language": "node",
+  "clientSide": true,
   "icon": "icon.png",
   "slug": "template",
   "source": "git@github.com:konnectors/template.git",
