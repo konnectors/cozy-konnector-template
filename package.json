@@ -1,5 +1,5 @@
 {
-  "name": "cozy-konnector-template",
+  "name": "cozy-konnector-amazon",
   "version": "1.0.0",
   "description": "",
   "repository": {
@@ -19,11 +19,6 @@
     "build",
     "data"
   ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint"
-    }
-  },
   "scripts": {
     "start": "node ./src/index.js",
     "dev": "cozy-konnector-dev",
@@ -37,10 +32,11 @@
     "travisDeployKey": "./bin/generate_travis_deploy_key"
   },
   "dependencies": {
-    "cozy-konnector-libs": "4.42.2"
+    "cozy-konnector-libs": "4.46.0"
   },
   "devDependencies": {
-    "cozy-jobs-cli": "1.16.2",
-    "cozy-konnector-build": "1.2.2"
+    "cozy-app-publish": "^0.30.1",
+    "cozy-jobs-cli": "1.16.7",
+    "cozy-konnector-build": "1.2.4"
   }
 }
