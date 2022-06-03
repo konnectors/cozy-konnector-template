@@ -1,10 +1,10 @@
 {
-  "name": "cozy-konnector-template",
+  "name": "cozy-konnector-amazon",
   "version": "1.0.0",
   "description": "",
   "repository": {
     "type": "git",
-    "url": "git@github.com:konnectors/template.git"
+    "url": "git@github.com:konnectors/cozy-konnector-template.git"
   },
   "keywords": [],
   "author": "Cozy Cloud",
@@ -35,6 +35,7 @@
     "cozy-konnector-libs": "4.46.0"
   },
   "devDependencies": {
+    "cozy-app-publish": "^0.30.1",
     "cozy-jobs-cli": "1.16.7",
     "cozy-konnector-build": "1.2.4"
   }

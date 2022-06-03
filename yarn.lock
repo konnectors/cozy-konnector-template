@@ -1151,6 +1151,22 @@ cozy-app-publish@0.28.0:
     tar "^4.4.13"
     verror "^1.10.1"
 
+cozy-app-publish@^0.30.1:
+  version "0.30.1"
+  resolved "https://registry.yarnpkg.com/cozy-app-publish/-/cozy-app-publish-0.30.1.tgz#59c7d62812a4a488262abbf5aa8ef12926e6a7b8"
+  integrity sha512-D3y46UYJU3notpUXAJEvw7LnQB2ZQLaDvy21iak9NnF0JD7ZDdmRxCJqbnjYPJ4mD6t86VHEOiM9ygYlx11V2w==
+  dependencies:
+    argparse "^2.0.1"
+    chalk "^2.4.2"
+    cross-spawn "^6.0.5"
+    fs-extra "^7.0.1"
+    lodash "^4.17.19"
+    node-fetch "^2.6.1"
+    prompt "^1.0.0"
+    request "^2.88.0"
+    tar "^4.4.13"
+    verror "^1.10.1"
+
 cozy-client-js@^0.20.0:
   version "0.20.0"
   resolved "https://registry.yarnpkg.com/cozy-client-js/-/cozy-client-js-0.20.0.tgz#a507ef9ccbeb340aacd58ca1f1d0cdc9d000e853"
