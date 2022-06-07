@@ -1,16 +1,23 @@
 {
   "version": "1.0.0",
-  "name": "Template ccc",
+  "name": "Connector template",
   "type": "konnector",
   "language": "node",
-  "icon": "icon.svg",
-  "slug": "template",
   "clientSide": true,
+  "icon": "icon.png",
+  "slug": "template",
   "source": "git@github.com:konnectors/template.git",
   "editor": "Cozy",
   "vendor_link": "Link to the target website",
   "categories": ["others"],
-  "fields": { },
+  "fields": {
+    "login": {
+      "type": "text"
+    },
+    "password": {
+      "type": "password"
+    }
+  },
   "folders": [{"defaultDir": "$administrative/$konnector/$account"}],
   "data_types": [
     "bill"
