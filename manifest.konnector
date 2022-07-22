@@ -5,7 +5,7 @@
   "language": "node",
   "icon": "icon.png",
   "slug": "red",
-  "source": "git@github.com:konnectors/template.git",
+  "source": "git@github.com:konnectors/cozy-konnector-template.git",
   "editor": "Cozy",
   "vendor_link": "https://www.red-by-sfr.fr/",
   "categories": [
