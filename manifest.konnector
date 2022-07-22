@@ -3,6 +3,7 @@
   "name": "Red",
   "type": "konnector",
   "language": "node",
+  "clientSide": true,
   "icon": "icon.png",
   "slug": "red",
   "source": "git@github.com:konnectors/cozy-konnector-template.git",
