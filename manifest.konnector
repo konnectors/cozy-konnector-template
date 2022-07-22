@@ -18,7 +18,10 @@
     }
   ],
   "fields": {
-    "identifier": "konnector"
+    "email": {
+      "type": "text",
+      "label": "fields.email.label"
+    }
    },
   "permissions": {
     "carbon_copy": {
