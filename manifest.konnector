@@ -17,12 +17,7 @@
       "defaultDir": "$administrative/$konnector/$account"
     }
   ],
-  "fields": {
-    "email": {
-      "type": "text",
-      "label": "fields.email.label"
-    }
-   },
+  "fields": { },
   "permissions": {
     "carbon_copy": {
       "type": "io.cozy.certified.carbon_copy"
