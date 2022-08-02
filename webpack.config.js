@@ -56,6 +56,9 @@ module.exports = {
     // Critical dependency: the request of a dependency is an expression
     // Since we cannot change this dependency. I think it won't hide more important messages
     exprContextCritical: false
+  },
+  externals: {
+    canvas: 'commonjs canvas'
   }
 }
 
