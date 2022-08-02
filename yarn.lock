@@ -2306,10 +2306,10 @@ cozy-flags@^2.8.7:
   dependencies:
     microee "^0.0.6"
 
-cozy-jobs-cli@1.18.2:
-  version "1.18.2"
-  resolved "https://registry.yarnpkg.com/cozy-jobs-cli/-/cozy-jobs-cli-1.18.2.tgz#19357d4219c814b3aaa0488e577beeb3dddadcc1"
-  integrity sha512-ZDz5d+Izu9wnpmriQvZYverNfJ5/2QUn9E3MwmGPrv+Pma8z+Y/FKD4fe3YXrXREWBIHdkeYoqsnTzpyXWFBiA==
+cozy-jobs-cli@1.19.0:
+  version "1.19.0"
+  resolved "https://registry.yarnpkg.com/cozy-jobs-cli/-/cozy-jobs-cli-1.19.0.tgz#f9d089ed683a21979bf66cfb84390960e041d222"
+  integrity sha512-jkbVbGBFvYmdxKnJ7iGJMRAmBO667mvwKsDdMwg/nCpGOfrVBsiIGKdfo6F8RHTSUutceRL2JaKlp+aXOik6Tg==
   dependencies:
     "@pollyjs/adapter-node-http" "5.1.1"
     "@pollyjs/core" "5.1.1"
