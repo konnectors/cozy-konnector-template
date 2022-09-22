@@ -1,11 +1,11 @@
 {
   "version": "1.0.0",
-  "name": "Veolia",
+  "name": "Veolia Eau",
   "type": "konnector",
   "language": "node",
   "clientSide": true,
   "icon": "icon.svg",
-  "slug": "veolia",
+  "slug": "veoliaeau",
   "source": "git@github.com:konnectors/cozy-konnector-template.git",
   "editor": "Cozy",
   "vendor_link": "https://www.service.eau.veolia.fr/home.html",
@@ -48,8 +48,8 @@
   ],
   "locales": {
     "fr": {
-      "short_description": "Récupère vos factures Veolia",
-      "long_description": "Récupère vos factures Veolia sur le site respectif. Une fois votre authentication effectuée, le connecteur sauvegardé vos factures disponibles.",
+      "short_description": "Récupère vos factures d'eau Veolia",
+      "long_description": "Récupère vos factures d'eau Veolia sur le site respectif. Une fois votre authentication effectuée, le connecteur sauvegardé vos factures disponibles.",
       "permissions": {
         "bank operations": {
           "description": "Utilisé pour relier les factures à des operations bancaires"
@@ -66,8 +66,8 @@
       }
     },
     "en": {
-      "short_description": "Fetch a list of Veolia invoices",
-      "long_description": "Fetch a list of Veolia invoices on the respective website. Once you've been authenticated, the konnector will save your available bills.",
+      "short_description": "Fetch a list of Veolia Eau invoices",
+      "long_description": "Fetch a list of Veolia Eau invoices on the respective website. Once you've been authenticated, the konnector will save your available bills.",
       "permissions": {
         "bank operations": {
           "description": "Required to link bank operations to bills"
