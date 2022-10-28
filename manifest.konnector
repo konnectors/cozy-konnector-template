@@ -33,7 +33,9 @@
       "type": "io.cozy.files"
     },
     "accounts": {
-      "type": "io.cozy.accounts"
+      "type": "io.cozy.accounts",
+      "selector": "account_type",
+      "values": ["template"]
     }
   },
   "developer": {
