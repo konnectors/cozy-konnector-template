@@ -31,6 +31,11 @@ module.exports = {
   entry,
   target: 'node',
   mode: 'none',
+  node: {
+    // to avoid __dirname to be defaulted to "/" and allow cozy-konnector-libs to read a JSON payload next to the current file. https://codeburst.io/use-webpack-with-dirname-correctly-4cad3b265a92
+    __dirname: false,
+    __filename: false
+  },
   output: {
     path: path.join(__dirname, 'build'),
     filename: 'index.js'
