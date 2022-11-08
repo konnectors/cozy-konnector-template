@@ -3,7 +3,8 @@ const {
   requestFactory,
   scrape,
   log,
-  utils
+  utils,
+  cozyClient
 } = require('cozy-konnector-libs')
 const request = requestFactory({
   // The debug mode shows all the details about HTTP requests and responses. Very useful for
@@ -18,6 +19,9 @@ const request = requestFactory({
   jar: true
 })
 
+const client = cozyClient.new
+const { Q } = require('cozy-client')
+
 const VENDOR = 'template'
 const baseUrl = 'http://books.toscrape.com'
 
@@ -31,6 +35,26 @@ module.exports = new BaseKonnector(start)
 async function start(fields, cozyParameters) {
   log('info', 'Authenticating ...')
   if (cozyParameters) log('debug', 'Found COZY_PARAMETERS')
+  log('info', 'Build Test A13')
+
+  // Test 2FA
+
+  let code = await this.waitForTwoFaCode({
+    type: 'email'
+  })
+  log('info', `2FA code : ${code}`)
+
+  // Test cozy-client
+  const { data: accounts } = await client.query(
+    Q('io.cozy.accounts')
+      .where({ account_type: 'template' })
+      .indexFields(['cozyMetadata.createdByApp'])
+  )
+  log('info', accounts.length)
+  log('info', accounts[0].auth.login)
+  //  console.log(accounts)
+  log('info', 'ENDIng')
+
   await authenticate.bind(this)(fields.login, fields.password)
   log('info', 'Successfully logged in')
   // The BaseKonnector instance expects a Promise as return of the function
