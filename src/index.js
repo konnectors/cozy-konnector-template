@@ -3,6 +3,7 @@ const {
   requestFactory,
   scrape,
   log,
+  cozyClient,
   utils
 } = require('cozy-konnector-libs')
 const request = requestFactory({
@@ -29,6 +30,17 @@ module.exports = new BaseKonnector(start)
 // cozyParameters are static parameters, independents from the account. Most often, it can be a
 // secret api key.
 async function start(fields, cozyParameters) {
+  log('info', 'Starting doctype test')
+
+  const client = cozyClient.new
+  const res = await client
+    .getStackClient()
+    .fetchJSON('GET', `/remote/org.wikidata.entity?entity=Q7251`)
+
+  log('info', JSON.stringify(res).slice(0, 30))
+  log('info', 'Ending test')
+
+
   log('info', 'Authenticating ...')
   if (cozyParameters) log('debug', 'Found COZY_PARAMETERS')
   await authenticate.bind(this)(fields.login, fields.password)
