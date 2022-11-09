@@ -36,8 +36,8 @@
       "type": "io.cozy.accounts"
     },
     "entity": {
-      "description": "Required for getting more informations about an entity on wikidata",
-      "type": "org.wikidata.entity"
+      "type": "org.wikidata.entity",
+      "description": "Required for getting more informations about an entity on wikidata"
     }
   },
   "developer": {
