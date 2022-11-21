@@ -1,4 +1,4 @@
-[Cozy][cozy] <YOUR SUPER NEW KONNECTOR NAME>
+[Cozy][cozy] __YOUR_SUPER_NEW_KONNECTOR_NAME__
 =======================================
 
 What's Cozy?
@@ -11,8 +11,9 @@ What's Cozy?
 What is this konnector about ?
 ------------------------------
 
-This konnector retrieves your <SOME DATA> and <SOME OTHER DATA> from <SERVICE>
-<YOUR DESCRIPTION HERE>
+This konnector retrieves your __SOME_DATA__ and __SOME_OTHER_DATA__ from __SERVICE__
+
+__YOUR_DESCRIPTION_HERE__
 
 ### Open a Pull-Request
 
@@ -45,7 +46,7 @@ This connector uses [cozy-konnector-libs](https://github.com/cozy/cozy-konnector
 
 ### Maintainer
 
-The lead maintainers for this konnector is <YOUR NAME>
+The lead maintainer for this konnector is __YOUR_NAME__
 
 
 ### Get in touch
@@ -56,13 +57,13 @@ You can reach the Cozy Community by:
 - Chatting with us on IRC [#cozycloud on Libera.Chat][libera]
 - Posting on our [Forum]
 - Posting issues on the [Github repos][github]
-- Say Hi! on [Twitter]
+- Say Hi! on [Twitter] or [Mastodon]
 
 
 License
 -------
 
-<YOUR KONNECTOR NAME> is developed by <your name> and distributed under the [AGPL v3 license][agpl-3.0].
+__YOUR_KONNECTOR_NAME__ is developed by __YOUR_NAME__ and distributed under the [AGPL v3 license][agpl-3.0].
 
 [cozy]: https://cozy.io "Cozy Cloud"
 [agpl-3.0]: https://www.gnu.org/licenses/agpl-3.0.html
@@ -71,7 +72,8 @@ License
 [github]: https://github.com/cozy/
 [nodejs]: https://nodejs.org/
 [standard]: https://standardjs.com
-[twitter]: https://twitter.com/mycozycloud
+[twitter]: https://twitter.com/cozycloud
+[mastodon]: https://framapiaf.org/@CozyCloud
 [webpack]: https://webpack.js.org
 [yarn]: https://yarnpkg.com
 [travis]: https://travis-ci.org
