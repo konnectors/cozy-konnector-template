@@ -2353,10 +2353,10 @@ cozy-jobs-cli@1.20.0:
     pretty "2.0.0"
     strip-json-comments "3.1.1"
 
-cozy-konnector-build@1.4.2:
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/cozy-konnector-build/-/cozy-konnector-build-1.4.2.tgz#257fbb09dcd7db22f7e9f1aa2ab8b22315282f71"
-  integrity sha512-RyFB5j402fANSGNsLno8FFmBgdsVie2OKxsyT3WKtLMQM/d2ELy59qMdnbOl5fX51rBkytfob29LhY9YDPK0Ug==
+cozy-konnector-build@1.4.3:
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/cozy-konnector-build/-/cozy-konnector-build-1.4.3.tgz#cf8cded8b1ed3a1c79ba9fb9ed4f12e1493cc975"
+  integrity sha512-vbhOqAZzu2u0MU+AOhdi8WSH5pDQDbTEecXwwG3maXARX3kOJFBOXirzhZUKdDa4W5OQt4jRRLhDovJq9nUhRA==
   dependencies:
     "@babel/core" "7.17.10"
     babel-preset-cozy-app "^2.0.2"
