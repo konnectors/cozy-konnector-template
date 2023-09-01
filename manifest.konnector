@@ -1,0 +1,84 @@
+{
+  "version": "1.0.0",
+  "name": "Connector template",
+  "type": "konnector",
+  "language": "node",
+  "icon": "icon.svg",
+  "slug": "template",
+  "source": "git@github.com:konnectors/template.git",
+  "editor": "Cozy",
+  "vendor_link": "Link to the target website",
+  "categories": ["others"],
+  "fields": {
+    "login": {
+      "type": "text"
+    },
+    "password": {
+      "type": "password"
+    }
+  },
+  "folders": [{"defaultDir": "$administrative/$konnector/$account"}],
+  "data_types": [
+    "bill"
+  ],
+  "screenshots": [],
+  "permissions": {
+    "bank operations": {
+      "type": "io.cozy.bank.operations"
+    },
+    "bills": {
+      "type": "io.cozy.bills"
+    },
+    "files": {
+      "type": "io.cozy.files"
+    },
+    "accounts": {
+      "type": "io.cozy.accounts"
+    }
+  },
+  "developer": {
+    "name": "Cozy Cloud",
+    "url": "https://cozy.io"
+  },
+  "langs": ["fr", "en"],
+  "locales": {
+    "fr": {
+      "short_description": "Récupère la liste de livres",
+      "long_description": "Récupère la liste de livre sur le site exemple",
+      "permissions": {
+        "bank operations": {
+          "description": "Utilisé pour relier les factures à des operations bancaires"
+        },
+        "bills": {
+          "description": "Utilisé pour sauver les données des factures"
+        },
+        "files": {
+          "description": "Utilisé pour sauvegarder les factures"
+        },
+        "accounts": {
+          "description": "Utilisé pour obtenir les données du compte"
+        }
+      }
+    },
+    "en": {
+      "short_description": "Fetch a list of books",
+      "long_description": "Fetch a list of books from the example website",
+      "permissions": {
+        "bank operations": {
+          "description": "Required to link bank operations to bills"
+        },
+        "bills": {
+          "description": "Required to save the bills data"
+        },
+        "files": {
+          "description": "Required to save the bills"
+        },
+        "accounts": {
+          "description": "Required to get the account's data"
+        }
+      }
+    }
+  },
+  "banksTransactionRegExp": "\\bbooks\\b",
+  "manifest_version": "2"
+}
