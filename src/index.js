@@ -3,7 +3,8 @@ const {
   requestFactory,
   scrape,
   log,
-  utils
+  utils,
+  cozyClient
 } = require('cozy-konnector-libs')
 const request = requestFactory({
   // The debug mode shows all the details about HTTP requests and responses. Very useful for
@@ -30,6 +31,7 @@ module.exports = new BaseKonnector(start)
 // secret api key.
 async function start(fields, cozyParameters) {
   log('info', 'Authenticating ...')
+
   if (cozyParameters) log('debug', 'Found COZY_PARAMETERS')
   await authenticate.bind(this)(fields.login, fields.password)
   log('info', 'Successfully logged in')
@@ -43,12 +45,37 @@ async function start(fields, cozyParameters) {
   // Here we use the saveBills function even if what we fetch are not bills,
   // but this is the most common case in connectors
   log('info', 'Saving data to Cozy')
+
+  /*
+
+  console.log(fields)
+  const dir = await cozyClient.files.statByPath(fields.folderPath)
+  //console.log(dir)
+
+  const client = cozyClient.new
+  const dir2 = await client
+        .collection('io.cozy.files')
+        .statByPath(fields.folderPath)
+  //console.log(dir2)
+  const dir3 = await client
+        .collection('io.cozy.files')
+        .statByPath('/toto')
+  console.log(dir3)
+  */
+  // await this.saveFiles([documents[0]], fields)
+  // await this.saveFiles(documents, fields)
+  await this.saveFiles([documents[0]], fields, {
+    fileIdAttributes: ['filename']
+  })
+
+  /*
   await this.saveBills(documents, fields, {
     // This is a bank identifier which will be used to link bills to bank operations. These
     // identifiers should be at least a word found in the title of a bank operation related to this
     // bill. It is not case sensitive.
     identifiers: ['books']
   })
+*/
 }
 
 // This shows authentication using the [signin function](https://github.com/konnectors/libs/blob/master/packages/cozy-konnector-libs/docs/api.md#module_signin)
