@@ -2307,10 +2307,10 @@ cozy-flags@^2.8.7:
   dependencies:
     microee "^0.0.6"
 
-cozy-jobs-cli@2.2.9:
-  version "2.2.9"
-  resolved "https://registry.yarnpkg.com/cozy-jobs-cli/-/cozy-jobs-cli-2.2.9.tgz#1d22c80c6a377ecd09dc5f8e0b74d6c5375afd10"
-  integrity sha512-k0YyZyN/DkgNzQYYNpUAsBtgZtRfedDt9iAaPbO6+I0hIwe8qiLg3mALaBdaNuL17t92LeEQGUmIpzilXEscHQ==
+cozy-jobs-cli@2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/cozy-jobs-cli/-/cozy-jobs-cli-2.3.0.tgz#b984829d384b35b1b7743550c81e2e784b999629"
+  integrity sha512-HiNSEN/2JXytzVxIAjJB3VDC0/crKMfgjJmPoRVFybrSfPgo1hKl3fx8uWIl4mOXs1HjV71H1tj8FnpNgFJ6Cg==
   dependencies:
     "@pollyjs/adapter-node-http" "5.1.1"
     "@pollyjs/core" "5.1.1"
@@ -2324,7 +2324,7 @@ cozy-jobs-cli@2.2.9:
     cozy-client "41.2.0"
     cozy-device-helper "^2.1.0"
     cozy-flags "^2.8.7"
-    cozy-konnector-libs "^5.7.0"
+    cozy-konnector-libs "^5.8.0"
     cozy-logger "1.9.0"
     open "8.4.0"
     pretty "2.0.0"
@@ -2346,10 +2346,10 @@ cozy-konnector-build@1.5.1:
     webpack "5.76.0"
     webpack-cli "4.9.2"
 
-cozy-konnector-libs@5.7.0, cozy-konnector-libs@^5.7.0:
-  version "5.7.0"
-  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-5.7.0.tgz#c0347e97e67c9ac403c66a6525b2c6d28e95e862"
-  integrity sha512-1jOPTI7X3l2hwCYqDJCzwQjQglHmy9jKFeTJ+fzxHmIF4eROGCraitvtEM4dSaN7XlPkW58+TdbEzRHnvBIyEg==
+cozy-konnector-libs@5.8.0, cozy-konnector-libs@^5.8.0:
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-5.8.0.tgz#698cbb780380be10cf382c1b49d39fe46543cb48"
+  integrity sha512-5J/ToVnuU9/IqkbmHedbPJaxsxE4UA/jBiE7Tz+TsVg2v2hsFPxTwaA+nRnDPiAeePnlwtYSIOXmT+okJQlXrw==
   dependencies:
     babel-runtime "^6.26.0"
     bluebird "^3.7.2"
