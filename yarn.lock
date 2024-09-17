@@ -2556,10 +2556,10 @@ cozy-flags@^2.8.7:
   dependencies:
     microee "^0.0.6"
 
-cozy-jobs-cli@2.4.3:
-  version "2.4.3"
-  resolved "https://registry.yarnpkg.com/cozy-jobs-cli/-/cozy-jobs-cli-2.4.3.tgz#236dc335ae5903c50a724e2e7a3c13cf5c02c16b"
-  integrity sha512-R1opCWcooYyQ6m6o6kK7WStpbP/sdk3Z0J9ekXq6U4GvzSxC+EY6ZHzvkr+57Ylfx7NEOAvzoB0yOJYLvlpdqg==
+cozy-jobs-cli@2.4.4:
+  version "2.4.4"
+  resolved "https://registry.yarnpkg.com/cozy-jobs-cli/-/cozy-jobs-cli-2.4.4.tgz#41b72d1ceed93f268c623abc806bd5bdd8edf161"
+  integrity sha512-fXXAwfdxbPh4RqQhYCv7sM9+Lev4RW7TQK+mqJhJAA/i3LnlCYC/bmMHh7iWLzGRUYiOemKFjM7VJr1u57PZAg==
   dependencies:
     "@pollyjs/adapter-node-http" "5.1.1"
     "@pollyjs/core" "5.1.1"
@@ -2573,7 +2573,7 @@ cozy-jobs-cli@2.4.3:
     cozy-client "45.14.1"
     cozy-device-helper "^2.1.0"
     cozy-flags "^2.8.7"
-    cozy-konnector-libs "^5.12.0"
+    cozy-konnector-libs "^5.12.1"
     cozy-logger "1.9.0"
     node-fetch "2.7.0"
     open "8.4.0"
@@ -2596,10 +2596,10 @@ cozy-konnector-build@1.7.0:
     webpack "5.76.0"
     webpack-cli "4.9.2"
 
-cozy-konnector-libs@5.12.0, cozy-konnector-libs@^5.12.0:
-  version "5.12.0"
-  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-5.12.0.tgz#44d714b67c81682fb6b6577b837a82df3905864e"
-  integrity sha512-ZrfjuMMaFe7S+y8c5DNfwhuN3VwYxbD4hxQvwM4rzDGZrk3y3r2nG5hX1yyPtw5aQ83y2xCmtMb2nphWVeFRXw==
+cozy-konnector-libs@5.12.1, cozy-konnector-libs@^5.12.1:
+  version "5.12.1"
+  resolved "https://registry.yarnpkg.com/cozy-konnector-libs/-/cozy-konnector-libs-5.12.1.tgz#06962950df0997fcf1cccd28574c722a81467676"
+  integrity sha512-9JWYeTzg4l9KTcSlTmtw/9ttWcXo11+dZ2LhN9D/AjQoe8HqmNhKDvbBc52GHBXjZK6GHGFyOX5QjAP2mxzDnQ==
   dependencies:
     babel-runtime "^6.26.0"
     bluebird "^3.7.2"
@@ -2621,7 +2621,7 @@ cozy-konnector-libs@5.12.0, cozy-konnector-libs@^5.12.0:
     lodash-id "^0.14.0"
     lowdb "^1.0.0"
     mime-types "^2.1.31"
-    node-fetch "^2.6.1"
+    node-fetch "^2.7.0"
     raven "^2.6.4"
     raw-body "^2.4.1"
     request "^2.88.2"
@@ -4513,7 +4513,7 @@ node-fetch@2.6.7, node-fetch@^2.0.0, node-fetch@^2.6.1:
   dependencies:
     whatwg-url "^5.0.0"
 
-node-fetch@2.7.0:
+node-fetch@2.7.0, node-fetch@^2.7.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.7.0.tgz#d0f0fa6e3e2dc1d27efcd8ad99d550bda94d187d"
   integrity sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==
