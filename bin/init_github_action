@@ -1,0 +1,48 @@
+#!/bin/bash
+
+set -e
+
+# .env file sample
+# MATTERMOST_HOOK_URL=https://***
+# REGISTRY_TOKEN="***"
+
+if [ ! -f ".env" ]; then
+  echo "Error: .env file is missing"
+  echo "Please create a .env file with the following structure:"
+  echo "MATTERMOST_HOOK_URL=https://your-mattermost-hook-url"
+  echo "REGISTRY_TOKEN=your-registry-token"
+  exit 1
+fi
+
+# Check if required environment variables are present in .env
+if ! grep -q "^MATTERMOST_HOOK_URL=" .env || ! grep -q "^REGISTRY_TOKEN=" .env; then
+  echo "Error: MATTERMOST_HOOK_URL and/or REGISTRY_TOKEN missing from .env file"
+  exit 1
+fi
+
+# Source the .env file to get variables
+source .env
+
+# Check if variables are empty
+if [ -z "$MATTERMOST_HOOK_URL" ] || [ -z "$REGISTRY_TOKEN" ]; then
+  echo "Error: MATTERMOST_HOOK_URL and/or REGISTRY_TOKEN cannot be empty in .env file"
+  exit 1
+fi
+
+# Check if gh CLI is installed
+if ! command -v gh &> /dev/null; then
+  echo "Error: GitHub CLI (gh) is not installed"
+  echo "Please install it from: https://cli.github.com/"
+  exit 1
+fi
+
+# generate a new private and public key
+ssh-keygen -t rsa -b 4096 -f github_deploy_key -N '' -C $url -q 1>/dev/null
+
+gh repo deploy-key add --allow-write --title "github_deploy_key" ./github_deploy_key.pub
+gh secret set DEPLOY_KEY < github_deploy_key
+gh secret set -f .env
+
+# cleaning
+rm github_deploy_key
+rm github_deploy_key.pub
