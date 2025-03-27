@@ -1,0 +1,40 @@
+name: CI/CD
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+    tags:
+      - '[0-9]+.[0-9]+.[0-9]+'
+      - '[0-9]+.[0-9]+.[0-9]+-beta.[0-9]+'
+
+env:
+  MATTERMOST_CHANNEL: publication
+  MATTERMOST_HOOK_URL: ${{ secrets.MATTERMOST_HOOK_URL }}
+  REGISTRY_TOKEN: ${{ secrets.REGISTRY_TOKEN }}
+
+jobs:
+  build:
+    name: Build and publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Lint
+        run: yarn lint
+      - name: Build
+        run: yarn build
+      - name: Set SSH git push
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.DEPLOY_KEY }}
+      - name: Publish
+        if: github.ref == 'refs/heads/master' || startsWith(github.ref, 'refs/tags/')
+        run: DEPLOY_BRANCH=build yarn deploy && yarn cozyPublish --yes --build-url $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/archive/$GITHUB_SHA.tar.gz
