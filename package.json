@@ -36,10 +36,10 @@
     "initGithubAction": "./bin/init_github_action"
   },
   "dependencies": {
-    "cozy-konnector-libs": "5.12.1"
+    "cozy-konnector-libs": "5.13.0"
   },
   "devDependencies": {
-    "cozy-jobs-cli": "2.4.4",
-    "cozy-konnector-build": "1.7.0"
+    "cozy-jobs-cli": "2.6.0",
+    "cozy-konnector-build": "1.8.0"
   }
 }
