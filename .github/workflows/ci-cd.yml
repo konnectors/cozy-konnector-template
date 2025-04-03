@@ -40,7 +40,7 @@ jobs:
         run: |
           DEPLOY_BRANCH=build yarn deploy
           if [[ $GITHUB_REF == refs/tags/* ]]; then
-            yarn cozyPublish --yes --postpublish mattermost --build-url $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/archive/$GITHUB_SHA.tar.gz
+            yarn cozyPublish --yes --postpublish mattermost --build-url $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/archive/refs/heads/build.tar.gz
           else
-            yarn cozyPublish --yes --build-url $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/archive/$GITHUB_SHA.tar.gz
+            yarn cozyPublish --yes --build-url $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/archive/refs/heads/build.tar.gz
           fi
